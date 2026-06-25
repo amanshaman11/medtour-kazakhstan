@@ -1,0 +1,66 @@
+import type { Hotel } from "./types";
+
+// Real hotels in Kazakhstan's major medical cities. Nightly prices are
+// estimated ranges and vary by season, room type, and availability.
+export const hotels: Hotel[] = [
+  {
+    id: "ritz-carlton-almaty",
+    name: "The Ritz-Carlton, Almaty",
+    city: "Almaty",
+    stars: 5,
+    priceRange: "Est. $250 – $420/night",
+    distanceFromHospital: "Esentai Tower, central business district",
+    amenityKeys: ["spa", "pool", "fineDining", "concierge"],
+    amenities: ["Spa", "Pool", "Fine Dining", "Concierge"],
+  },
+  {
+    id: "ritz-carlton-astana",
+    name: "The Ritz-Carlton, Astana",
+    city: "Astana",
+    stars: 5,
+    priceRange: "Est. $220 – $470/night",
+    distanceFromHospital: "13 km from airport, near medical district",
+    amenityKeys: ["spa", "pool", "airportShuttle", "clubLevel"],
+    amenities: ["Spa", "Pool", "Airport Shuttle", "Club Level"],
+  },
+  {
+    id: "rixos-almaty",
+    name: "Rixos Almaty",
+    city: "Almaty",
+    stars: 5,
+    priceRange: "Est. $110 – $200/night",
+    distanceFromHospital: "City center, near major clinics",
+    amenityKeys: ["spa", "restaurant", "concierge", "transfers"],
+    amenities: ["Spa", "Restaurant", "Concierge", "Transfers"],
+  },
+  {
+    id: "hilton-astana",
+    name: "Hilton Astana",
+    city: "Astana",
+    stars: 5,
+    priceRange: "Est. $120 – $210/night",
+    distanceFromHospital: "Central, near UMC medical campus",
+    amenityKeys: ["gym", "restaurant", "businessCenter"],
+    amenities: ["Gym", "Restaurant", "Business Center"],
+  },
+  {
+    id: "holiday-inn-almaty",
+    name: "Holiday Inn Almaty",
+    city: "Almaty",
+    stars: 4,
+    priceRange: "Est. $70 – $120/night",
+    distanceFromHospital: "Short drive to medical centers",
+    amenityKeys: ["breakfast", "wifi", "shuttle"],
+    amenities: ["Breakfast", "WiFi", "Shuttle"],
+  },
+  {
+    id: "rixos-khadisha-shymkent",
+    name: "Rixos Khadisha Shymkent",
+    city: "Shymkent",
+    stars: 5,
+    priceRange: "Est. $90 – $160/night",
+    distanceFromHospital: "City center, near medical district",
+    amenityKeys: ["spa", "pool", "restaurant", "recoveryMenu"],
+    amenities: ["Spa", "Pool", "Restaurant", "Recovery Menu"],
+  },
+];

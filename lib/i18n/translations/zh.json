@@ -1,0 +1,402 @@
+{
+  "nav": {
+    "why": "为什么选择哈萨克斯坦",
+    "platform": "平台",
+    "treatments": "治疗项目",
+    "clinics": "诊所",
+    "packages": "套餐",
+    "contact": "联系我们",
+    "concierge": "医疗专员",
+    "findTreatment": "查找治疗"
+  },
+  "common": {
+    "est": "约"
+  },
+  "cities": {
+    "almaty": "阿拉木图",
+    "astana": "阿斯塔纳",
+    "shymkent": "奇姆肯特"
+  },
+  "hero": {
+    "eyebrow": "医疗旅游平台 · 哈萨克斯坦",
+    "title": "哈萨克斯坦的世界级医疗服务",
+    "subtitle": "通过单一平台比较医院、了解治疗方案、安排住宿并获得个性化协助。",
+    "findTreatment": "查找治疗",
+    "contactConcierge": "联系医疗专员",
+    "trust1": "认证医院",
+    "trust2": "国际患者",
+    "trust3": "全程协调",
+    "statHospitals": "合作医院",
+    "statPatients": "已服务患者",
+    "statSavings": "费用节省",
+    "statSupport": "联络中心",
+    "verifiedHospitals": "已验证医院",
+    "tagCardiology": "心脏科",
+    "tagSurgery": "外科",
+    "tagIVF": "试管婴儿",
+    "panelClinics": "诊所",
+    "panelHotels": "酒店",
+    "panelLanguages": "语言",
+    "patientsServed": "已服务患者"
+  },
+  "stats": {
+    "badge": "数据一览",
+    "title": "广受患者信赖",
+    "subtitle": "一个不断成长的生态系统，将国际患者与哈萨克斯坦各地认证的医疗服务相连接。",
+    "countries": "服务国家",
+    "procedures": "可提供的治疗项目"
+  },
+  "partners": {
+    "badge": "合作医院",
+    "title": "认证合作医院",
+    "subtitle": "我们与哈萨克斯坦各地国际认可且通过国家认证的医疗机构合作。",
+    "visit": "访问网站",
+    "items": {
+      "heart-center-umc": { "focus": "中亚领先的心脏外科中心" },
+      "national-hospital": { "focus": "多学科诊疗，提供国际患者服务" },
+      "nnmc": { "focus": "高科技心脏外科、神经外科及心律失常治疗" },
+      "syzganov": { "focus": "国家级先进外科科研中心" },
+      "umc-fund": { "focus": "心脏、妇幼及诊断中心，逾1000张床位" },
+      "shymkent-heart": { "focus": "自2000年起专注心脏科与心脏外科" },
+      "mediker": { "focus": "设有英语专家的国际部" },
+      "alanda": { "focus": "设有住院部的现代多学科中心" }
+    }
+  },
+  "trust": {
+    "badge": "信任与安全",
+    "title": "建立在信任与透明之上",
+    "subtitle": "您医疗旅程的每个环节都有经过验证的标准和专属患者保护作为支撑。",
+    "items": {
+      "accredited": { "title": "JCI及国家认证", "desc": "合作医院符合国际及国家质量与安全标准。" },
+      "pricing": { "title": "透明定价", "desc": "预先提供预估治疗费用区间。最终费用在会诊后确认。" },
+      "multilingual": { "title": "多语种协调", "desc": "提供八种语言的专业口译员和协调员。" },
+      "privacy": { "title": "数据隐私", "desc": "您的医疗信息将受到严格保密处理。" },
+      "patientFirst": { "title": "以患者为先", "desc": "专属协调员从咨询到康复全程陪伴您。" },
+      "network": { "title": "全球患者网络", "desc": "服务来自美国、欧洲、独联体及中东的患者。" }
+    }
+  },
+  "why": {
+    "badge": "为什么选择哈萨克斯坦",
+    "title": "医疗旅游的首选目的地",
+    "subtitle": "哈萨克斯坦为来自美国、欧洲、独联体及中东的国际患者提供世界级医疗基础设施、有竞争力的价格和友好的环境。",
+    "cards": {
+      "recognized": { "title": "国际认可的医院", "desc": "通过JCI认证及ISO认证的机构，配备现代设备、经验丰富的专家及国际质量标准。" },
+      "affordable": { "title": "实惠的医疗", "desc": "相比美国和西欧节省40–60%，同时获得相当的临床效果和优质护理。" },
+      "fast": { "title": "快速就诊专家", "desc": "无需漫长排队。通过我们的协调预约系统，几天内即可安排会诊和治疗。" },
+      "packages": { "title": "医疗旅游套餐", "desc": "一次预订即包含治疗、住宿、接送、口译及康复支持的全包套餐。" }
+    }
+  },
+  "platform": {
+    "badge": "平台",
+    "title": "一个平台，满足一切",
+    "subtitle": "MedTour Kazakhstan 将您医疗旅程的每个环节——从选择医院到治疗后随访——整合到一个协调一致的生态系统中。",
+    "features": {
+      "search": { "title": "医院搜索", "desc": "浏览阿拉木图、阿斯塔纳和奇姆肯特的认证医院。" },
+      "comparison": { "title": "治疗对比", "desc": "并排比较治疗项目、专家及透明定价。" },
+      "accommodation": { "title": "住宿预订", "desc": "靠近所选医疗机构、适合康复的酒店。" },
+      "transfers": { "title": "机场接送", "desc": "从抵达到离开的协调接送服务。" },
+      "translation": { "title": "翻译服务", "desc": "提供5种以上语言的专业医疗口译。" },
+      "visa": { "title": "签证协助", "desc": "提供医疗签证要求及材料方面的指导。" },
+      "tourism": { "title": "旅游套餐", "desc": "康复期间精选的本地体验。" },
+      "support": { "title": "24/7患者支持", "desc": "通过统一联络中心提供全天候协调。" }
+    }
+  },
+  "search": {
+    "badge": "搜索",
+    "title": "查找您的治疗",
+    "subtitle": "按专科搜索医院和诊所。比较哈萨克斯坦领先的医疗机构。",
+    "placeholder": "按治疗、诊所或城市搜索...",
+    "empty": "未找到诊所。请尝试其他搜索或类别。",
+    "showing": "显示",
+    "clinic": "家诊所",
+    "clinics": "家诊所",
+    "disclaimer": "所示价格为预估值。最终费用在会诊后确认。",
+    "categories": {
+      "all": "全部",
+      "dental": "牙科",
+      "ivf": "试管婴儿",
+      "cardiology": "心脏科",
+      "plasticSurgery": "整形外科",
+      "orthopedics": "骨科"
+    }
+  },
+  "specialties": {
+    "cardiologySurgery": "心脏科与心脏外科",
+    "cardiacNeuro": "心脏外科、神经外科与心脏科",
+    "multidiscSurgery": "多学科外科与诊断",
+    "surgeryOrthoTransplant": "外科、骨科与器官移植",
+    "cardiacCardioNeuro": "心脏外科、心脏科与神经外科",
+    "multidiscDental": "多学科诊疗与种植牙",
+    "diagnosticsDentalSurgery": "诊断、牙科与外科",
+    "reproIvf": "生殖医学与试管婴儿",
+    "reproIvfObstetrics": "生殖医学、试管婴儿与产科",
+    "multidiscRecon": "多学科与重建外科",
+    "familyCheckupDental": "家庭医学、体检与牙科"
+  },
+  "accreditations": {
+    "jci": "JCI认证",
+    "national": "国家认证",
+    "moh": "卫生部许可",
+    "intlDept": "国际部",
+    "intlStandards": "国际标准",
+    "ivfClinic": "专业试管婴儿诊所"
+  },
+  "concierge": {
+    "badge": "医疗专员",
+    "title": "个性化患者协助",
+    "subtitle": "我们的医疗专员团队协调您的整个旅程——选择诊所、住宿、接送及随访护理。通过统一联络中心24/7全天候提供。",
+    "patientInquiry": "患者咨询",
+    "unifiedCenter": "统一联络中心",
+    "available5": "24/7全天候提供五种语言服务",
+    "name": "医疗专员",
+    "team": "患者协调团队",
+    "online": "在线",
+    "placeholder": "描述您的医疗需求...",
+    "send": "发送消息",
+    "recommendedClinics": "推荐诊所：",
+    "packageSuggestions": "套餐建议：",
+    "hotelRecommendations": "酒店推荐：",
+    "scenarios": {
+      "dental": {
+        "patientMessage": "我需要种植牙。",
+        "title": "阿拉木图的种植牙方案",
+        "clinics": [
+          "Premium Dental Center — JCI认证",
+          "Smile Dental Clinic — ISO 9001认证"
+        ],
+        "priceRange": "预估治疗：每颗种植体 800 – 5,000 美元",
+        "hotels": [
+          "Holiday Inn Express — 距诊所3分钟（55美元/晚）",
+          "Rixos Almaty — 五星级康复住宿（110美元/晚）"
+        ],
+        "interpreter": "每日提供英语和俄语口译",
+        "contact": "拨打1717或发送邮件至 contact@medtour.kz 预订"
+      },
+      "ivf": {
+        "patientMessage": "我需要试管婴儿治疗。",
+        "title": "试管婴儿治疗中心",
+        "clinics": [
+          "Almaty IVF Institute — ESHRE标准",
+          "Family IVF Center，阿斯塔纳 — 患者满意度94%"
+        ],
+        "packages": [
+          "7天试管婴儿套餐 — 4,200美元起（治疗+酒店+口译）",
+          "14天综合套餐 — 7,500美元起"
+        ],
+        "hotels": [
+          "Rixos Almaty — 适合康复的套房",
+          "Sheraton Astana — 紧邻医疗区"
+        ],
+        "interpreter": "多语种协调员：EN, RU, KZ, AR, CN",
+        "contact": "拨打1717获取个性化治疗方案"
+      }
+    }
+  },
+  "treatments": {
+    "badge": "治疗项目",
+    "title": "治疗类别",
+    "subtitle": "探索我们遍布哈萨克斯坦的合作医院和诊所提供的医疗专科。"
+  },
+  "treatmentCats": {
+    "search": "搜索",
+    "dentistry": { "name": "牙科", "desc": "种植、贴面、全口修复及美容牙科", "procedures": "45+项目" },
+    "ivf": { "name": "试管婴儿", "desc": "由顶尖生殖医学专家提供的助孕治疗", "procedures": "12+项目" },
+    "cardiology": { "name": "心脏科", "desc": "心脏手术、支架、搭桥及心脏康复项目", "procedures": "30+项目" },
+    "orthopedics": { "name": "骨科", "desc": "关节置换、脊柱手术及运动医学", "procedures": "25+项目" },
+    "plasticSurgery": { "name": "整形外科", "desc": "由认证外科医生进行的美容及重建手术", "procedures": "40+项目" },
+    "checkups": { "name": "预防性体检", "desc": "全面健康筛查及高管健康套餐", "procedures": "20+套餐" }
+  },
+  "clinics": {
+    "badge": "精选诊所",
+    "title": "合作医院与诊所",
+    "subtitle": "经认证的医疗机构，在质量、安全及国际患者满意度方面均经过验证。"
+  },
+  "hotels": {
+    "badge": "住宿",
+    "title": "酒店与康复住宿",
+    "subtitle": "靠近合作医院、适合康复的住宿，按舒适度、便利性及医疗旅客需求精选。",
+    "priceRange": "价格区间",
+    "inquire": "咨询",
+    "perNight": "/晚",
+    "amenities": {
+      "spa": "水疗",
+      "pool": "泳池",
+      "fineDining": "高级餐饮",
+      "concierge": "礼宾服务",
+      "airportShuttle": "机场班车",
+      "clubLevel": "行政楼层",
+      "restaurant": "餐厅",
+      "transfers": "接送",
+      "gym": "健身房",
+      "businessCenter": "商务中心",
+      "breakfast": "早餐",
+      "wifi": "无线网络",
+      "shuttle": "班车",
+      "recoveryMenu": "康复餐单"
+    },
+    "items": {
+      "ritz-carlton-almaty": { "distance": "Esentai大厦，中央商务区" },
+      "ritz-carlton-astana": { "distance": "距机场13公里，临近医疗区" },
+      "rixos-almaty": { "distance": "市中心，临近主要诊所" },
+      "hilton-astana": { "distance": "市中心，临近UMC医疗园区" },
+      "holiday-inn-almaty": { "distance": "距医疗中心车程很短" },
+      "rixos-khadisha-shymkent": { "distance": "市中心，临近医疗区" }
+    }
+  },
+  "travelPackages": {
+    "badge": "套餐",
+    "title": "医疗旅游套餐",
+    "subtitle": "整合治疗、住宿、接送、口译及本地体验的全包套餐。",
+    "mostPopular": "最受欢迎",
+    "days": "天",
+    "from": "起价",
+    "request": "索取套餐详情",
+    "items": {
+      "5-day": {
+        "name": "5天医疗套餐",
+        "includes": [
+          "治疗会诊及手术",
+          "四星级酒店住宿",
+          "机场接送",
+          "专业口译",
+          "城市导览"
+        ]
+      },
+      "7-day": {
+        "name": "7天医疗套餐",
+        "includes": [
+          "完整治疗方案",
+          "五星级酒店住宿",
+          "机场接送及交通",
+          "专属口译",
+          "复诊预约",
+          "本地文化游览"
+        ]
+      },
+      "14-day": {
+        "name": "14天医疗套餐",
+        "includes": [
+          "综合治疗方案",
+          "高端酒店住宿",
+          "全部机场及诊所接送",
+          "24/7口译支持",
+          "康复监测",
+          "多城市旅游体验",
+          "含签证协助"
+        ]
+      }
+    }
+  },
+  "tourism": {
+    "badge": "旅游",
+    "title": "旅游体验",
+    "subtitle": "将您的治疗与哈萨克斯坦最具活力城市中精选的文化和自然体验相结合。",
+    "attractionsLabel": "景点与体验",
+    "viewPackages": "查看旅游套餐",
+    "items": {
+      "almaty": {
+        "city": "阿拉木图",
+        "tagline": "通往天山的门户",
+        "description": "哈萨克斯坦最大的城市融合了国际化文化与令人惊叹的自然美景——是康复与探索的理想之地。",
+        "attractions": [
+          "大阿拉木图湖",
+          "梅迪奥与奇姆布拉克滑雪场",
+          "科克托别山",
+          "绿色巴扎与当地美食",
+          "中央国家博物馆"
+        ]
+      },
+      "astana": {
+        "city": "阿斯塔纳",
+        "tagline": "现代化首都",
+        "description": "一座建筑独特、基础设施世界一流的未来之城，汇聚多家领先医疗机构。",
+        "attractions": [
+          "巴伊杰列克塔",
+          "可汗沙特尔娱乐中心",
+          "阿斯塔纳歌剧院",
+          "哈萨克斯坦国家博物馆",
+          "伊希姆河滨步道"
+        ]
+      },
+      "shymkent": {
+        "city": "奇姆肯特",
+        "tagline": "丝绸之路遗产",
+        "description": "阳光明媚的南部首府在古丝绸之路沿线提供实惠的医疗、丰富的历史和热情的款待。",
+        "attractions": [
+          "奥尔达巴斯广场",
+          "州历史博物馆",
+          "阿克苏-扎巴格雷自然保护区",
+          "传统巴扎",
+          "丝绸之路地标"
+        ]
+      }
+    }
+  },
+  "how": {
+    "badge": "运作方式",
+    "title": "四步开启您的医疗旅程",
+    "subtitle": "从初次咨询到治疗后随访，MedTour协调您体验的每个细节。",
+    "steps": {
+      "choose": { "title": "选择治疗", "desc": "浏览治疗类别或搜索我们的医院目录，找到适合您需求的专科和诊所。" },
+      "recommend": { "title": "获取推荐", "desc": "我们的医疗专员根据您的需求提供个性化的诊所、住宿及套餐推荐。" },
+      "book": { "title": "预订旅程", "desc": "确认您的医疗套餐——治疗、酒店、接送、口译及旅游附加项一次预订完成。" },
+      "travel": { "title": "前往哈萨克斯坦", "desc": "在全面支持下抵达。您的专属协调员负责机场接机、诊所预约及随访护理。" }
+    }
+  },
+  "contact": {
+    "badge": "联络中心",
+    "title": "一个号码，全部医疗服务。",
+    "subtitle": "我们统一的医疗联络中心通过单一热线，将国际患者与医院、住宿、接送及患者支持相连接。",
+    "availability": "24/7全天候 · 英语 · 俄语 · 哈萨克语 · 阿拉伯语 · 中文",
+    "call": "拨打1717",
+    "features": {
+      "support": { "title": "24/7支持", "desc": "全天候提供五种语言的患者协助。" },
+      "appointment": { "title": "预约协调", "desc": "安排会诊、治疗及复诊。" },
+      "planning": { "title": "治疗规划", "desc": "个性化医疗旅程规划及套餐选择。" },
+      "emergency": { "title": "紧急协助", "desc": "为紧急医疗出行需求提供即时支持。" },
+      "interpreter": { "title": "口译协调", "desc": "按需安排专业医疗口译。" }
+    }
+  },
+  "testimonials": {
+    "badge": "患者评价",
+    "title": "受到全球患者信赖",
+    "subtitle": "来自美国、欧洲、独联体及中东的国际患者分享他们的MedTour体验。",
+    "items": {
+      "1": { "country": "英国", "treatment": "种植牙", "quote": "MedTour让一切都很顺畅——从选择诊所到预订酒店。相比伦敦价格我节省了50%以上，并在阿拉木图的Premium Dental Center获得了卓越护理。" },
+      "2": { "country": "阿联酋", "treatment": "心脏手术", "quote": "联络中心协调了我的整个旅程。口译支持、机场接送和复诊预约都处理得很专业。体验极佳。" },
+      "3": { "country": "俄罗斯", "treatment": "试管婴儿治疗", "quote": "在比较了欧洲各地的方案后，我们选择了哈萨克斯坦做试管婴儿。7天套餐包含了我们所需的一切。Almaty IVF Institute团队超出了我们的预期。" },
+      "4": { "country": "美国", "treatment": "骨科手术", "quote": "作为一名美国患者，我对JCI认证的机构和透明的定价印象深刻。在我订机票之前，医疗专员就回答了每一个问题。" },
+      "5": { "country": "哈萨克斯坦", "treatment": "平台推荐", "quote": "我通过MedTour为我在德国的表亲做了推荐。统一平台让我们能在一处轻松比较诊所、套餐和住宿。真正的一体化生态系统。" },
+      "6": { "country": "意大利", "treatment": "整形外科", "quote": "自始至终都很专业。14天套餐让我有时间一边康复一边游览阿斯塔纳。患者协调团队在每一步都给予我支持。" }
+    }
+  },
+  "cta": {
+    "title": "在哈萨克斯坦开启您的医疗旅程",
+    "subtitle": "集医院、治疗、住宿及患者支持于一体的平台。联系我们的医疗专员即可开始。",
+    "findTreatment": "查找治疗",
+    "call": "拨打1717",
+    "note": "免费咨询 · 无需承诺 · 服务来自40多个国家的患者"
+  },
+  "footer": {
+    "tagline": "面向赴哈萨克斯坦就医的国际患者的一体化医疗旅游平台。",
+    "contactLine": "1717 — 24/7联络中心",
+    "platform": "平台",
+    "services": "服务",
+    "company": "公司",
+    "hospitalSearch": "医院搜索",
+    "treatmentCategories": "治疗类别",
+    "partnerHospitals": "合作医院",
+    "medicalPackages": "医疗套餐",
+    "hotels": "酒店与住宿",
+    "tourism": "旅游体验",
+    "contactCenter": "联络中心",
+    "about": "关于MedTour",
+    "howItWorks": "运作方式",
+    "why": "为什么选择哈萨克斯坦",
+    "partnerWithUs": "成为合作伙伴",
+    "rights": "保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "disclaimer": "医疗免责声明"
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "nav": {
+    "why": "Nega Qozogʻiston",
+    "platform": "Platforma",
+    "treatments": "Davolash",
+    "clinics": "Klinikalar",
+    "packages": "Paketlar",
+    "contact": "Aloqa",
+    "concierge": "Tibbiy konsyerj",
+    "findTreatment": "Davolashni topish"
+  },
+  "common": {
+    "est": "Taxm."
+  },
+  "cities": {
+    "almaty": "Almati",
+    "astana": "Ostona",
+    "shymkent": "Chimkent"
+  },
+  "hero": {
+    "eyebrow": "Tibbiy turizm platformasi · Qozogʻiston",
+    "title": "Qozogʻistonda jahon darajasidagi tibbiy yordam",
+    "subtitle": "Kasalxonalarni solishtiring, davolash variantlarini oʻrganing, turar joy tashkil eting va yagona platforma orqali shaxsiy yordam oling.",
+    "findTreatment": "Davolashni topish",
+    "contactConcierge": "Konsyerj bilan bogʻlanish",
+    "trust1": "Akkreditatsiyalangan kasalxonalar",
+    "trust2": "Xalqaro bemorlar",
+    "trust3": "Toʻliq hamrohlik",
+    "statHospitals": "Hamkor kasalxonalar",
+    "statPatients": "Qabul qilingan bemorlar",
+    "statSavings": "Xarajat tejash",
+    "statSupport": "Aloqa markazi",
+    "verifiedHospitals": "Tasdiqlangan kasalxonalar",
+    "tagCardiology": "Kardiologiya",
+    "tagSurgery": "Jarrohlik",
+    "tagIVF": "EKO",
+    "panelClinics": "Klinika",
+    "panelHotels": "Mehmonxona",
+    "panelLanguages": "Til",
+    "patientsServed": "Qabul qilingan bemorlar"
+  },
+  "stats": {
+    "badge": "Raqamlarda",
+    "title": "Bemorlar keng miqyosda ishonadi",
+    "subtitle": "Xalqaro bemorlarni Qozogʻiston boʻylab akkreditatsiyalangan tibbiyot bilan bogʻlovchi oʻsib borayotgan ekotizim.",
+    "countries": "Xizmat koʻrsatiladigan davlatlar",
+    "procedures": "Taklif etilayotgan muolajalar"
+  },
+  "partners": {
+    "badge": "Hamkor kasalxonalar",
+    "title": "Akkreditatsiyalangan hamkor kasalxonalar",
+    "subtitle": "Biz Qozogʻiston boʻylab xalqaro tan olingan va milliy akkreditatsiyalangan tibbiyot muassasalari bilan hamkorlik qilamiz.",
+    "visit": "Saytga oʻtish",
+    "items": {
+      "heart-center-umc": { "focus": "Markaziy Osiyodagi yetakchi yurak jarrohligi markazi" },
+      "national-hospital": { "focus": "Xalqaro bemorlar xizmati bilan koʻp tarmoqli yordam" },
+      "nnmc": { "focus": "Yuqori texnologiyali yurak, asab jarrohligi va aritmologiya" },
+      "syzganov": { "focus": "Ilgʻor jarrohlik milliy ilmiy markazi" },
+      "umc-fund": { "focus": "Yurak, ona va bola, diagnostika markazlarida 1000+ oʻrin" },
+      "shymkent-heart": { "focus": "2000-yildan beri ixtisoslashgan kardiologiya va yurak jarrohligi" },
+      "mediker": { "focus": "Ingliz tilida soʻzlashuvchi mutaxassislarga ega xalqaro boʻlim" },
+      "alanda": { "focus": "Statsionarga ega zamonaviy koʻp tarmoqli markaz" }
+    }
+  },
+  "trust": {
+    "badge": "Ishonch va xavfsizlik",
+    "title": "Ishonch va shaffoflik asosida",
+    "subtitle": "Davolanish yoʻlingizning har bir jihati tasdiqlangan standartlar va bemorni himoya qilish bilan taʼminlangan.",
+    "items": {
+      "accredited": { "title": "JCI va milliy akkreditatsiya", "desc": "Hamkor kasalxonalar xalqaro va milliy sifat hamda xavfsizlik standartlariga javob beradi." },
+      "pricing": { "title": "Shaffof narxlar", "desc": "Oldindan taxminiy oraliqlar. Yakuniy narx maslahatdan soʻng tasdiqlanadi." },
+      "multilingual": { "title": "Koʻp tilli muvofiqlashtirish", "desc": "8 tilda professional tarjimonlar va muvofiqlashtiruvchilar." },
+      "privacy": { "title": "Maʼlumotlar maxfiyligi", "desc": "Tibbiy maʼlumotlaringiz qatʼiy maxfiylik bilan qayta ishlanadi." },
+      "patientFirst": { "title": "Bemor birinchi oʻrinda", "desc": "Shaxsiy muvofiqlashtiruvchilar soʻrovdan tuzalishgacha hamroh boʻladi." },
+      "network": { "title": "Global bemorlar tarmogʻi", "desc": "AQSH, Yevropa, MDH va Yaqin Sharq bemorlariga xizmat koʻrsatamiz." }
+    }
+  },
+  "why": {
+    "badge": "Nega Qozogʻiston",
+    "title": "Tibbiy sayohat uchun yetakchi yoʻnalish",
+    "subtitle": "Qozogʻiston AQSH, Yevropa, MDH va Yaqin Sharq bemorlari uchun jahon darajasidagi tibbiy infratuzilma, raqobatbardosh narxlar va xush muomalali muhitni taklif etadi.",
+    "cards": {
+      "recognized": { "title": "Xalqaro tan olingan kasalxonalar", "desc": "JCI akkreditatsiyasi va ISO sertifikatiga ega, zamonaviy jihozlangan, tajribali mutaxassislarga ega muassasalar." },
+      "affordable": { "title": "Hamyonbop tibbiyot", "desc": "AQSH va Gʻarbiy Yevropaga nisbatan 40–60% tejang, ayni paytda oʻxshash natija va premium yordam oling." },
+      "fast": { "title": "Mutaxassislarga tez kirish", "desc": "Uzoq navbatsiz. Muvofiqlashtirilgan tizim orqali maslahat va muolajalarni bir necha kunda rejalashtiring." },
+      "packages": { "title": "Tibbiy sayohat paketlari", "desc": "Davolash, turar joy, transfer, tarjima va tuzalish yordamini qamrovchi toʻliq paketlar." }
+    }
+  },
+  "platform": {
+    "badge": "Platforma",
+    "title": "Hamma narsa uchun yagona platforma",
+    "subtitle": "MedTour Kazakhstan davolanish yoʻlingizning har bir jihatini — kasalxona tanlashdan davolashdan keyingi kuzatuvgacha — yagona muvofiqlashtirilgan ekotizimda jamlaydi.",
+    "features": {
+      "search": { "title": "Kasalxona qidirish", "desc": "Almati, Ostona va Chimkentdagi akkreditatsiyalangan kasalxonalar." },
+      "comparison": { "title": "Davolashni solishtirish", "desc": "Muolajalar, mutaxassislar va shaffof narxlarni yonma-yon solishtiring." },
+      "accommodation": { "title": "Turar joy bron qilish", "desc": "Tanlangan klinikangizga yaqin, tuzalishga qulay mehmonxonalar." },
+      "transfers": { "title": "Aeroport transferlari", "desc": "Kelishdan ketishgacha muvofiqlashtirilgan kutib olish va kuzatish." },
+      "translation": { "title": "Tarjima xizmatlari", "desc": "5+ tilda professional tibbiy tarjimonlar." },
+      "visa": { "title": "Viza yordami", "desc": "Tibbiy viza talablari va hujjatlar boʻyicha yoʻl-yoʻriq." },
+      "tourism": { "title": "Turistik paketlar", "desc": "Tuzalish davrida tanlangan mahalliy tajribalar." },
+      "support": { "title": "24/7 qoʻllab-quvvatlash", "desc": "Yagona aloqa markazi orqali kunu tun muvofiqlashtirish." }
+    }
+  },
+  "search": {
+    "badge": "Qidiruv",
+    "title": "Davolashingizni toping",
+    "subtitle": "Kasalxona va klinikalarni mutaxassislik boʻyicha qidiring. Qozogʻistonning yetakchi muassasalarini solishtiring.",
+    "placeholder": "Davolash, klinika yoki shahar boʻyicha qidiring...",
+    "empty": "Klinikalar topilmadi. Boshqa soʻrov yoki toifani sinab koʻring.",
+    "showing": "Koʻrsatilmoqda",
+    "clinic": "klinika",
+    "clinics": "klinika",
+    "disclaimer": "Koʻrsatilgan narxlar taxminiy. Yakuniy narx maslahatdan soʻng tasdiqlanadi.",
+    "categories": {
+      "all": "Barchasi",
+      "dental": "Stomatologiya",
+      "ivf": "EKO",
+      "cardiology": "Kardiologiya",
+      "plasticSurgery": "Plastik jarrohlik",
+      "orthopedics": "Ortopediya"
+    }
+  },
+  "specialties": {
+    "cardiologySurgery": "Kardiologiya va yurak jarrohligi",
+    "cardiacNeuro": "Yurak jarrohligi, asab jarrohligi va kardiologiya",
+    "multidiscSurgery": "Koʻp tarmoqli jarrohlik va diagnostika",
+    "surgeryOrthoTransplant": "Jarrohlik, ortopediya va transplantatsiya",
+    "cardiacCardioNeuro": "Yurak jarrohligi, kardiologiya va asab jarrohligi",
+    "multidiscDental": "Koʻp tarmoqli yordam va implant stomatologiyasi",
+    "diagnosticsDentalSurgery": "Diagnostika, stomatologiya va jarrohlik",
+    "reproIvf": "Reproduktiv tibbiyot va EKO",
+    "reproIvfObstetrics": "Reproduktiv tibbiyot, EKO va akusherlik",
+    "multidiscRecon": "Koʻp tarmoqli va rekonstruktiv jarrohlik",
+    "familyCheckupDental": "Oilaviy tibbiyot, tekshiruvlar va stomatologiya"
+  },
+  "accreditations": {
+    "jci": "JCI akkreditatsiyasi",
+    "national": "Milliy akkreditatsiya",
+    "moh": "Sogʻliqni saqlash vazirligi litsenziyasi",
+    "intlDept": "Xalqaro boʻlim",
+    "intlStandards": "Xalqaro standartlar",
+    "ivfClinic": "Ixtisoslashgan EKO klinikasi"
+  },
+  "concierge": {
+    "badge": "Tibbiy konsyerj",
+    "title": "Bemorga shaxsiy yordam",
+    "subtitle": "Tibbiy konsyerj jamoamiz butun yoʻlni muvofiqlashtiradi — klinika tanlash, turar joy, transfer va kuzatuv. Yagona aloqa markazi orqali 24/7 mavjud.",
+    "patientInquiry": "Bemor soʻrovi",
+    "unifiedCenter": "Yagona aloqa markazi",
+    "available5": "5 tilda 24/7 mavjud",
+    "name": "Tibbiy konsyerj",
+    "team": "Bemorlarni muvofiqlashtirish jamoasi",
+    "online": "Onlayn",
+    "placeholder": "Tibbiy ehtiyojlaringizni tasvirlang...",
+    "send": "Xabar yuborish",
+    "recommendedClinics": "Tavsiya etilgan klinikalar:",
+    "packageSuggestions": "Paket takliflari:",
+    "hotelRecommendations": "Tavsiya etilgan mehmonxonalar:",
+    "scenarios": {
+      "dental": {
+        "patientMessage": "Menga tish implantlari kerak.",
+        "title": "Almatida tish implanti variantlari",
+        "clinics": [
+          "Premium Dental Center — JCI akkreditatsiyasi",
+          "Smile Dental Clinic — ISO 9001 sertifikati"
+        ],
+        "priceRange": "Taxminiy davolash: bitta implant uchun $800 – $5 000",
+        "hotels": [
+          "Holiday Inn Express — klinikadan 3 daqiqa ($55/kecha)",
+          "Rixos Almaty — 5 yulduzli tuzalish maskani ($110/kecha)"
+        ],
+        "interpreter": "Ingliz va rus tili tarjimonlari har kuni mavjud",
+        "contact": "Bron uchun 1717 raqamiga qoʻngʻiroq qiling yoki contact@medtour.kz"
+      },
+      "ivf": {
+        "patientMessage": "Menga EKO davolashi kerak.",
+        "title": "EKO davolash markazlari",
+        "clinics": [
+          "Almaty IVF Institute — ESHRE standartlari",
+          "Family IVF Center, Ostona — bemorlar 94% mamnun"
+        ],
+        "packages": [
+          "7 kunlik EKO paketi — $4 200 dan (davolash + mehmonxona + tarjimon)",
+          "14 kunlik kompleks paket — $7 500 dan"
+        ],
+        "hotels": [
+          "Rixos Almaty — tuzalishga qulay lyukslar",
+          "Sheraton Astana — tibbiy tumanga yaqin"
+        ],
+        "interpreter": "Koʻp tilli muvofiqlashtiruvchilar: EN, RU, KZ, AR, CN",
+        "contact": "Shaxsiy davolash rejasi uchun 1717 raqamiga qoʻngʻiroq qiling"
+      }
+    }
+  },
+  "treatments": {
+    "badge": "Davolash",
+    "title": "Davolash toifalari",
+    "subtitle": "Qozogʻiston boʻylab hamkor kasalxonalar va klinikalarda mavjud tibbiy mutaxassisliklarni oʻrganing."
+  },
+  "treatmentCats": {
+    "search": "Qidiruv",
+    "dentistry": { "name": "Stomatologiya", "desc": "Implantlar, vinirlar, toʻliq tiklash va estetik stomatologiya", "procedures": "45+ muolaja" },
+    "ivf": { "name": "EKO", "desc": "Reproduktiv tibbiyotning yetakchi mutaxassislari bilan bepushtlikni davolash", "procedures": "12+ dastur" },
+    "cardiology": { "name": "Kardiologiya", "desc": "Yurak operatsiyalari, stentlar, shuntlash va kardioreabilitatsiya", "procedures": "30+ muolaja" },
+    "orthopedics": { "name": "Ortopediya", "desc": "Boʻgʻim almashtirish, umurtqa jarrohligi va sport tibbiyoti", "procedures": "25+ muolaja" },
+    "plasticSurgery": { "name": "Plastik jarrohlik", "desc": "Sertifikatlangan jarrohlar tomonidan estetik va rekonstruktiv jarrohlik", "procedures": "40+ muolaja" },
+    "checkups": { "name": "Profilaktik tekshiruvlar", "desc": "Keng qamrovli tekshiruvlar va korporativ salomatlik paketlari", "procedures": "20+ paket" }
+  },
+  "clinics": {
+    "badge": "Tanlangan klinikalar",
+    "title": "Hamkor kasalxonalar va klinikalar",
+    "subtitle": "Sifat, xavfsizlik va xalqaro bemorlar mamnuniyati boʻyicha tekshirilgan akkreditatsiyalangan muassasalar."
+  },
+  "hotels": {
+    "badge": "Turar joy",
+    "title": "Mehmonxonalar va tuzalish uchun turar joy",
+    "subtitle": "Hamkor kasalxonalarga yaqin, qulaylik, kirish imkoniyati va tibbiy sayohatchi ehtiyojlari hisobga olingan turar joy.",
+    "priceRange": "Narx oraligʻi",
+    "inquire": "Soʻrov yuborish",
+    "perNight": "/kecha",
+    "amenities": {
+      "spa": "SPA",
+      "pool": "Basseyn",
+      "fineDining": "Yuqori darajadagi restoran",
+      "concierge": "Konsyerj",
+      "airportShuttle": "Aeroport transferi",
+      "clubLevel": "Klub qavati",
+      "restaurant": "Restoran",
+      "transfers": "Transferlar",
+      "gym": "Sport zali",
+      "businessCenter": "Biznes markaz",
+      "breakfast": "Nonushta",
+      "wifi": "Wi-Fi",
+      "shuttle": "Shuttle",
+      "recoveryMenu": "Tuzalish menyusi"
+    },
+    "items": {
+      "ritz-carlton-almaty": { "distance": "Esentai minorasi, markaziy biznes tumani" },
+      "ritz-carlton-astana": { "distance": "Aeroportdan 13 km, tibbiy tumanga yaqin" },
+      "rixos-almaty": { "distance": "Shahar markazi, yirik klinikalarga yaqin" },
+      "hilton-astana": { "distance": "Markaziy, UMC tibbiy kampusiga yaqin" },
+      "holiday-inn-almaty": { "distance": "Tibbiy markazlarga yaqin" },
+      "rixos-khadisha-shymkent": { "distance": "Shahar markazi, tibbiy tumanga yaqin" }
+    }
+  },
+  "travelPackages": {
+    "badge": "Paketlar",
+    "title": "Tibbiy sayohat paketlari",
+    "subtitle": "Davolash, turar joy, transfer, tarjima va mahalliy tajribalarni birlashtiruvchi toʻliq paketlar.",
+    "mostPopular": "Eng mashhur",
+    "days": "kun",
+    "from": "dan",
+    "request": "Paket tafsilotlarini soʻrash",
+    "items": {
+      "5-day": {
+        "name": "5 kunlik tibbiy paket",
+        "includes": [
+          "Maslahat va muolaja",
+          "4 yulduzli mehmonxonada turar joy",
+          "Aeroportdan kutib olish va kuzatish",
+          "Professional tarjimon",
+          "Shahar bilan tanishuv ekskursiyasi"
+        ]
+      },
+      "7-day": {
+        "name": "7 kunlik tibbiy paket",
+        "includes": [
+          "Toʻliq davolash dasturi",
+          "5 yulduzli mehmonxonada turar joy",
+          "Kutib olish va transferlar",
+          "Shaxsiy tarjimon",
+          "Takroriy qabullar",
+          "Mahalliy madaniy ekskursiya"
+        ]
+      },
+      "14-day": {
+        "name": "14 kunlik tibbiy paket",
+        "includes": [
+          "Keng qamrovli davolash rejasi",
+          "Premium mehmonxonada turar joy",
+          "Barcha aeroport va klinika transferlari",
+          "24/7 tarjimon yordami",
+          "Tuzalishni kuzatish",
+          "Bir necha shahardagi turistik tajribalar",
+          "Viza yordami kiritilgan"
+        ]
+      }
+    }
+  },
+  "tourism": {
+    "badge": "Turizm",
+    "title": "Turistik tajribalar",
+    "subtitle": "Davolanishingizni Qozogʻistonning eng jonli shaharlaridagi tanlangan madaniy va tabiiy tajribalar bilan uygʻunlashtiring.",
+    "attractionsLabel": "Diqqatga sazovor joylar va tajribalar",
+    "viewPackages": "Paketlarni koʻrish",
+    "items": {
+      "almaty": {
+        "city": "Almati",
+        "tagline": "Tyan-Shan togʻlariga darvoza",
+        "description": "Qozogʻistonning eng yirik shahri kosmopolit madaniyat va goʻzal tabiatni uygʻunlashtiradi — tuzalish va sayr uchun ideal.",
+        "attractions": [
+          "Katta Almati koʻli",
+          "Medeu va Shimbuloq chang'i kurorti",
+          "Koʻktoʻbe tepaligi",
+          "Yashil bozor va mahalliy taomlar",
+          "Markaziy davlat muzeyi"
+        ]
+      },
+      "astana": {
+        "city": "Ostona",
+        "tagline": "Zamonaviy poytaxt",
+        "description": "Hayratlanarli meʼmorchilik va jahon darajasidagi infratuzilmaga ega futuristik shahar, yetakchi tibbiyot muassasalari maskani.",
+        "attractions": [
+          "Bayterek minorasi",
+          "Xan Shatir koʻngilochar markazi",
+          "Ostona opera teatri",
+          "Qozogʻiston milliy muzeyi",
+          "Eshim daryosi sohili"
+        ]
+      },
+      "shymkent": {
+        "city": "Chimkent",
+        "tagline": "Ipak yoʻli merosi",
+        "description": "Quyoshli janubiy poytaxt qadimgi Ipak yoʻli boʻylab hamyonbop tibbiyot, boy tarix va iliq mehmondoʻstlik taklif etadi.",
+        "attractions": [
+          "Ordabasi maydoni",
+          "Viloyat tarix muzeyi",
+          "Aksu-Jabagʻli qoʻrigʻi",
+          "Anʼanaviy bozorlar",
+          "Ipak yoʻli yodgorliklari"
+        ]
+      }
+    }
+  },
+  "how": {
+    "badge": "Qanday ishlaydi",
+    "title": "Davolanish yoʻlingiz toʻrt bosqichda",
+    "subtitle": "Birinchi soʻrovdan davolashdan keyingi kuzatuvgacha MedTour har bir tafsilotni muvofiqlashtiradi.",
+    "steps": {
+      "choose": { "title": "Davolashni tanlang", "desc": "Davolash toifalarini koʻring yoki katalogdan kerakli mutaxassislik va klinikani toping." },
+      "recommend": { "title": "Tavsiyalar oling", "desc": "Konsyerjimiz talablaringizga mos klinika, turar joy va paketlarni tavsiya qiladi." },
+      "book": { "title": "Sayohatni bron qiling", "desc": "Paketni tasdiqlang — davolash, mehmonxona, transfer, tarjimon va turizm bitta bronda." },
+      "travel": { "title": "Qozogʻistonga keling", "desc": "Toʻliq yordam bilan keling. Muvofiqlashtiruvchi kutib olish, qabullar va kuzatuvni tashkil etadi." }
+    }
+  },
+  "contact": {
+    "badge": "Aloqa markazi",
+    "title": "Bitta raqam. Barcha tibbiy xizmatlar.",
+    "subtitle": "Yagona tibbiy aloqa markazimiz xalqaro bemorlarni kasalxonalar, turar joy, transfer va yordam bilan bitta liniya orqali bogʻlaydi.",
+    "availability": "24/7 mavjud · ingliz · rus · qozoq · arab · xitoy",
+    "call": "1717 qoʻngʻiroq",
+    "features": {
+      "support": { "title": "24/7 qoʻllab-quvvatlash", "desc": "5 tilda bemorlarga kunu tun yordam." },
+      "appointment": { "title": "Qabulni muvofiqlashtirish", "desc": "Maslahat, muolaja va takroriy qabullarga yozilish." },
+      "planning": { "title": "Davolashni rejalashtirish", "desc": "Shaxsiy davolanish rejasi va paket tanlash." },
+      "emergency": { "title": "Shoshilinch yordam", "desc": "Shoshilinch tibbiy sayohat ehtiyojlariga zudlik bilan yordam." },
+      "interpreter": { "title": "Tarjimonlarni muvofiqlashtirish", "desc": "Soʻrov boʻyicha professional tibbiy tarjimonlar." }
+    }
+  },
+  "testimonials": {
+    "badge": "Sharhlar",
+    "title": "Dunyo boʻylab bemorlar ishonadi",
+    "subtitle": "AQSH, Yevropa, MDH va Yaqin Sharq bemorlari MedTour tajribasi bilan oʻrtoqlashadi.",
+    "items": {
+      "1": { "country": "Buyuk Britaniya", "treatment": "Tish implantlari", "quote": "MedTour hamma narsani osonlashtirdi — klinika tanlashdan mehmonxona bronigacha. London narxlariga nisbatan 50% dan koʻp tejadim va Almatidagi Premium Dental Center-da aʼlo yordam oldim." },
+      "2": { "country": "BAA", "treatment": "Yurak muolajasi", "quote": "Aloqa markazi butun yoʻlimni muvofiqlashtirdi. Tarjimon, transferlar va takroriy qabullar — barchasi professional darajada. Ajoyib tajriba." },
+      "3": { "country": "Rossiya", "treatment": "EKO davolashi", "quote": "Yevropa boʻylab variantlarni solishtirib, EKO uchun Qozogʻistonni tanladik. 7 kunlik paketda hamma narsa bor edi. Almaty IVF Institute jamoasi kutganimizdan oshib ketdi." },
+      "4": { "country": "AQSH", "treatment": "Ortopedik operatsiya", "quote": "Amerikalik bemor sifatida JCI akkreditatsiyali muassasalar va shaffof narxlar meni hayratga soldi. Konsyerj men chipta olishimdan oldin har bir savolga javob berdi." },
+      "5": { "country": "Qozogʻiston", "treatment": "Platforma tavsiyasi", "quote": "Germaniyadagi amakivachchamni MedTour orqali tavsiya qildim. Yagona platforma klinikalar, paketlar va turar joyni bir joyda solishtirishni osonlashtirdi." },
+      "6": { "country": "Italiya", "treatment": "Plastik jarrohlik", "quote": "Boshidan oxirigacha professional. 14 kunlik paket Ostonani sayr qilib tuzalishga vaqt berdi. Har bir qadamda yordam sezdim." }
+    }
+  },
+  "cta": {
+    "title": "Qozogʻistonda davolanishingizni boshlang",
+    "subtitle": "Kasalxonalar, davolash, turar joy va bemorlarni qoʻllab-quvvatlash uchun yagona platforma. Boshlash uchun tibbiy konsyerj bilan bogʻlaning.",
+    "findTreatment": "Davolashni topish",
+    "call": "1717 qoʻngʻiroq",
+    "note": "Bepul maslahat · Majburiyatsiz · 40+ davlat bemorlariga xizmat"
+  },
+  "footer": {
+    "tagline": "Qozogʻistonda davolanishni istagan xalqaro bemorlar uchun markazlashgan tibbiy turizm platformasi.",
+    "contactLine": "1717 — 24/7 aloqa markazi",
+    "platform": "Platforma",
+    "services": "Xizmatlar",
+    "company": "Kompaniya",
+    "hospitalSearch": "Kasalxona qidirish",
+    "treatmentCategories": "Davolash toifalari",
+    "partnerHospitals": "Hamkor kasalxonalar",
+    "medicalPackages": "Tibbiy paketlar",
+    "hotels": "Mehmonxonalar va turar joy",
+    "tourism": "Turistik tajribalar",
+    "contactCenter": "Aloqa markazi",
+    "about": "MedTour haqida",
+    "howItWorks": "Qanday ishlaydi",
+    "why": "Nega Qozogʻiston",
+    "partnerWithUs": "Biz bilan hamkorlik",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "disclaimer": "Tibbiy ogohlantirish"
+  }
+}

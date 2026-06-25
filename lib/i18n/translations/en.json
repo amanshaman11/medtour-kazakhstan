@@ -1,0 +1,402 @@
+{
+  "nav": {
+    "why": "Why Kazakhstan",
+    "platform": "Platform",
+    "treatments": "Treatments",
+    "clinics": "Clinics",
+    "packages": "Packages",
+    "contact": "Contact",
+    "concierge": "Medical Concierge",
+    "findTreatment": "Find Treatment"
+  },
+  "common": {
+    "est": "Est."
+  },
+  "cities": {
+    "almaty": "Almaty",
+    "astana": "Astana",
+    "shymkent": "Shymkent"
+  },
+  "hero": {
+    "eyebrow": "Medical Tourism Platform · Kazakhstan",
+    "title": "World-Class Medical Care in Kazakhstan",
+    "subtitle": "Compare hospitals, explore treatment options, arrange accommodation, and receive personalized assistance through a single platform.",
+    "findTreatment": "Find Treatment",
+    "contactConcierge": "Contact Medical Concierge",
+    "trust1": "Accredited Hospitals",
+    "trust2": "International Patients",
+    "trust3": "End-to-End Coordination",
+    "statHospitals": "Partner Hospitals",
+    "statPatients": "Patients Served",
+    "statSavings": "Cost Savings",
+    "statSupport": "Contact Center",
+    "verifiedHospitals": "Verified Hospitals",
+    "tagCardiology": "Cardiology",
+    "tagSurgery": "Surgery",
+    "tagIVF": "IVF",
+    "panelClinics": "Clinics",
+    "panelHotels": "Hotels",
+    "panelLanguages": "Languages",
+    "patientsServed": "Patients served"
+  },
+  "stats": {
+    "badge": "By the Numbers",
+    "title": "Trusted by Patients at Scale",
+    "subtitle": "A growing ecosystem connecting international patients with accredited healthcare across Kazakhstan.",
+    "countries": "Countries Served",
+    "procedures": "Procedures Offered"
+  },
+  "partners": {
+    "badge": "Partner Hospitals",
+    "title": "Accredited Partner Hospitals",
+    "subtitle": "We collaborate with internationally recognized and nationally accredited medical institutions across Kazakhstan.",
+    "visit": "Visit",
+    "items": {
+      "heart-center-umc": { "focus": "Leading cardiac surgery center in Central Asia" },
+      "national-hospital": { "focus": "Multidisciplinary care with international patient services" },
+      "nnmc": { "focus": "High-tech cardiac surgery, neurosurgery & arrhythmology" },
+      "syzganov": { "focus": "National scientific center for advanced surgery" },
+      "umc-fund": { "focus": "1,000+ beds across Heart, Mother & Child, Diagnostic centers" },
+      "shymkent-heart": { "focus": "Specialized cardiology & cardiac surgery since 2000" },
+      "mediker": { "focus": "International department with English-speaking specialists" },
+      "alanda": { "focus": "Modern multidisciplinary center with inpatient facility" }
+    }
+  },
+  "trust": {
+    "badge": "Trust & Safety",
+    "title": "Built on Trust and Transparency",
+    "subtitle": "Every aspect of your medical journey is backed by verified standards and dedicated patient protection.",
+    "items": {
+      "accredited": { "title": "JCI & Nationally Accredited", "desc": "Partner hospitals meet international and national quality and safety standards." },
+      "pricing": { "title": "Transparent Pricing", "desc": "Estimated treatment ranges upfront. Final costs confirmed after consultation." },
+      "multilingual": { "title": "Multilingual Coordination", "desc": "Professional interpreters and coordinators across 8 languages." },
+      "privacy": { "title": "Data Privacy", "desc": "Your medical information is handled with strict confidentiality." },
+      "patientFirst": { "title": "Patient-First Support", "desc": "Dedicated coordinators guide you from inquiry to recovery." },
+      "network": { "title": "Global Patient Network", "desc": "Serving patients from the USA, Europe, CIS, and the Middle East." }
+    }
+  },
+  "why": {
+    "badge": "Why Kazakhstan",
+    "title": "A Premier Destination for Medical Travel",
+    "subtitle": "Kazakhstan offers world-class healthcare infrastructure, competitive pricing, and a welcoming environment for international patients from the USA, Europe, CIS, and the Middle East.",
+    "cards": {
+      "recognized": { "title": "Internationally Recognized Hospitals", "desc": "JCI-accredited and ISO-certified facilities with modern equipment, experienced specialists, and international quality standards." },
+      "affordable": { "title": "Affordable Healthcare", "desc": "Save 40–60% compared to the USA and Western Europe while receiving comparable clinical outcomes and premium patient care." },
+      "fast": { "title": "Fast Access to Specialists", "desc": "Skip long waiting lists. Schedule consultations and procedures within days through our coordinated booking system." },
+      "packages": { "title": "Medical Travel Packages", "desc": "All-inclusive packages covering treatment, accommodation, transfers, interpretation, and recovery support in one booking." }
+    }
+  },
+  "platform": {
+    "badge": "Platform",
+    "title": "One Platform For Everything",
+    "subtitle": "MedTour Kazakhstan centralizes every aspect of your medical journey — from hospital selection to post-treatment follow-up — in a single, coordinated ecosystem.",
+    "features": {
+      "search": { "title": "Hospital Search", "desc": "Browse accredited hospitals across Almaty, Astana, and Shymkent." },
+      "comparison": { "title": "Treatment Comparison", "desc": "Compare procedures, specialists, and transparent pricing side by side." },
+      "accommodation": { "title": "Accommodation Booking", "desc": "Recovery-friendly hotels near your chosen medical facility." },
+      "transfers": { "title": "Airport Transfers", "desc": "Coordinated pickup and drop-off from arrival to departure." },
+      "translation": { "title": "Translation Services", "desc": "Professional medical interpreters in 5+ languages." },
+      "visa": { "title": "Visa Assistance", "desc": "Guidance on medical visa requirements and documentation." },
+      "tourism": { "title": "Tourism Packages", "desc": "Curated local experiences during your recovery period." },
+      "support": { "title": "24/7 Patient Support", "desc": "Round-the-clock coordination through our unified contact center." }
+    }
+  },
+  "search": {
+    "badge": "Search",
+    "title": "Find Your Treatment",
+    "subtitle": "Search hospitals and clinics by specialty. Compare options across Kazakhstan's leading medical facilities.",
+    "placeholder": "Search by treatment, clinic, or city...",
+    "empty": "No clinics found. Try a different search or category.",
+    "showing": "Showing",
+    "clinic": "clinic",
+    "clinics": "clinics",
+    "disclaimer": "Pricing shown is estimated. Final costs are confirmed after consultation.",
+    "categories": {
+      "all": "All",
+      "dental": "Dental",
+      "ivf": "IVF",
+      "cardiology": "Cardiology",
+      "plasticSurgery": "Plastic Surgery",
+      "orthopedics": "Orthopedics"
+    }
+  },
+  "specialties": {
+    "cardiologySurgery": "Cardiology & Cardiac Surgery",
+    "cardiacNeuro": "Cardiac Surgery, Neurosurgery & Cardiology",
+    "multidiscSurgery": "Multidisciplinary Surgery & Diagnostics",
+    "surgeryOrthoTransplant": "Surgery, Orthopedics & Transplantation",
+    "cardiacCardioNeuro": "Cardiac Surgery, Cardiology & Neurosurgery",
+    "multidiscDental": "Multidisciplinary Care & Implant Dentistry",
+    "diagnosticsDentalSurgery": "Diagnostics, Dentistry & Surgery",
+    "reproIvf": "Reproductive Medicine & IVF",
+    "reproIvfObstetrics": "Reproductive Medicine, IVF & Obstetrics",
+    "multidiscRecon": "Multidisciplinary & Reconstructive Surgery",
+    "familyCheckupDental": "Family Medicine, Check-ups & Dentistry"
+  },
+  "accreditations": {
+    "jci": "JCI Accredited",
+    "national": "Nationally Accredited",
+    "moh": "Ministry of Health Licensed",
+    "intlDept": "International Department",
+    "intlStandards": "International Standards",
+    "ivfClinic": "Specialized IVF Clinic"
+  },
+  "concierge": {
+    "badge": "Medical Concierge",
+    "title": "Personalized Patient Assistance",
+    "subtitle": "Our medical concierge team coordinates your entire journey — clinic selection, accommodation, transfers, and follow-up care. Available 24/7 through our unified contact center.",
+    "patientInquiry": "Patient inquiry",
+    "unifiedCenter": "Unified Contact Center",
+    "available5": "Available 24/7 in 5 languages",
+    "name": "Medical Concierge",
+    "team": "Patient Coordination Team",
+    "online": "Online",
+    "placeholder": "Describe your medical needs...",
+    "send": "Send message",
+    "recommendedClinics": "Recommended Clinics:",
+    "packageSuggestions": "Package Suggestions:",
+    "hotelRecommendations": "Hotel Recommendations:",
+    "scenarios": {
+      "dental": {
+        "patientMessage": "I need dental implants.",
+        "title": "Dental Implant Options in Almaty",
+        "clinics": [
+          "Premium Dental Center — JCI Accredited",
+          "Smile Dental Clinic — ISO 9001 Certified"
+        ],
+        "priceRange": "Estimated treatment: $800 – $5,000 per implant",
+        "hotels": [
+          "Holiday Inn Express — 3 min from clinic ($55/night)",
+          "Rixos Almaty — 5-star recovery stay ($110/night)"
+        ],
+        "interpreter": "English & Russian interpreters available daily",
+        "contact": "Call 1717 or contact@medtour.kz for booking"
+      },
+      "ivf": {
+        "patientMessage": "I need IVF treatment.",
+        "title": "IVF Treatment Centers",
+        "clinics": [
+          "Almaty IVF Institute — ESHRE Standards",
+          "Family IVF Center, Astana — 94% patient satisfaction"
+        ],
+        "packages": [
+          "7 Day IVF Package — from $4,200 (treatment + hotel + interpreter)",
+          "14 Day Comprehensive Package — from $7,500"
+        ],
+        "hotels": [
+          "Rixos Almaty — recovery-friendly suites",
+          "Sheraton Astana — adjacent to medical district"
+        ],
+        "interpreter": "Multilingual coordinators: EN, RU, KZ, AR, CN",
+        "contact": "Dial 1717 for personalized treatment planning"
+      }
+    }
+  },
+  "treatments": {
+    "badge": "Treatments",
+    "title": "Treatment Categories",
+    "subtitle": "Explore medical specialties available through our partner hospitals and clinics across Kazakhstan."
+  },
+  "treatmentCats": {
+    "search": "Search",
+    "dentistry": { "name": "Dentistry", "desc": "Implants, veneers, full mouth restoration & cosmetic dentistry", "procedures": "45+ procedures" },
+    "ivf": { "name": "IVF", "desc": "Fertility treatments with leading reproductive medicine specialists", "procedures": "12+ programs" },
+    "cardiology": { "name": "Cardiology", "desc": "Heart surgery, stents, bypass & cardiac rehabilitation programs", "procedures": "30+ procedures" },
+    "orthopedics": { "name": "Orthopedics", "desc": "Joint replacement, spine surgery & sports medicine", "procedures": "25+ procedures" },
+    "plasticSurgery": { "name": "Plastic Surgery", "desc": "Cosmetic and reconstructive surgery by certified surgeons", "procedures": "40+ procedures" },
+    "checkups": { "name": "Preventive Checkups", "desc": "Comprehensive health screenings & executive wellness packages", "procedures": "20+ packages" }
+  },
+  "clinics": {
+    "badge": "Featured Clinics",
+    "title": "Partner Hospitals & Clinics",
+    "subtitle": "Accredited medical facilities verified for quality, safety, and international patient satisfaction."
+  },
+  "hotels": {
+    "badge": "Accommodation",
+    "title": "Hotels & Recovery Stays",
+    "subtitle": "Recovery-friendly accommodations near partner hospitals, selected for comfort, accessibility, and medical traveler needs.",
+    "priceRange": "Price Range",
+    "inquire": "Inquire",
+    "perNight": "/night",
+    "amenities": {
+      "spa": "Spa",
+      "pool": "Pool",
+      "fineDining": "Fine Dining",
+      "concierge": "Concierge",
+      "airportShuttle": "Airport Shuttle",
+      "clubLevel": "Club Level",
+      "restaurant": "Restaurant",
+      "transfers": "Transfers",
+      "gym": "Gym",
+      "businessCenter": "Business Center",
+      "breakfast": "Breakfast",
+      "wifi": "WiFi",
+      "shuttle": "Shuttle",
+      "recoveryMenu": "Recovery Menu"
+    },
+    "items": {
+      "ritz-carlton-almaty": { "distance": "Esentai Tower, central business district" },
+      "ritz-carlton-astana": { "distance": "13 km from airport, near medical district" },
+      "rixos-almaty": { "distance": "City center, near major clinics" },
+      "hilton-astana": { "distance": "Central, near UMC medical campus" },
+      "holiday-inn-almaty": { "distance": "Short drive to medical centers" },
+      "rixos-khadisha-shymkent": { "distance": "City center, near medical district" }
+    }
+  },
+  "travelPackages": {
+    "badge": "Packages",
+    "title": "Medical Travel Packages",
+    "subtitle": "All-inclusive packages combining treatment, accommodation, transfers, interpretation, and local experiences.",
+    "mostPopular": "Most Popular",
+    "days": "Days",
+    "from": "From",
+    "request": "Request Package Details",
+    "items": {
+      "5-day": {
+        "name": "5 Day Medical Package",
+        "includes": [
+          "Treatment consultation & procedure",
+          "4-star hotel accommodation",
+          "Airport pickup & drop-off",
+          "Professional interpreter",
+          "City orientation tour"
+        ]
+      },
+      "7-day": {
+        "name": "7 Day Medical Package",
+        "includes": [
+          "Full treatment program",
+          "5-star hotel accommodation",
+          "Airport pickup & transfers",
+          "Dedicated interpreter",
+          "Follow-up appointments",
+          "Local cultural tour"
+        ]
+      },
+      "14-day": {
+        "name": "14 Day Medical Package",
+        "includes": [
+          "Comprehensive treatment plan",
+          "Premium hotel accommodation",
+          "All airport & clinic transfers",
+          "24/7 interpreter support",
+          "Recovery monitoring",
+          "Multi-city tourism experiences",
+          "Visa assistance included"
+        ]
+      }
+    }
+  },
+  "tourism": {
+    "badge": "Tourism",
+    "title": "Tourism Experiences",
+    "subtitle": "Combine your medical treatment with curated cultural and natural experiences across Kazakhstan's most vibrant cities.",
+    "attractionsLabel": "Attractions & Experiences",
+    "viewPackages": "View travel packages",
+    "items": {
+      "almaty": {
+        "city": "Almaty",
+        "tagline": "Gateway to the Tian Shan Mountains",
+        "description": "Kazakhstan's largest city blends cosmopolitan culture with breathtaking natural beauty — ideal for recovery and exploration.",
+        "attractions": [
+          "Big Almaty Lake",
+          "Medeu & Shymbulak Ski Resort",
+          "Kok-Tobe Hill",
+          "Green Bazaar & Local Cuisine",
+          "Central State Museum"
+        ]
+      },
+      "astana": {
+        "city": "Astana",
+        "tagline": "The Modern Capital",
+        "description": "A futuristic city of striking architecture and world-class infrastructure, home to leading medical institutions.",
+        "attractions": [
+          "Bayterek Tower",
+          "Khan Shatyr Entertainment Center",
+          "Astana Opera House",
+          "National Museum of Kazakhstan",
+          "Ishim River Promenade"
+        ]
+      },
+      "shymkent": {
+        "city": "Shymkent",
+        "tagline": "Silk Road Heritage",
+        "description": "The sunny southern capital offers affordable care, rich history, and warm hospitality along the ancient Silk Road.",
+        "attractions": [
+          "Ordabasy Square",
+          "Regional History Museum",
+          "Aksu-Zhabagly Nature Reserve",
+          "Traditional Bazaars",
+          "Silk Road Landmarks"
+        ]
+      }
+    }
+  },
+  "how": {
+    "badge": "How It Works",
+    "title": "Your Medical Journey in Four Steps",
+    "subtitle": "From initial inquiry to post-treatment follow-up, MedTour coordinates every detail of your experience.",
+    "steps": {
+      "choose": { "title": "Choose Treatment", "desc": "Browse treatment categories or search our hospital directory to find the right specialty and clinic for your needs." },
+      "recommend": { "title": "Get Recommendations", "desc": "Our medical concierge provides personalized clinic, accommodation, and package recommendations based on your requirements." },
+      "book": { "title": "Book Your Journey", "desc": "Confirm your medical package — treatment, hotel, transfers, interpreter, and tourism add-ons in one coordinated booking." },
+      "travel": { "title": "Travel To Kazakhstan", "desc": "Arrive with full support. Your dedicated coordinator manages airport pickup, clinic appointments, and follow-up care." }
+    }
+  },
+  "contact": {
+    "badge": "Contact Center",
+    "title": "One Number. Every Medical Service.",
+    "subtitle": "Our unified medical contact center connects international patients with hospitals, accommodation, transfers, and patient support — all through a single line.",
+    "availability": "Available 24/7 · English · Russian · Kazakh · Arabic · Chinese",
+    "call": "Call 1717",
+    "features": {
+      "support": { "title": "24/7 Support", "desc": "Round-the-clock patient assistance in 5 languages." },
+      "appointment": { "title": "Appointment Coordination", "desc": "Schedule consultations, procedures, and follow-ups." },
+      "planning": { "title": "Treatment Planning", "desc": "Personalized medical journey planning and package selection." },
+      "emergency": { "title": "Emergency Assistance", "desc": "Immediate support for urgent medical travel needs." },
+      "interpreter": { "title": "Interpreter Coordination", "desc": "Professional medical interpreters arranged on demand." }
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Trusted by Patients Worldwide",
+    "subtitle": "International patients from the USA, Europe, CIS, and the Middle East share their MedTour experience.",
+    "items": {
+      "1": { "country": "United Kingdom", "treatment": "Dental Implants", "quote": "MedTour made everything seamless — from clinic selection to hotel booking. I saved over 50% compared to London prices and received exceptional care at Premium Dental Center in Almaty." },
+      "2": { "country": "United Arab Emirates", "treatment": "Cardiac Procedure", "quote": "The contact center coordinated my entire journey. Interpreter support, airport transfers, and follow-up appointments were all handled professionally. Outstanding experience." },
+      "3": { "country": "Russia", "treatment": "IVF Treatment", "quote": "We chose Kazakhstan for IVF after comparing options across Europe. The 7-day package included everything we needed. The team at Almaty IVF Institute exceeded our expectations." },
+      "4": { "country": "United States", "treatment": "Orthopedic Surgery", "quote": "As an American patient, I was impressed by the JCI-accredited facilities and transparent pricing. The medical concierge answered every question before I even booked my flight." },
+      "5": { "country": "Kazakhstan", "treatment": "Platform Referral", "quote": "I referred my cousin from Germany through MedTour. The unified platform made it easy to compare clinics, packages, and accommodation in one place. Truly a centralized ecosystem." },
+      "6": { "country": "Italy", "treatment": "Plastic Surgery", "quote": "Professional from start to finish. The 14-day package gave me time to recover while exploring Astana. I felt supported every step of the way by the patient coordination team." }
+    }
+  },
+  "cta": {
+    "title": "Begin Your Medical Journey in Kazakhstan",
+    "subtitle": "One platform for hospitals, treatment, accommodation, and patient support. Contact our medical concierge to get started.",
+    "findTreatment": "Find Treatment",
+    "call": "Call 1717",
+    "note": "Free consultation · No commitment · Serving patients from 40+ countries"
+  },
+  "footer": {
+    "tagline": "The centralized medical tourism platform for international patients seeking treatment in Kazakhstan.",
+    "contactLine": "1717 — 24/7 Contact Center",
+    "platform": "Platform",
+    "services": "Services",
+    "company": "Company",
+    "hospitalSearch": "Hospital Search",
+    "treatmentCategories": "Treatment Categories",
+    "partnerHospitals": "Partner Hospitals",
+    "medicalPackages": "Medical Packages",
+    "hotels": "Hotels & Accommodation",
+    "tourism": "Tourism Experiences",
+    "contactCenter": "Contact Center",
+    "about": "About MedTour",
+    "howItWorks": "How It Works",
+    "why": "Why Kazakhstan",
+    "partnerWithUs": "Partner With Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Medical Disclaimer"
+  }
+}

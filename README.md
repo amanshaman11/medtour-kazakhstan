@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MedTour Kazakhstan
 
-## Getting Started
+A premium medical tourism platform connecting international patients with accredited hospitals in Kazakhstan. Compare hospitals, explore treatments, book accommodation, and get 24/7 personalized assistance — all on one platform.
 
-First, run the development server:
+## Tech stack
+
+- **Next.js 16** (App Router)
+- **TypeScript** (strict)
+- **Tailwind CSS v4**
+- **Framer Motion** (animations)
+- **Lucide React** (icons)
+
+## Features
+
+- Hero, statistics, partner hospitals, treatments, featured clinics, hotels, packages, tourism, how-it-works, trust indicators, contact center, testimonials, and CTA sections
+- **Live treatment search** filtering real clinic data by specialty (client-side, no backend)
+- **Medical Concierge** chat experience with realistic patient scenarios
+- **Internationalization** in 8 languages (English, Russian, Kazakh, Uzbek, Kyrgyz, Tajik, Arabic, Chinese) with **RTL support** for Arabic
+- SEO: dynamic Open Graph image, sitemap, robots, canonical + language alternates
+- Accessible, responsive, and motion-reduced friendly
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Production build |
+| `npm run start` | Run the production server |
+| `npm run lint` | Lint with ESLint |
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+Copy `.env.example` to `.env.local` and set your production domain:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This drives canonical URLs, `robots.txt`, `sitemap.xml`, and Open Graph metadata.
 
-## Deploy on Vercel
+## Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repository to GitHub/GitLab/Bitbucket.
+2. Import the project in [Vercel](https://vercel.com/new) — the framework is auto-detected.
+3. Add the `NEXT_PUBLIC_SITE_URL` environment variable in **Project Settings → Environment Variables**.
+4. Deploy. No `vercel.json` is required.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project structure
+
+```
+app/                 App Router entry, metadata, robots, sitemap, OG image
+components/
+  layout/            Navbar, Footer
+  sections/          Page sections
+  ui/                Shared UI (AnimatedSection, LanguageSelector)
+lib/
+  data/              TypeScript mock data (clinics, hotels, packages, ...)
+  i18n/              Locale config, provider, translation JSON
+```
+
+## Notes on data
+
+Clinic and hospital information is based on publicly available data about real
+institutions in Kazakhstan. Treatment prices are shown as **estimated ranges** —
+final costs are confirmed after an individual consultation.
