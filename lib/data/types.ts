@@ -43,6 +43,8 @@ export interface Hotel {
   distanceFromHospital: string;
   amenityKeys: string[];
   amenities: string[];
+  image: string;
+  website: string;
 }
 
 export interface TravelPackage {

@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Hotel, MapPin, Star } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Star, ExternalLink } from "lucide-react";
 import { hotels } from "@/lib/data/hotels";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { AnimatedSection, SectionHeader } from "@/components/ui/AnimatedSection";
@@ -25,10 +26,23 @@ export function HotelsAccommodation() {
             <AnimatedSection key={hotel.id} delay={i * 0.06}>
               <motion.div
                 whileHover={{ y: -4 }}
-                className="h-full rounded-xl bg-white border border-border overflow-hidden hover:shadow-lg hover:border-navy-200 transition-all duration-300"
+                className="group h-full rounded-xl bg-white border border-border overflow-hidden hover:shadow-lg hover:border-navy-200 transition-all duration-300"
               >
-                <div className="h-36 bg-gradient-to-br from-navy-800 to-navy-950 p-5 flex flex-col justify-between relative">
-                  <div className="flex items-center gap-0.5">
+                <a
+                  href={hotel.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-36 p-5 flex flex-col justify-between relative overflow-hidden"
+                >
+                  <Image
+                    src={hotel.image}
+                    alt={hotel.name}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/45 to-navy-950/10" />
+                  <div className="relative flex items-center gap-0.5">
                     {Array.from({ length: hotel.stars }).map((_, s) => (
                       <Star
                         key={s}
@@ -36,13 +50,12 @@ export function HotelsAccommodation() {
                       />
                     ))}
                   </div>
-                  <div>
-                    <Hotel className="w-7 h-7 text-white/20 absolute top-5 right-5" />
-                    <h3 className="text-[16px] font-semibold text-white">
+                  <div className="relative">
+                    <h3 className="text-[16px] font-semibold text-white drop-shadow-sm">
                       {hotel.name}
                     </h3>
                   </div>
-                </div>
+                </a>
 
                 <div className="p-5">
                   <div className="flex items-center gap-1.5 text-[13px] text-muted mb-4">
@@ -73,9 +86,15 @@ export function HotelsAccommodation() {
                           .replace("/night", t("hotels.perNight"))}
                       </p>
                     </div>
-                    <button className="px-4 py-2 text-[13px] font-medium text-navy-700 bg-navy-50 rounded-lg hover:bg-navy-100 transition-colors">
-                      {t("hotels.inquire")}
-                    </button>
+                    <a
+                      href={hotel.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 text-[13px] font-medium text-navy-700 bg-navy-50 rounded-lg hover:bg-navy-100 transition-colors"
+                    >
+                      {t("hotels.visitWebsite")}
+                      <ExternalLink className="w-3.5 h-3.5 rtl-flip" />
+                    </a>
                   </div>
                 </div>
               </motion.div>

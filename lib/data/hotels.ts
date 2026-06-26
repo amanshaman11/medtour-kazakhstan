@@ -12,6 +12,8 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "Esentai Tower, central business district",
     amenityKeys: ["spa", "pool", "fineDining", "concierge"],
     amenities: ["Spa", "Pool", "Fine Dining", "Concierge"],
+    image: "/images/ritz-carlton-almaty.jpg",
+    website: "https://www.ritzcarlton.com/en/hotels/alarz-the-ritz-carlton-almaty/overview/",
   },
   {
     id: "ritz-carlton-astana",
@@ -22,6 +24,8 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "13 km from airport, near medical district",
     amenityKeys: ["spa", "pool", "airportShuttle", "clubLevel"],
     amenities: ["Spa", "Pool", "Airport Shuttle", "Club Level"],
+    image: "/images/ritz-carlton-astana.jpg",
+    website: "https://www.ritzcarlton.com/en/hotels/tserz-the-ritz-carlton-astana/overview/",
   },
   {
     id: "rixos-almaty",
@@ -32,6 +36,8 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "City center, near major clinics",
     amenityKeys: ["spa", "restaurant", "concierge", "transfers"],
     amenities: ["Spa", "Restaurant", "Concierge", "Transfers"],
+    image: "/images/rixos-almaty.jpg",
+    website: "https://www.rixos.com/en/hotel-resort/rixos-almaty",
   },
   {
     id: "hilton-astana",
@@ -42,6 +48,8 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "Central, near UMC medical campus",
     amenityKeys: ["gym", "restaurant", "businessCenter"],
     amenities: ["Gym", "Restaurant", "Business Center"],
+    image: "/images/hilton-astana.jpg",
+    website: "https://www.hilton.com/en/hotels/tsekahi-hilton-astana/",
   },
   {
     id: "holiday-inn-almaty",
@@ -52,6 +60,8 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "Short drive to medical centers",
     amenityKeys: ["breakfast", "wifi", "shuttle"],
     amenities: ["Breakfast", "WiFi", "Shuttle"],
+    image: "/images/holiday-inn-almaty.jpg",
+    website: "https://www.ihg.com/holidayinn/hotels/us/en/almaty/alakz/hoteldetail",
   },
   {
     id: "rixos-khadisha-shymkent",
@@ -62,5 +72,7 @@ export const hotels: Hotel[] = [
     distanceFromHospital: "City center, near medical district",
     amenityKeys: ["spa", "pool", "restaurant", "recoveryMenu"],
     amenities: ["Spa", "Pool", "Restaurant", "Recovery Menu"],
+    image: "/images/rixos-khadisha-shymkent.jpg",
+    website: "https://www.rixos.com/en/hotel-resort/rixos-khadisha-shymkent",
   },
 ];
