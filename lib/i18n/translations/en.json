@@ -195,7 +195,7 @@
       "plasticSurgery": "Plastic Surgery",
       "orthopedics": "Orthopedics"
     },
-    "yearsOperating": "Years in operation",
+    "foundedIn": "Since",
     "patientsLabel": "Patients served",
     "items": {
       "umc-heart-center": {

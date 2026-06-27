@@ -195,7 +195,7 @@
       "plasticSurgery": "Пластическая хирургия",
       "orthopedics": "Ортопедия"
     },
-    "yearsOperating": "Лет работы",
+    "foundedIn": "Основан в",
     "patientsLabel": "Принято пациентов",
     "items": {
       "umc-heart-center": {

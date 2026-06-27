@@ -20,7 +20,7 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $3,000 – $25,000",
     rating: 4.9,
     reviews: 412,
-    established: "2011",
+    foundedYear: 2011,
     patientsServed: "12,000+",
   },
   {
@@ -38,6 +38,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $2,500 – $20,000",
     rating: 4.8,
     reviews: 286,
+    foundedYear: 2001,
+    patientsServed: "18,000+",
   },
   {
     id: "national-hospital-almaty",
@@ -55,7 +57,7 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $1,500 – $18,000",
     rating: 4.9,
     reviews: 357,
-    established: "1997",
+    foundedYear: 1997,
     patientsServed: "8,500+",
   },
   {
@@ -74,7 +76,7 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $2,000 – $16,000",
     rating: 4.7,
     reviews: 198,
-    established: "1936",
+    foundedYear: 1936,
     patientsServed: "20,000+",
   },
   {
@@ -92,6 +94,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $800 – $9,000",
     rating: 4.8,
     reviews: 321,
+    foundedYear: 2022,
+    patientsServed: "15,000+",
   },
   {
     id: "shymkent-heart-center",
@@ -109,7 +113,7 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $2,000 – $15,000",
     rating: 4.7,
     reviews: 142,
-    established: "2000",
+    foundedYear: 2000,
     patientsServed: "5,000+",
   },
   {
@@ -128,6 +132,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $300 – $5,000",
     rating: 4.6,
     reviews: 118,
+    foundedYear: 1990,
+    patientsServed: "12,000+",
   },
   {
     id: "ekomed-ivf-shymkent",
@@ -143,6 +149,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $3,500 – $10,000",
     rating: 4.8,
     reviews: 96,
+    foundedYear: 1995,
+    patientsServed: "30,000+",
   },
   {
     id: "umc-mother-child",
@@ -158,6 +166,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $3,500 – $12,000",
     rating: 4.9,
     reviews: 274,
+    foundedYear: 2007,
+    patientsServed: "20,000+",
   },
   {
     id: "alanda-clinic-astana",
@@ -173,6 +183,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $1,500 – $14,000",
     rating: 4.7,
     reviews: 131,
+    foundedYear: 2018,
+    patientsServed: "15,000+",
   },
   {
     id: "american-medical-centers-almaty",
@@ -190,6 +202,8 @@ export const clinics: Clinic[] = [
     priceRange: "Est. $200 – $3,000",
     rating: 4.6,
     reviews: 152,
+    foundedYear: 1991,
+    patientsServed: "8,000+",
   },
 ];
 

@@ -193,7 +193,7 @@
       "plasticSurgery": "Пластикалық хирургия",
       "orthopedics": "Ортопедия"
     },
-    "yearsOperating": "Жыл жұмыс істейді",
+    "foundedIn": "Құрылған жылы",
     "patientsLabel": "Қабылданған пациенттер",
     "items": {
       "umc-heart-center": {

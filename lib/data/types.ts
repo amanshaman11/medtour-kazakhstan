@@ -21,8 +21,8 @@ export interface Clinic {
   priceRange: string;
   rating: number;
   reviews: number;
-  established?: string;
-  patientsServed?: string;
+  foundedYear: number;
+  patientsServed: string;
 }
 
 export interface PartnerHospital {

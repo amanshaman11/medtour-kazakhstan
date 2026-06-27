@@ -193,7 +193,7 @@
       "plasticSurgery": "整形外科",
       "orthopedics": "骨科"
     },
-    "yearsOperating": "运营年限",
+    "foundedIn": "成立于",
     "patientsLabel": "服务患者",
     "items": {
       "umc-heart-center": {
