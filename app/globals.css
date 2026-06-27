@@ -22,6 +22,14 @@
   --muted: #4a5568;
   --muted-soft: #64748b;
   --border: #dbe2ec;
+  
+  /* Kazakhstan flag colors */
+  --kz-blue: #00AFCA;
+  --kz-blue-light: #1FC1DA;
+  --kz-blue-dark: #0093AD;
+  --kz-gold: #FEC310;
+  --kz-gold-light: #FFD54F;
+  --kz-gold-dark: #E5AD00;
 }
 
 @theme inline {
@@ -45,6 +53,12 @@
   --color-muted: var(--muted);
   --color-muted-soft: var(--muted-soft);
   --color-border: var(--border);
+  --color-kz-blue: var(--kz-blue);
+  --color-kz-blue-light: var(--kz-blue-light);
+  --color-kz-blue-dark: var(--kz-blue-dark);
+  --color-kz-gold: var(--kz-gold);
+  --color-kz-gold-light: var(--kz-gold-light);
+  --color-kz-gold-dark: var(--kz-gold-dark);
   --font-sans: var(--font-inter);
 }
 
@@ -58,6 +72,9 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 0% 0%, rgba(0, 175, 202, 0.04), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(254, 195, 16, 0.03), transparent 50%);
 }
 
 ::selection {
@@ -140,6 +157,95 @@ body {
     radial-gradient(at 18% 12%, rgba(36, 81, 145, 0.18) 0px, transparent 50%),
     radial-gradient(at 82% 8%, rgba(15, 110, 156, 0.12) 0px, transparent 50%),
     radial-gradient(at 75% 82%, rgba(47, 99, 184, 0.1) 0px, transparent 50%);
+}
+
+@keyframes kz-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+/* Kazakhstan side ambience */
+.kz-side-glow {
+  position: absolute;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: kz-pulse 8s ease-in-out infinite;
+}
+.kz-side-glow-left {
+  top: 12%;
+  left: -10rem;
+  background: radial-gradient(circle, rgba(0, 175, 202, 0.22) 0%, transparent 70%);
+}
+.kz-side-glow-right {
+  bottom: 18%;
+  right: -10rem;
+  background: radial-gradient(circle, rgba(254, 195, 16, 0.18) 0%, transparent 70%);
+  animation-delay: 2s;
+}
+
+.kz-accent-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  opacity: 0.35;
+}
+.kz-accent-line-left {
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--kz-blue) 25%,
+    var(--kz-gold) 50%,
+    var(--kz-blue) 75%,
+    transparent 100%
+  );
+}
+.kz-accent-line-right {
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--kz-gold) 25%,
+    var(--kz-blue) 50%,
+    var(--kz-gold) 75%,
+    transparent 100%
+  );
+}
+
+/* Section backgrounds with Kazakhstan tint */
+.kz-section-bg {
+  background:
+    radial-gradient(ellipse 50% 40% at 0% 50%, rgba(0, 175, 202, 0.06), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 100% 50%, rgba(254, 195, 16, 0.05), transparent 50%),
+    var(--surface);
+}
+
+/* Kazakhstan-themed gradients */
+.gradient-kz {
+  background: linear-gradient(135deg, var(--kz-blue) 0%, var(--kz-blue-dark) 55%, #007a8f 100%);
+}
+
+.gradient-kz-gold {
+  background: linear-gradient(135deg, var(--kz-gold) 0%, var(--kz-gold-dark) 100%);
+}
+
+.gradient-kz-hero {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 175, 202, 0.12) 0%,
+    rgba(6, 15, 30, 0.88) 45%,
+    rgba(6, 15, 30, 0.97) 100%
+  );
+}
+
+.gradient-kz-badge {
+  background: linear-gradient(135deg, var(--kz-blue) 0%, #0088a0 50%, var(--kz-blue-dark) 100%);
+  box-shadow:
+    0 4px 24px rgba(0, 175, 202, 0.35),
+    0 0 0 1px rgba(254, 195, 16, 0.25);
 }
 
 /* Grid + glow */

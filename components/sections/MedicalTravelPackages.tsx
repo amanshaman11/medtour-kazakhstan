@@ -81,7 +81,7 @@ export function MedicalTravelPackages() {
                 </ul>
 
                 <a
-                  href="#contact-center"
+                  href="tel:1717"
                   className={`inline-flex items-center gap-1.5 text-[13px] font-semibold transition-all hover:gap-2.5 ${
                     pkg.popular
                       ? "text-white"

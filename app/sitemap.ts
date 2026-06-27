@@ -7,17 +7,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sections = [
     "",
+    "#city-selection",
     "#why-kazakhstan",
     "#platform",
     "#search",
     "#concierge",
     "#treatments",
-    "#partners",
     "#hotels",
     "#packages",
-    "#tourism",
     "#how-it-works",
-    "#contact-center",
   ];
 
   return sections.map((path) => ({

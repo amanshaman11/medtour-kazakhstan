@@ -1,6 +1,6 @@
 "use client";
 
-import { HeartPulse, Phone, Mail, MapPin } from "lucide-react";
+import { HeartPulse, Mail, MapPin, Building2, Hotel, Plane, Compass, Globe } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 
 const footerColumns = [
@@ -9,7 +9,7 @@ const footerColumns = [
     links: [
       { key: "footer.hospitalSearch", href: "#search" },
       { key: "footer.treatmentCategories", href: "#treatments" },
-      { key: "footer.partnerHospitals", href: "#partners" },
+      { key: "footer.partnerHospitals", href: "#search" },
       { key: "footer.medicalPackages", href: "#packages" },
     ],
   },
@@ -17,9 +17,9 @@ const footerColumns = [
     titleKey: "footer.services",
     links: [
       { key: "footer.hotels", href: "#hotels" },
-      { key: "footer.tourism", href: "#tourism" },
+      { key: "footer.tourism", href: "#city-selection" },
       { key: "nav.concierge", href: "#concierge" },
-      { key: "footer.contactCenter", href: "#contact-center" },
+      { key: "footer.contactCenterLink", href: "tel:1717" },
     ],
   },
   {
@@ -37,29 +37,41 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-navy-950 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8">
+    <footer className="bg-navy-950 border-t border-kz-blue/10 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-kz-blue/5 via-transparent to-kz-gold/5 pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-5 lg:px-8">
+        <div className="py-10 border-b border-white/5">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
+            {[
+              { icon: Building2, labelKey: "footer.serviceTypes.hospitals" },
+              { icon: Globe, labelKey: "footer.serviceTypes.translation" },
+              { icon: Hotel, labelKey: "footer.serviceTypes.hotels" },
+              { icon: Plane, labelKey: "footer.serviceTypes.transportation" },
+              { icon: Compass, labelKey: "footer.serviceTypes.tourism" },
+            ].map((service) => (
+              <div key={service.labelKey} className="text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-kz-blue/10 border border-kz-blue/20 mb-3">
+                  <service.icon className="w-6 h-6 text-kz-blue" />
+                </div>
+                <p className="text-xs text-white/70">{t(service.labelKey)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-10">
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-lg bg-navy-700 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-gradient-kz flex items-center justify-center">
                 <HeartPulse className="w-[18px] h-[18px] text-white" />
               </div>
-              <span className="text-white font-semibold text-[15px]">
-                MedTour Kazakhstan
-              </span>
+              <span className="text-white font-semibold text-[15px]">MedTour Kazakhstan</span>
             </a>
             <p className="text-[13px] text-white/55 leading-relaxed max-w-xs mb-6">
               {t("footer.tagline")}
             </p>
             <div className="space-y-2.5">
-              <a
-                href="tel:1717"
-                className="flex items-center gap-2 text-[13px] text-white/50 hover:text-white transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                {t("footer.contactLine")}
-              </a>
               <a
                 href="mailto:contact@medtour.kz"
                 className="flex items-center gap-2 text-[13px] text-white/50 hover:text-white transition-colors"
@@ -76,15 +88,13 @@ export function Footer() {
 
           {footerColumns.map((col) => (
             <div key={col.titleKey}>
-              <h4 className="text-[13px] font-semibold text-white mb-4">
-                {t(col.titleKey)}
-              </h4>
+              <h4 className="text-[13px] font-semibold text-white mb-4">{t(col.titleKey)}</h4>
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.key}>
                     <a
                       href={link.href}
-                      className="text-[13px] text-white/55 hover:text-white transition-colors"
+                      className="text-[13px] text-white/55 hover:text-kz-blue-light transition-colors"
                     >
                       {t(link.key)}
                     </a>

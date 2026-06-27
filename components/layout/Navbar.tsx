@@ -1,100 +1,87 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Menu, X, HeartPulse, Phone } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Menu, X, HeartPulse, Phone, Search } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { LanguageSelector } from "@/components/ui/LanguageSelector";
 
+const ctaClassName =
+  "inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 text-[11px] sm:text-[13px] font-bold whitespace-nowrap leading-none rounded-lg bg-kz-gold text-navy-900 border-2 border-navy-900/15 shadow-lg shadow-kz-gold/30 hover:bg-[#f5b800] transition-colors shrink-0";
+
 export function Navbar() {
   const { t } = useTranslation();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
     { label: t("nav.why"), href: "#why-kazakhstan" },
     { label: t("nav.platform"), href: "#platform" },
     { label: t("nav.treatments"), href: "#treatments" },
-    { label: t("nav.clinics"), href: "#partners" },
+    { label: t("nav.clinics"), href: "#search" },
     { label: t("nav.packages"), href: "#packages" },
-    { label: t("nav.contact"), href: "#contact-center" },
+    { label: t("nav.contact"), href: "tel:1717" },
   ];
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/85 backdrop-blur-xl border-b border-border shadow-sm shadow-navy-900/5"
-          : "bg-transparent"
-      }`}
+      className="fixed top-0 inset-x-0 z-[100] bg-white border-b border-kz-blue/15 shadow-md"
     >
-      <nav className="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between h-16 lg:h-[4.5rem]">
-        <a href="#" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-navy-700 to-navy-500 flex items-center justify-center shadow-lg shadow-navy-500/20 group-hover:shadow-navy-500/40 transition-shadow">
-            <HeartPulse className="w-[18px] h-[18px] text-white" />
+      <nav className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-8">
+        <div className="flex items-center h-16 lg:h-[4.5rem] gap-2 sm:gap-3 min-w-0">
+          <a href="#" className="flex items-center gap-2 group shrink-0 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-kz-blue to-kz-blue-dark flex items-center justify-center shadow-lg shadow-kz-blue/25 group-hover:shadow-kz-blue/40 transition-shadow shrink-0">
+              <HeartPulse className="w-[18px] h-[18px] text-white" />
+            </div>
+            <span className="hidden md:inline font-semibold text-[14px] xl:text-[15px] tracking-tight text-navy-900 whitespace-nowrap">
+              MedTour Kazakhstan
+            </span>
+          </a>
+
+          <div className="hidden xl:flex flex-1 items-center justify-center gap-4 min-w-0 px-2">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-[12px] xl:text-[13px] font-medium whitespace-nowrap leading-none text-muted hover:text-kz-blue-dark transition-colors shrink-0"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
-          <span
-            className={`font-semibold text-[15px] tracking-tight transition-colors ${
-              scrolled ? "text-navy-900" : "text-white"
-            }`}
-          >
-            MedTour Kazakhstan
-          </span>
-        </a>
 
-        <div className="hidden lg:flex items-center gap-7">
-          {navLinks.map((link) => (
+          <div className="flex-1 xl:hidden" aria-hidden="true" />
+
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             <a
-              key={link.href}
-              href={link.href}
-              className={`text-[13px] font-medium transition-colors ${
-                scrolled
-                  ? "text-muted hover:text-navy-900"
-                  : "text-white/75 hover:text-white"
-              }`}
+              href="#search"
+              className={ctaClassName}
+              aria-label={t("nav.findTreatment")}
             >
-              {link.label}
+              <Search className="w-4 h-4 shrink-0" />
+              <span className="hidden sm:inline">{t("nav.findTreatment")}</span>
             </a>
-          ))}
-        </div>
 
-        <div className="hidden lg:flex items-center gap-2.5">
-          <a
-            href="tel:1717"
-            className={`flex items-center gap-1.5 text-[13px] font-semibold transition-colors ${
-              scrolled ? "text-navy-700" : "text-white/85"
-            }`}
-          >
-            <Phone className="w-3.5 h-3.5" />
-            1717
-          </a>
-          <LanguageSelector light={!scrolled} />
-          <a
-            href="#search"
-            className="px-4 py-2 text-[13px] font-semibold text-white bg-navy-700 hover:bg-navy-600 rounded-lg transition-colors shadow-sm shadow-navy-700/20"
-          >
-            {t("nav.findTreatment")}
-          </a>
-        </div>
+            <a
+              href="tel:1717"
+              className="hidden lg:inline-flex items-center gap-1.5 text-[12px] xl:text-[13px] font-semibold whitespace-nowrap leading-none text-navy-700 transition-colors shrink-0"
+            >
+              <Phone className="w-3.5 h-3.5 shrink-0" />
+              1717
+            </a>
 
-        <div className="lg:hidden flex items-center gap-1">
-          <LanguageSelector light={!scrolled} />
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className={`p-2 ${scrolled ? "text-navy-900" : "text-white"}`}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+            <LanguageSelector />
+
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="xl:hidden p-2 text-navy-900 shrink-0"
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -102,7 +89,7 @@ export function Navbar() {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          className="lg:hidden bg-white border-b border-border shadow-lg overflow-hidden"
+          className="xl:hidden bg-white border-b border-border shadow-lg overflow-hidden"
         >
           <div className="px-5 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
@@ -115,13 +102,6 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#search"
-              onClick={() => setMobileOpen(false)}
-              className="mt-3 py-3 text-center text-sm font-semibold text-white bg-navy-700 rounded-lg"
-            >
-              {t("nav.findTreatment")}
-            </a>
           </div>
         </motion.div>
       )}

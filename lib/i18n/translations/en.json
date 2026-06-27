@@ -18,14 +18,18 @@
     "shymkent": "Shymkent"
   },
   "hero": {
-    "eyebrow": "Medical Tourism Platform · Kazakhstan",
-    "title": "World-Class Medical Care in Kazakhstan",
-    "subtitle": "Compare hospitals, explore treatment options, arrange accommodation, and receive personalized assistance through a single platform.",
+    "kazakhstan": "Kazakhstan",
+    "eyebrow": "Central Asia's Leading Medical Tourism Destination",
+    "title": "Discover World-Class Healthcare in the Heart of Central Asia",
+    "subtitle": "Receive high-quality medical care while discovering one of the world's fastest-growing destinations.",
+    "exploreTreatments": "Explore Treatments",
+    "contactExpert": "Contact Expert",
+    "trust1": "3 Major Medical Cities",
+    "trust2": "JCI-Accredited Institutions",
+    "discover": "Discover",
+    "scrollDown": "Scroll to explore",
     "findTreatment": "Find Treatment",
     "contactConcierge": "Contact Medical Concierge",
-    "trust1": "Accredited Hospitals",
-    "trust2": "International Patients",
-    "trust3": "End-to-End Coordination",
     "statHospitals": "Partner Hospitals",
     "statPatients": "Patients Served",
     "statSavings": "Cost Savings",
@@ -38,6 +42,78 @@
     "panelHotels": "Hotels",
     "panelLanguages": "Languages",
     "patientsServed": "Patients served"
+  },
+  "citySelection": {
+    "badge": "Choose Your Destination",
+    "title": "Three World-Class Medical Cities",
+    "subtitle": "Each city offers unique medical strengths, modern facilities, and authentic Kazakh hospitality.",
+    "medicalStrengths": "Medical Specialties",
+    "attractions": "Top Attractions",
+    "cities": {
+      "almaty": {
+        "name": "Almaty",
+        "description": "Kazakhstan's largest city sits at the foothills of the Alatau Mountains, where world-class hospitals meet alpine landscapes and vibrant urban culture. Almaty blends cosmopolitan dining, museums, and mountain recreation with leading cardiac surgery, IVF, plastic surgery, and orthopedic centers — making it ideal for patients who want high-quality treatment and a memorable recovery environment.",
+        "strengths": ["Cardiac Surgery", "IVF & Fertility", "Plastic Surgery", "Orthopedics"],
+        "attractions": ["Big Almaty Lake", "Medeu & Shymbulak Ski Resort", "Kok-Tobe Hill", "Green Bazaar", "Central State Museum"]
+      },
+      "astana": {
+        "name": "Astana",
+        "description": "Astana is Kazakhstan's modern capital — a city of striking futuristic architecture, excellent infrastructure, and the country's most advanced medical campuses. Patients travel here for neurosurgery, oncology, cardiology, and complex diagnostics, while enjoying landmarks like Bayterek Tower, the National Museum, and the Ishim River promenade during recovery.",
+        "strengths": ["Neurosurgery", "Oncology", "Cardiology", "Advanced Diagnostics"],
+        "attractions": ["Bayterek Tower", "Khan Shatyr", "Astana Opera House", "National Museum", "Ishim River Promenade"]
+      },
+      "shymkent": {
+        "name": "Shymkent",
+        "description": "Shymkent is a sunny southern city on the historic Silk Road, known for warm hospitality, affordable care, and easy access to nature reserves and cultural sites. It offers strong general surgery, dentistry, and diagnostic services alongside attractions such as Sayram, Aksu-Zhabagly Reserve, and traditional bazaars — a welcoming option for budget-conscious medical travelers.",
+        "strengths": ["General Surgery", "Dentistry", "Diagnostics", "Family Medicine"],
+        "attractions": ["Ordabasy Square", "Regional History Museum", "Aksu-Zhabagly Nature Reserve", "Traditional Bazaars", "Silk Road Landmarks"]
+      }
+    }
+  },
+  "whyKazakhstan": {
+    "badge": "Why Choose Kazakhstan",
+    "title": "Why International Patients Choose Kazakhstan",
+    "subtitle": "Experience exceptional medical care in a country that combines modern healthcare infrastructure, affordability, and warm hospitality.",
+    "reasons": {
+      "affordable": {
+        "title": "Affordable Healthcare",
+        "description": "Save 40-60% compared to Western countries while receiving the same quality of care. Transparent pricing with no hidden costs ensures you know exactly what to expect."
+      },
+      "specialists": {
+        "title": "Highly Qualified Specialists",
+        "description": "Our partner hospitals employ doctors trained at leading international institutions, many with decades of specialized experience and international certifications."
+      },
+      "equipment": {
+        "title": "Modern Medical Equipment",
+        "description": "Access to state-of-the-art diagnostic tools, surgical robotics, and the latest medical technology found in top-tier facilities worldwide."
+      },
+      "waiting": {
+        "title": "Short Waiting Times",
+        "description": "Schedule consultations and procedures within days, not months. No long waiting lists mean faster access to the care you need."
+      },
+      "support": {
+        "title": "International Patient Support",
+        "description": "Dedicated multilingual coordinators guide you through every step, from initial inquiry to post-treatment follow-up, in your preferred language."
+      },
+      "destinations": {
+        "title": "Beautiful Tourism Destinations",
+        "description": "Combine medical treatment with exploration. Experience stunning mountain landscapes, vibrant cities, and rich cultural heritage during your recovery."
+      },
+      "safety": {
+        "title": "Safe & Welcoming Environment",
+        "description": "Kazakhstan welcomes international visitors with visa-free entry for many countries, modern infrastructure, and a reputation for safety and hospitality."
+      },
+      "care": {
+        "title": "Patient-Centered Care",
+        "description": "Receive personalized attention with comfortable private rooms, family accommodation options, and care plans tailored to your specific needs."
+      }
+    },
+    "stats": {
+      "savings": "Average Cost Savings",
+      "hospitals": "Accredited Hospitals",
+      "patients": "International Patients",
+      "support": "Multilingual Support"
+    }
   },
   "stats": {
     "badge": "By the Numbers",
@@ -118,6 +194,43 @@
       "cardiology": "Cardiology",
       "plasticSurgery": "Plastic Surgery",
       "orthopedics": "Orthopedics"
+    },
+    "yearsOperating": "Years in operation",
+    "patientsLabel": "Patients served",
+    "items": {
+      "umc-heart-center": {
+        "description": "Heart Center UMC is one of Central Asia's leading cardiac institutions, performing complex open-heart surgery, stenting, and arrhythmia treatment. International patients choose it for JCI-accredited standards, experienced cardiac surgeons, and a dedicated international coordination team."
+      },
+      "national-scientific-medical-center": {
+        "description": "The National Scientific Medical Center in Astana is a high-technology hospital specializing in cardiac surgery, neurosurgery, and advanced cardiology. It serves as a national referral center for complex cases and offers modern operating theaters, ICU facilities, and multidisciplinary specialist teams."
+      },
+      "national-hospital-almaty": {
+        "description": "The National Hospital under the MC of the President's Affairs is among Kazakhstan's most respected multidisciplinary institutions. It provides surgical, diagnostic, and rehabilitation services with JCI accreditation, making it a trusted choice for international patients seeking premium hospital care in Almaty."
+      },
+      "syzganov-surgery-center": {
+        "description": "The Syzganov National Scientific Center of Surgery is a flagship surgical hospital in Almaty with deep expertise in transplantation, orthopedics, and advanced general surgery. Its national accreditation and research-driven approach attract patients requiring complex surgical interventions."
+      },
+      "mediker-hospital-almaty": {
+        "description": "Mediker Hospital International offers multidisciplinary care with a strong international patient department and English-speaking staff. It is particularly known for dental implantology, cosmetic procedures, and coordinated care packages for foreign visitors."
+      },
+      "shymkent-heart-center": {
+        "description": "Shymkent Heart Center has provided specialized cardiology and cardiac surgery since 2000. The center offers accessible pricing compared to Western markets while maintaining modern cath labs, surgical suites, and post-operative cardiac rehabilitation programs."
+      },
+      "shymkent-diagnostic-center": {
+        "description": "The City Diagnostic Center of Shymkent is a modern facility combining advanced imaging, dentistry, and outpatient surgery. International patients value its efficient diagnostics, transparent pricing, and convenient location in southern Kazakhstan's medical district."
+      },
+      "ekomed-ivf-shymkent": {
+        "description": "Ekomed Fertility & IVF Center is a dedicated reproductive medicine clinic offering IVF, ICSI, and fertility preservation programs. Couples from across the CIS and Middle East choose Ekomed for personalized fertility care and competitive treatment packages."
+      },
+      "umc-mother-child": {
+        "description": "Mother & Child Center UMC in Astana is a JCI-accredited institution specializing in reproductive medicine, IVF, obstetrics, and neonatal care. Its integrated women's health campus provides end-to-end support from fertility consultation through pregnancy and delivery."
+      },
+      "alanda-clinic-astana": {
+        "description": "Alanda Clinic is a modern multidisciplinary medical center in Astana offering reconstructive surgery, orthopedics, and inpatient recovery facilities. International patients appreciate its boutique hospital environment and personalized treatment planning."
+      },
+      "american-medical-centers-almaty": {
+        "description": "American Medical Centers Almaty follows international clinical standards for family medicine, executive health check-ups, and dentistry. Expatriates and medical tourists often use AMC for preventive screenings, dental care, and English-language primary care before specialist referrals."
+      }
     }
   },
   "specialties": {
@@ -381,6 +494,10 @@
   "footer": {
     "tagline": "The centralized medical tourism platform for international patients seeking treatment in Kazakhstan.",
     "contactLine": "1717 — 24/7 Contact Center",
+    "contactCenter": "Unified Medical Contact Center",
+    "contactCenterLink": "Contact Center",
+    "available247": "Available 24/7",
+    "languages": "Languages",
     "platform": "Platform",
     "services": "Services",
     "company": "Company",
@@ -390,7 +507,6 @@
     "medicalPackages": "Medical Packages",
     "hotels": "Hotels & Accommodation",
     "tourism": "Tourism Experiences",
-    "contactCenter": "Contact Center",
     "about": "About MedTour",
     "howItWorks": "How It Works",
     "why": "Why Kazakhstan",
@@ -398,6 +514,23 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "disclaimer": "Medical Disclaimer"
+    "disclaimer": "Medical Disclaimer",
+    "langs": {
+      "english": "English",
+      "russian": "Russian",
+      "kazakh": "Kazakh",
+      "uzbek": "Uzbek",
+      "kyrgyz": "Kyrgyz",
+      "tajik": "Tajik",
+      "arabic": "Arabic",
+      "chinese": "Chinese"
+    },
+    "serviceTypes": {
+      "hospitals": "Medical Institutions",
+      "translation": "Translation",
+      "hotels": "Accommodation",
+      "transportation": "Transportation",
+      "tourism": "Tourism"
+    }
   }
 }

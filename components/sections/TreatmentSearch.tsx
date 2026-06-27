@@ -137,9 +137,28 @@ export function TreatmentSearch() {
                     </div>
                   </div>
 
-                  <p className="text-[13px] text-navy-700 font-medium mb-3">
+                  <p className="text-[13px] text-navy-700 font-medium mb-2">
                     {t(`specialties.${clinic.specialtyKey}`)}
                   </p>
+
+                  <p className="text-[13px] text-muted leading-relaxed mb-4">
+                    {t(`search.items.${clinic.id}.description`)}
+                  </p>
+
+                  {(clinic.established || clinic.patientsServed) && (
+                    <div className="flex flex-wrap gap-3 mb-4 text-[12px] text-muted">
+                      {clinic.established && (
+                        <span>
+                          {t("search.yearsOperating")}: {clinic.established}
+                        </span>
+                      )}
+                      {clinic.patientsServed && (
+                        <span>
+                          {t("search.patientsLabel")}: {clinic.patientsServed}
+                        </span>
+                      )}
+                    </div>
+                  )}
 
                   {clinic.accredited && (
                     <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-navy-50 text-[11px] font-semibold text-navy-700 mb-4">
