@@ -2,11 +2,9 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { Play, MapPin, Award, CalendarCheck } from "lucide-react";
+import { Play, MapPin, Award } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { CallCenterBanner } from "@/components/sections/CallCenterBanner";
-import { procedureCityPath } from "@/lib/utils/routes";
 
 export function Hero({ background }: { background: React.ReactNode }) {
   const { t } = useTranslation();
@@ -18,16 +16,16 @@ export function Hero({ background }: { background: React.ReactNode }) {
   };
 
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
+    <section className="relative min-h-[100dvh] h-screen overflow-hidden">
       {background}
 
-      <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10 pb-28 sm:pb-32 lg:pb-36 translate-y-[1cm]">
-        <motion.div style={{ opacity }} className="max-w-3xl flex-1">
+      <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10 pb-[11.5rem] sm:pb-36 lg:pb-36 lg:translate-y-[1cm]">
+        <motion.div style={{ opacity }} className="max-w-3xl flex-1 min-w-0 w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 max-w-full sm:max-w-2xl px-3 sm:px-4 py-2 rounded-full glass mb-6"
+            className="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 max-w-full px-3 sm:px-4 py-2 rounded-full glass mb-4 sm:mb-6"
           >
             <div className="w-2 h-2 rounded-full bg-kz-blue animate-pulse shrink-0" />
             <span className="text-[11px] sm:text-xs md:text-sm font-medium text-white/90 leading-snug text-balance">
@@ -35,11 +33,27 @@ export function Hero({ background }: { background: React.ReactNode }) {
             </span>
           </motion.div>
 
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="lg:hidden flex items-center gap-2 mb-4 w-fit max-w-full"
+          >
+            <Image
+              src="/images/kazakhstan-flag.jpg"
+              alt={t("hero.kazakhstan")}
+              width={32}
+              height={21}
+              className="rounded-sm object-cover shadow-sm shrink-0"
+            />
+            <span className="text-xs font-semibold text-white/85 truncate">{t("hero.kazakhstan")}</span>
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-[1.9rem] sm:text-[2.35rem] md:text-4xl lg:text-[3rem] xl:text-[3.35rem] font-bold tracking-tight leading-[1.12] text-white mb-6"
+            className="text-[1.75rem] sm:text-[2.35rem] md:text-4xl lg:text-[3rem] xl:text-[3.35rem] font-bold tracking-tight leading-[1.12] text-white mb-4 sm:mb-6 pr-0"
           >
             {t("hero.title")}
           </motion.h1>
@@ -48,7 +62,7 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-base sm:text-lg lg:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
+            className="text-[15px] sm:text-lg lg:text-xl text-white/80 leading-relaxed mb-6 sm:mb-8 max-w-2xl"
           >
             {t("hero.subtitle")}
           </motion.p>
@@ -57,15 +71,8 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10"
+            className="flex flex-col sm:flex-row flex-wrap gap-3 mb-6 sm:mb-10"
           >
-            <Link
-              href={procedureCityPath()}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-kz-gold text-navy-900 text-sm font-bold rounded-xl border-2 border-white/20 shadow-lg shadow-kz-gold/30 hover:bg-[#f5b800] transition-all hover:scale-[1.02]"
-            >
-              <CalendarCheck className="w-4 h-4" />
-              {t("procedures.mobile.bookAppointment")}
-            </Link>
             <a
               href="#search"
               className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-kz text-white text-sm font-semibold rounded-xl hover:shadow-2xl hover:shadow-kz-blue/30 transition-all hover:scale-[1.02]"
@@ -90,15 +97,15 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="flex flex-wrap gap-5"
+            className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-5"
           >
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-kz-blue" />
-              <span className="text-xs sm:text-sm text-white/70">{t("hero.trust1")}</span>
+            <div className="flex items-center gap-2 min-w-0">
+              <MapPin className="w-4 h-4 text-kz-blue shrink-0" />
+              <span className="text-xs sm:text-sm text-white/70 leading-snug">{t("hero.trust1")}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-4 h-4 text-kz-gold" />
-              <span className="text-xs sm:text-sm text-white/70">{t("hero.trust2")}</span>
+            <div className="flex items-center gap-2 min-w-0">
+              <Award className="w-4 h-4 text-kz-gold shrink-0" />
+              <span className="text-xs sm:text-sm text-white/70 leading-snug">{t("hero.trust2")}</span>
             </div>
           </motion.div>
         </motion.div>
@@ -123,24 +130,6 @@ export function Hero({ background }: { background: React.ReactNode }) {
             </p>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="lg:hidden absolute top-24 right-5 z-10"
-        >
-          <div className="flex items-center gap-2 glass rounded-full px-3 py-2 border border-white/15">
-            <Image
-              src="/images/kazakhstan-flag.jpg"
-              alt={t("hero.kazakhstan")}
-              width={36}
-              height={24}
-              className="rounded-sm object-cover shadow-sm"
-            />
-            <span className="text-sm font-semibold text-white/90">{t("hero.kazakhstan")}</span>
-          </div>
-        </motion.div>
       </div>
 
       <CallCenterBanner embedded />
@@ -150,7 +139,7 @@ export function Hero({ background }: { background: React.ReactNode }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.2 }}
         onClick={scrollToProcedures}
-        className="absolute bottom-[4.5rem] sm:bottom-[5rem] lg:bottom-[5.25rem] left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer"
+        className="absolute bottom-[10.5rem] sm:bottom-[5rem] lg:bottom-[5.25rem] left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer"
         aria-label={t("hero.scrollDown")}
       >
         <span className="text-[10px] sm:text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>

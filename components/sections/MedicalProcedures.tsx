@@ -18,6 +18,7 @@ import {
   BadgeDollarSign,
   ShieldCheck,
   Headphones,
+  CalendarCheck,
 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { AnimatedSection, SectionHeader } from "@/components/ui/AnimatedSection";
@@ -225,9 +226,10 @@ export function MedicalProcedures() {
           <div className="text-center">
             <Link
               href={`/procedures/${city}`}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-kz-gold text-navy-900 text-sm font-bold rounded-xl border-2 border-navy-900/10 shadow-lg shadow-kz-gold/25 hover:bg-[#f5b800] transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-kz-gold text-navy-900 text-sm font-bold rounded-xl border-2 border-navy-900/10 shadow-lg shadow-kz-gold/25 hover:bg-[#f5b800] transition-colors"
             >
-              {t("procedures.viewAll")}
+              <CalendarCheck className="w-4 h-4 shrink-0" />
+              {t("procedures.mobile.bookAppointment")}
               <ArrowRight className="w-4 h-4 rtl-flip" />
             </Link>
           </div>
