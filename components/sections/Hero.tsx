@@ -4,13 +4,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Play, MapPin, Award } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
-import { useRef } from "react";
 import { CallCenterBanner } from "@/components/sections/CallCenterBanner";
-import { HERO_VIDEO_SRC } from "@/lib/constants/media";
 
-export function Hero() {
+export function Hero({ background }: { background: React.ReactNode }) {
   const { t } = useTranslation();
-  const videoRef = useRef<HTMLVideoElement>(null);
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
@@ -20,26 +17,7 @@ export function Hero() {
 
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden">
-      <div className="absolute inset-0 bg-navy-900">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src={HERO_VIDEO_SRC} type="video/mp4" />
-        </video>
-
-        <div className="absolute inset-0 gradient-kz-hero" />
-        <div className="absolute inset-0 grid-pattern opacity-20" />
-
-        {/* Kazakhstan color side accents */}
-        <div className="absolute left-0 top-1/4 bottom-1/4 w-1 bg-gradient-to-b from-transparent via-kz-blue/60 to-transparent" />
-        <div className="absolute right-0 top-1/3 bottom-1/3 w-1 bg-gradient-to-b from-transparent via-kz-gold/50 to-transparent" />
-      </div>
+      {background}
 
       <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10 pb-28 sm:pb-32 lg:pb-36 translate-y-[1cm]">
         <motion.div style={{ opacity }} className="max-w-3xl flex-1">

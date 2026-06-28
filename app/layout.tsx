@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/lib/i18n/I18nProvider";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { HERO_VIDEO_SRC } from "@/lib/constants/media";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -95,6 +96,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
+      <head>
+        <link rel="preload" href={HERO_VIDEO_SRC} as="video" type="video/mp4" />
+      </head>
       <body className="min-h-full flex flex-col antialiased">
         <ScrollToTop />
         <I18nProvider>{children}</I18nProvider>

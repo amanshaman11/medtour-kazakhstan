@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PageAmbience } from "@/components/ui/PageAmbience";
 import { Hero } from "@/components/sections/Hero";
+import { HeroBackground } from "@/components/sections/HeroBackground";
 import { MedicalProcedures } from "@/components/sections/MedicalProcedures";
 import { CitySelection } from "@/components/sections/CitySelection";
 import { WhyChooseKazakhstan } from "@/components/sections/WhyChooseKazakhstan";
@@ -23,7 +24,7 @@ export default function Home() {
       <PageAmbience />
       <Navbar />
       <main className="relative z-10">
-        <Hero />
+        <Hero background={<HeroBackground />} />
         <CitySelection />
         <MedicalProcedures />
         <WhyChooseKazakhstan />
