@@ -72,7 +72,7 @@ export function CitySelection() {
             return (
               <AnimatedSection key={city.id} delay={index * 0.1}>
                 <motion.a
-                  href="#search"
+                  href={`/procedures/${city.id}`}
                   whileHover={{ y: -8 }}
                   transition={{ duration: 0.3 }}
                   className="group block h-full"

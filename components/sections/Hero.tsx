@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Play, MapPin, Award } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { useRef } from "react";
-
-const HERO_VIDEO = "/images/mountains-compressed.mp4";
+import { CallCenterBanner } from "@/components/sections/CallCenterBanner";
+import { HERO_VIDEO_SRC } from "@/lib/constants/media";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -14,13 +14,13 @@ export function Hero() {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
-  const scrollToContent = () => {
-    document.getElementById("city-selection")?.scrollIntoView({ behavior: "smooth" });
+  const scrollToProcedures = () => {
+    document.getElementById("procedures")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-navy-900">
         <video
           ref={videoRef}
           autoPlay
@@ -28,10 +28,9 @@ export function Hero() {
           loop
           playsInline
           preload="auto"
-          poster="/images/almaty.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={HERO_VIDEO} type="video/mp4" />
+          <source src={HERO_VIDEO_SRC} type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 gradient-kz-hero" />
@@ -42,16 +41,18 @@ export function Hero() {
         <div className="absolute right-0 top-1/3 bottom-1/3 w-1 bg-gradient-to-b from-transparent via-kz-gold/50 to-transparent" />
       </div>
 
-      <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10">
+      <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10 pb-28 sm:pb-32 lg:pb-36 translate-y-[1cm]">
         <motion.div style={{ opacity }} className="max-w-3xl flex-1">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6"
+            className="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 max-w-full sm:max-w-2xl px-3 sm:px-4 py-2 rounded-full glass mb-6"
           >
-            <div className="w-2 h-2 rounded-full bg-kz-blue animate-pulse" />
-            <span className="text-sm sm:text-base font-medium text-white/90">{t("hero.eyebrow")}</span>
+            <div className="w-2 h-2 rounded-full bg-kz-blue animate-pulse shrink-0" />
+            <span className="text-[11px] sm:text-xs md:text-sm font-medium text-white/90 leading-snug text-balance">
+              {t("hero.eyebrow")}
+            </span>
           </motion.div>
 
           <motion.h1
@@ -86,10 +87,15 @@ export function Hero() {
               {t("hero.exploreTreatments")}
             </a>
             <a
-              href="tel:1717"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white glass rounded-xl hover:bg-white/15 transition-all"
+              href="#procedures"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToProcedures();
+              }}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white glass rounded-xl hover:bg-white/15 transition-all border border-white/20"
             >
-              {t("hero.contactExpert")}
+              <MapPin className="w-4 h-4 text-kz-gold" />
+              {t("citySelection.badge")}
             </a>
           </motion.div>
 
@@ -150,19 +156,21 @@ export function Hero() {
         </motion.div>
       </div>
 
+      <CallCenterBanner embedded />
+
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.2 }}
-        onClick={scrollToContent}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors group cursor-pointer"
+        onClick={scrollToProcedures}
+        className="absolute bottom-[4.5rem] sm:bottom-[5rem] lg:bottom-[5.25rem] left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer"
         aria-label={t("hero.scrollDown")}
       >
-        <span className="text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
+        <span className="text-[10px] sm:text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2 group-hover:border-kz-blue/60 transition-colors"
+          className="w-5 h-8 rounded-full border-2 border-white/40 flex items-start justify-center p-1.5 group-hover:border-kz-blue/60 transition-colors"
         >
           <motion.div
             animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}

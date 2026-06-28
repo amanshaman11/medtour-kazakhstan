@@ -1,0 +1,322 @@
+{
+  "cardio-checkup": {
+    "name": "Kardiologik tekshiruv",
+    "description": "Akreditatsiyalangan hamkor klinikalarda EKG, qon tahlili va mutaxassis konsultatsiyasini o'z ichiga olgan keng qamrovli yurak-qon tomir tekshiruvi.",
+    "summary": "Akreditatsiyalangan hamkor klinikalarda EKG, qon tahlili va mutaxassis konsultatsiyasini o'z ichiga olgan keng qamrovli yurak-qon tomir t…"
+  },
+  "full-body-ct-checkup": {
+    "name": "To'liq tana KT tekshiruvi",
+    "description": "Radiolog xulosasi bilan butun organizm salomatligini baholash uchun kengaytirilgan KT diagnostika paketi.",
+    "summary": "Radiolog xulosasi bilan butun organizm salomatligini baholash uchun kengaytirilgan KT diagnostika paketi."
+  },
+  "full-body-mri-checkup": {
+    "name": "To'liq tana MRT tekshiruvi",
+    "description": "Asosiy organ tizimlarini qamrab oluvchi yuqori aniqlikdagi MRT skrining paketi.",
+    "summary": "Asosiy organ tizimlarini qamrab oluvchi yuqori aniqlikdagi MRT skrining paketi."
+  },
+  "womens-checkup": {
+    "name": "Ayollar salomatligi tekshiruvi",
+    "description": "Ayollar uchun ginekologik ko'rik, UTT va laboratoriya skriningi.",
+    "summary": "Ayollar uchun ginekologik ko'rik, UTT va laboratoriya skriningi."
+  },
+  "mens-checkup": {
+    "name": "Erkaklar salomatligi tekshiruvi",
+    "description": "Erkaklar uchun urologik va umumiy tibbiy tekshiruv paketi.",
+    "summary": "Erkaklar uchun urologik va umumiy tibbiy tekshiruv paketi."
+  },
+  "executive-checkup": {
+    "name": "Premium salomatlik tekshiruvi",
+    "description": "Kengaytirilgan diagnostika va mutaxassislar ko'rigi bilan ko'p kunlik skrining dasturi.",
+    "summary": "Kengaytirilgan diagnostika va mutaxassislar ko'rigi bilan ko'p kunlik skrining dasturi."
+  },
+  "ct-head": {
+    "name": "Bosh KT",
+    "description": "Miya va bosh suyagining kompyuter tomografiyasi, mutaxassis talqini bilan.",
+    "summary": "Miya va bosh suyagining kompyuter tomografiyasi, mutaxassis talqini bilan."
+  },
+  "ct-chest": {
+    "name": "Ko'krak qafasi KT",
+    "description": "O'pka, yurak va mediastenumni baholash uchun ko'krak qafasi KT.",
+    "summary": "O'pka, yurak va mediastenumni baholash uchun ko'krak qafasi KT."
+  },
+  "ct-abdomen": {
+    "name": "Qorin bo'shlig'i KT",
+    "description": "Jigar, buyrak, oshqozon osti bezi va hazm a'zolarini baholash uchun qorin bo'shlig'i KT.",
+    "summary": "Jigar, buyrak, oshqozon osti bezi va hazm a'zolarini baholash uchun qorin bo'shlig'i KT."
+  },
+  "ct-full-body": {
+    "name": "To'liq tana KT",
+    "description": "Boshdan tos suyagigacha kompleks KT tekshiruvi.",
+    "summary": "Boshdan tos suyagigacha kompleks KT tekshiruvi."
+  },
+  "ct-angiography": {
+    "name": "KT angiografiya",
+    "description": "Qon tomirlarini baholash uchun kontrastli KT.",
+    "summary": "Qon tomirlarini baholash uchun kontrastli KT."
+  },
+  "mri-brain": {
+    "name": "Miya MRT",
+    "description": "Miyaning yuqori aniqlikdagi magnit-rezonans tomografiyasi.",
+    "summary": "Miyaning yuqori aniqlikdagi magnit-rezonans tomografiyasi."
+  },
+  "mri-spine": {
+    "name": "Umurtqa pog'onasi MRT",
+    "description": "Bo'yin, ko'krak yoki bel bo'limi umurtqa pog'onasining MRT tekshiruvi.",
+    "summary": "Bo'yin, ko'krak yoki bel bo'limi umurtqa pog'onasining MRT tekshiruvi."
+  },
+  "mri-joint": {
+    "name": "Bo'g'im MRT",
+    "description": "Tizza, yelka, son yoki boshqa bo'g'imning MRT tekshiruvi.",
+    "summary": "Tizza, yelka, son yoki boshqa bo'g'imning MRT tekshiruvi."
+  },
+  "mri-full-body": {
+    "name": "To'liq tana MRT",
+    "description": "Kompleks MRT skrining paketi.",
+    "summary": "Kompleks MRT skrining paketi."
+  },
+  "mri-cardiac": {
+    "name": "Yurak MRT",
+    "description": "Yurak tuzilishi va funksiyasini baholash uchun ixtisoslashtirilgan MRT.",
+    "summary": "Yurak tuzilishi va funksiyasini baholash uchun ixtisoslashtirilgan MRT."
+  },
+  "us-abdomen": {
+    "name": "Qorin bo'shlig'i UTT",
+    "description": "Qorin bo'shlig'i a'zolarining ultratovush tekshiruvi.",
+    "summary": "Qorin bo'shlig'i a'zolarining ultratovush tekshiruvi."
+  },
+  "us-thyroid": {
+    "name": "Qalqonsimon bez UTT",
+    "description": "Qalqonsimon bez va bo'yin tuzilmalarining ultratovush tekshiruvi.",
+    "summary": "Qalqonsimon bez va bo'yin tuzilmalarining ultratovush tekshiruvi."
+  },
+  "us-pregnancy": {
+    "name": "Homiladorlik UTT",
+    "description": "Homiladorlikning turli bosqichlarida akusherlik ultratovushi.",
+    "summary": "Homiladorlikning turli bosqichlarida akusherlik ultratovushi."
+  },
+  "us-doppler": {
+    "name": "Doppler UTT",
+    "description": "Qon oqimini baholash bilan tomir ultratovushi.",
+    "summary": "Qon oqimini baholash bilan tomir ultratovushi."
+  },
+  "us-heart": {
+    "name": "Exokardiografiya",
+    "description": "Yurakning ultratovush tekshiruvi.",
+    "summary": "Yurakning ultratovush tekshiruvi."
+  },
+  "dental-implant": {
+    "name": "Tish implantati",
+    "description": "Hamkor stomatologiya klinikalarida toj bilan bitta tish implantati.",
+    "summary": "Hamkor stomatologiya klinikalarida toj bilan bitta tish implantati."
+  },
+  "dental-crown": {
+    "name": "Tish toji",
+    "description": "Keramik yoki sirkoniy tojni o'rnatish.",
+    "summary": "Keramik yoki sirkoniy tojni o'rnatish."
+  },
+  "teeth-whitening": {
+    "name": "Tishlarni oqartirish",
+    "description": "Klinikada professional tishlarni oqartirish.",
+    "summary": "Klinikada professional tishlarni oqartirish."
+  },
+  "dental-cleaning": {
+    "name": "Professional tish tozalash",
+    "description": "Ultratovush tozalash va polishing.",
+    "summary": "Ultratovush tozalash va polishing."
+  },
+  "root-canal": {
+    "name": "Ildiz kanallarini davolash",
+    "description": "Tish pulpasining infeksiyasi uchun endodontik davolash.",
+    "summary": "Tish pulpasining infeksiyasi uchun endodontik davolash."
+  },
+  "xray-chest": {
+    "name": "Ko'krak qafasi rentgeni",
+    "description": "Ko'krak qafasining standart to'g'ri proyeksiyadagi rentgenogrammasi.",
+    "summary": "Ko'krak qafasining standart to'g'ri proyeksiyadagi rentgenogrammasi."
+  },
+  "xray-spine": {
+    "name": "Umurtqa pog'onasi rentgeni",
+    "description": "Umurtqa pog'onasi bo'limlarining rentgenologik tekshiruvi.",
+    "summary": "Umurtqa pog'onasi bo'limlarining rentgenologik tekshiruvi."
+  },
+  "xray-dental": {
+    "name": "Stomatologik rentgen",
+    "description": "Panoramik yoki nuqtaviy stomatologik rentgen.",
+    "summary": "Panoramik yoki nuqtaviy stomatologik rentgen."
+  },
+  "xray-joint": {
+    "name": "Bo'g'im rentgeni",
+    "description": "Yirik bo'g'imlarning rentgenologik tekshiruvi.",
+    "summary": "Yirik bo'g'imlarning rentgenologik tekshiruvi."
+  },
+  "therapeutic-massage": {
+    "name": "Davolash massaji",
+    "description": "Og'riqni kamaytirish va tiklanish uchun tibbiy massaj.",
+    "summary": "Og'riqni kamaytirish va tiklanish uchun tibbiy massaj."
+  },
+  "sports-massage": {
+    "name": "Sport massaji",
+    "description": "Sportchilar va faol tiklanish uchun massaj.",
+    "summary": "Sportchilar va faol tiklanish uchun massaj."
+  },
+  "lymphatic-massage": {
+    "name": "Limfodrenaj massaji",
+    "description": "Shishni kamaytirish va qon aylanishini yaxshilash uchun yumshoq massaj.",
+    "summary": "Shishni kamaytirish va qon aylanishini yaxshilash uchun yumshoq massaj."
+  },
+  "recovery-massage": {
+    "name": "Davolashdan keyingi tiklanish massaji",
+    "description": "Tibbiy turizm tiklanish davri uchun moslashtirilgan massaj.",
+    "summary": "Tibbiy turizm tiklanish davri uchun moslashtirilgan massaj."
+  },
+  "ecg": {
+    "name": "Elektrokardiogramma (EKG)",
+    "description": "Yurak ritmi va elektr faolligini qayd etish.",
+    "summary": "Yurak ritmi va elektr faolligini qayd etish."
+  },
+  "holter-monitor": {
+    "name": "24 soatlik Xolter monitoringi",
+    "description": "24 soat davomida uzluksiz kardiologik kuzatuv.",
+    "summary": "24 soat davomida uzluksiz kardiologik kuzatuv."
+  },
+  "spirometry": {
+    "name": "Spirometriya",
+    "description": "Nafas olish tizimini baholash uchun o'pka funksiyasi tekshiruvi.",
+    "summary": "Nafas olish tizimini baholash uchun o'pka funksiyasi tekshiruvi."
+  },
+  "stress-test": {
+    "name": "Yurak stress-testi",
+    "description": "Yurakka yuklama yoki farmakologik stress-test.",
+    "summary": "Yurakka yuklama yoki farmakologik stress-test."
+  },
+  "iv-therapy": {
+    "name": "Vena ichiga terapiya",
+    "description": "Vena ichiga vitamin va infuzion terapiya.",
+    "summary": "Vena ichiga vitamin va infuzion terapiya."
+  },
+  "injection-therapy": {
+    "name": "In'ektsion terapiya",
+    "description": "Mushak ichiga yoki teri ostiga tibbiy in'ektsiyalar.",
+    "summary": "Mushak ichiga yoki teri ostiga tibbiy in'ektsiyalar."
+  },
+  "wound-dressing": {
+    "name": "Yara bog'lash",
+    "description": "Professional yara parvarishi va bog'lama almashtirish.",
+    "summary": "Professional yara parvarishi va bog'lama almashtirish."
+  },
+  "medical-certificate": {
+    "name": "Tibbiy ma'lumotnoma",
+    "description": "Ish yoki o'qish uchun rasmiy tibbiy ma'lumotnoma.",
+    "summary": "Ish yoki o'qish uchun rasmiy tibbiy ma'lumotnoma."
+  },
+  "fitness-certificate": {
+    "name": "Sportga yaroqlilik ma'lumotnomasi",
+    "description": "Sport va fitnes mashg'ulotlariga ruxsat beruvchi tibbiy xulosa.",
+    "summary": "Sport va fitnes mashg'ulotlariga ruxsat beruvchi tibbiy xulosa."
+  },
+  "travel-medical-cert": {
+    "name": "Sayohat uchun tibbiy ma'lumotnoma",
+    "description": "Xalqaro sayohat uchun tibbiy hujjatlar.",
+    "summary": "Xalqaro sayohat uchun tibbiy hujjatlar."
+  },
+  "cardio-consultation": {
+    "name": "Kardiolog konsultatsiyasi",
+    "description": "Kardiolog mutaxassisining konsultatsiyasi.",
+    "summary": "Kardiolog mutaxassisining konsultatsiyasi."
+  },
+  "echo-cardiogram": {
+    "name": "Exokardiogramma",
+    "description": "Kardiolog bahosi bilan yurakning ultratovush tekshiruvi.",
+    "summary": "Kardiolog bahosi bilan yurakning ultratovush tekshiruvi."
+  },
+  "gyno-consultation": {
+    "name": "Ginekolog konsultatsiyasi",
+    "description": "Ginekolog mutaxassisining konsultatsiyasi.",
+    "summary": "Ginekolog mutaxassisining konsultatsiyasi."
+  },
+  "pap-smear": {
+    "name": "Pap-test (sitolologiya)",
+    "description": "Bachadon bo'yni skriningi uchun sitologik tahlil.",
+    "summary": "Bachadon bo'yni skriningi uchun sitologik tahlil."
+  },
+  "neuro-consultation": {
+    "name": "Nevrolog konsultatsiyasi",
+    "description": "Nevrolog mutaxassisining konsultatsiyasi.",
+    "summary": "Nevrolog mutaxassisining konsultatsiyasi."
+  },
+  "eeg": {
+    "name": "EEG (elektroensefalografiya)",
+    "description": "Miya elektr faolligini qayd etish.",
+    "summary": "Miya elektr faolligini qayd etish."
+  },
+  "ortho-consultation": {
+    "name": "Ortoped konsultatsiyasi",
+    "description": "Suyak va bo'g'im kasalliklari bo'yicha konsultatsiya.",
+    "summary": "Suyak va bo'g'im kasalliklari bo'yicha konsultatsiya."
+  },
+  "joint-injection": {
+    "name": "Bo'g'imga in'ektsiya",
+    "description": "Bo'g'im og'rig'i va yallig'lanishi uchun davolash in'ektsiyasi.",
+    "summary": "Bo'g'im og'rig'i va yallig'lanishi uchun davolash in'ektsiyasi."
+  },
+  "eye-exam": {
+    "name": "Kompleks ko'z tekshiruvi",
+    "description": "To'liq oftalmologik tekshiruv.",
+    "summary": "To'liq oftalmologik tekshiruv."
+  },
+  "lasik-consultation": {
+    "name": "LASIK konsultatsiyasi",
+    "description": "Lazer ko'rishni tuzatish oldidan oldindan tekshiruv.",
+    "summary": "Lazer ko'rishni tuzatish oldidan oldindan tekshiruv."
+  },
+  "urology-consultation": {
+    "name": "Urolog konsultatsiyasi",
+    "description": "Urolog mutaxassisining konsultatsiyasi.",
+    "summary": "Urolog mutaxassisining konsultatsiyasi."
+  },
+  "prostate-screening": {
+    "name": "Prostata skriningi",
+    "description": "PSA tahlili va prostata ultratovushi.",
+    "summary": "PSA tahlili va prostata ultratovushi."
+  },
+  "general-surgery-consult": {
+    "name": "Jarroh konsultatsiyasi",
+    "description": "Operatsiyadan oldingi jarrohlik konsultatsiyasi.",
+    "summary": "Operatsiyadan oldingi jarrohlik konsultatsiyasi."
+  },
+  "hernia-repair": {
+    "name": "Chanoq tanasini tuzatish operatsiyasi",
+    "description": "Chanoq yoki qorin bo'shlig'i tanasini jarrohlik bilan davolash.",
+    "summary": "Chanoq yoki qorin bo'shlig'i tanasini jarrohlik bilan davolash."
+  },
+  "pediatric-consultation": {
+    "name": "Pediatr konsultatsiyasi",
+    "description": "Pediatr mutaxassisining konsultatsiyasi.",
+    "summary": "Pediatr mutaxassisining konsultatsiyasi."
+  },
+  "child-vaccination": {
+    "name": "Bolalar emlashi",
+    "description": "Bolalarning rejalashtirilgan emlanishi.",
+    "summary": "Bolalarning rejalashtirilgan emlanishi."
+  },
+  "dermatology-consultation": {
+    "name": "Dermatolog konsultatsiyasi",
+    "description": "Teri holatini baholash va davolash rejasini tuzish.",
+    "summary": "Teri holatini baholash va davolash rejasini tuzish."
+  },
+  "skin-biopsy": {
+    "name": "Teri biopsiyasi",
+    "description": "Teri o'zgarishini gistologik tekshirish uchun kichik protsedura.",
+    "summary": "Teri o'zgarishini gistologik tekshirish uchun kichik protsedura."
+  },
+  "endocrinology-consultation": {
+    "name": "Endokrinolog konsultatsiyasi",
+    "description": "Gormonal va metabolik buzilishlar bo'yicha konsultatsiya.",
+    "summary": "Gormonal va metabolik buzilishlar bo'yicha konsultatsiya."
+  },
+  "thyroid-panel": {
+    "name": "Qalqonsimon bez tekshiruvi",
+    "description": "Qalqonsimon bez funksiyasi uchun qon tahlili va ultratovush.",
+    "summary": "Qalqonsimon bez funksiyasi uchun qon tahlili va ultratovush."
+  }
+}

@@ -27,7 +27,7 @@ export function LanguageSelector({ light = false }: { light?: boolean }) {
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen((o) => !o)}
-        className={`flex items-center gap-1.5 px-2.5 py-2 rounded-lg text-[12px] xl:text-[13px] font-medium whitespace-nowrap leading-none transition-colors shrink-0 ${
+        className={`flex items-center gap-1.5 h-10 sm:h-11 px-2.5 sm:px-3 rounded-lg text-[13px] sm:text-[14px] font-medium whitespace-nowrap transition-colors shrink-0 ${
           light
             ? "text-white/80 hover:text-white hover:bg-white/10"
             : "text-navy-700 hover:bg-surface border border-border"

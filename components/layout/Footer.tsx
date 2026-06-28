@@ -1,34 +1,36 @@
 "use client";
 
+import Link from "next/link";
 import { HeartPulse, Mail, MapPin, Building2, Hotel, Plane, Compass, Globe } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
+import { homeHref } from "@/lib/utils/routes";
 
 const footerColumns = [
   {
     titleKey: "footer.platform",
     links: [
-      { key: "footer.hospitalSearch", href: "#search" },
-      { key: "footer.treatmentCategories", href: "#treatments" },
-      { key: "footer.partnerHospitals", href: "#search" },
-      { key: "footer.medicalPackages", href: "#packages" },
+      { key: "footer.hospitalSearch", href: homeHref("#search") },
+      { key: "footer.treatmentCategories", href: homeHref("#treatments") },
+      { key: "footer.medicalProcedures", href: homeHref("#procedures") },
+      { key: "footer.medicalPackages", href: homeHref("#packages") },
     ],
   },
   {
     titleKey: "footer.services",
     links: [
-      { key: "footer.hotels", href: "#hotels" },
-      { key: "footer.tourism", href: "#city-selection" },
-      { key: "nav.concierge", href: "#concierge" },
+      { key: "footer.hotels", href: homeHref("#hotels") },
+      { key: "footer.tourism", href: homeHref("#city-selection") },
+      { key: "nav.concierge", href: homeHref("#concierge") },
       { key: "footer.contactCenterLink", href: "tel:1717" },
     ],
   },
   {
     titleKey: "footer.company",
     links: [
-      { key: "footer.about", href: "#" },
-      { key: "footer.howItWorks", href: "#how-it-works" },
-      { key: "footer.why", href: "#why-kazakhstan" },
-      { key: "footer.partnerWithUs", href: "#" },
+      { key: "footer.about", href: "/" },
+      { key: "footer.howItWorks", href: homeHref("#how-it-works") },
+      { key: "footer.why", href: homeHref("#why-kazakhstan") },
+      { key: "footer.partnerWithUs", href: "/" },
     ],
   },
 ];
@@ -62,12 +64,12 @@ export function Footer() {
 
         <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-10">
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2.5 mb-5">
+            <Link href="/" className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-lg bg-gradient-kz flex items-center justify-center">
                 <HeartPulse className="w-[18px] h-[18px] text-white" />
               </div>
               <span className="text-white font-semibold text-[15px]">MedTour Kazakhstan</span>
-            </a>
+            </Link>
             <p className="text-[13px] text-white/55 leading-relaxed max-w-xs mb-6">
               {t("footer.tagline")}
             </p>
@@ -92,12 +94,12 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.key}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-[13px] text-white/55 hover:text-kz-blue-light transition-colors"
                     >
                       {t(link.key)}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -110,15 +112,15 @@ export function Footer() {
             © {new Date().getFullYear()} MedTour Kazakhstan. {t("footer.rights")}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-[12px] text-white/50 hover:text-white transition-colors">
+            <Link href="/" className="text-[12px] text-white/50 hover:text-white transition-colors">
               {t("footer.privacy")}
-            </a>
-            <a href="#" className="text-[12px] text-white/50 hover:text-white transition-colors">
+            </Link>
+            <Link href="/" className="text-[12px] text-white/50 hover:text-white transition-colors">
               {t("footer.terms")}
-            </a>
-            <a href="#" className="text-[12px] text-white/50 hover:text-white transition-colors">
+            </Link>
+            <Link href="/" className="text-[12px] text-white/50 hover:text-white transition-colors">
               {t("footer.disclaimer")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

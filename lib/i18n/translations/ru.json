@@ -7,7 +7,9 @@
     "packages": "Пакеты",
     "contact": "Контакты",
     "concierge": "Медицинский консьерж",
-    "findTreatment": "Подобрать лечение"
+    "findTreatment": "Подобрать лечение",
+    "procedures": "Процедуры",
+    "menu": "Меню"
   },
   "common": {
     "est": "Ориент."
@@ -19,7 +21,7 @@
   },
   "hero": {
     "kazakhstan": "Казахстан",
-    "eyebrow": "Ведущее направление медицинского туризма в Центральной Азии",
+    "eyebrow": "Ведущее направление медтуризма в Центральной Азии",
     "title": "Откройте для себя первоклассное здравоохранение в сердце Центральной Азии",
     "subtitle": "Получите высококачественную медицинскую помощь, открывая для себя одно из самых быстроразвивающихся направлений мира.",
     "exploreTreatments": "Изучить лечение",
@@ -53,20 +55,47 @@
       "almaty": {
         "name": "Алматы",
         "description": "Крупнейший город Казахстана у подножия гор Алатау, сочетающий передовое здравоохранение с природной красотой.",
-        "strengths": ["Кардиохирургия", "ЭКО и репродукция", "Пластическая хирургия", "Ортопедия"],
-        "attractions": ["Каток Медео", "Гора Кок-Тобе", "Парк Панфилова"]
+        "strengths": [
+          "Кардиохирургия",
+          "ЭКО и репродукция",
+          "Пластическая хирургия",
+          "Ортопедия"
+        ],
+        "attractions": [
+          "Каток Медео",
+          "Гора Кок-Тобе",
+          "Парк Панфилова"
+        ]
       },
       "astana": {
         "name": "Астана",
         "description": "Современная столица с футуристической архитектурой и самыми передовыми медицинскими учреждениями Казахстана.",
-        "strengths": ["Нейрохирургия", "Онкология", "Кардиология", "Продвинутая диагностика"],
-        "attractions": ["Башня Байтерек", "Экспо-сити", "Дворец мира"]
+        "strengths": [
+          "Нейрохирургия",
+          "Онкология",
+          "Кардиология",
+          "Продвинутая диагностика"
+        ],
+        "attractions": [
+          "Башня Байтерек",
+          "Экспо-сити",
+          "Дворец мира"
+        ]
       },
       "shymkent": {
         "name": "Шымкент",
         "description": "Исторический город на Великом шёлковом пути, предлагающий отличную медицинскую помощь с доступом к природе и культурному наследию.",
-        "strengths": ["Общая хирургия", "Стоматология", "Диагностика", "Семейная медицина"],
-        "attractions": ["Древний город Сайрам", "Заповедник Аксу-Жабаглы", "Парк Арборетум"]
+        "strengths": [
+          "Общая хирургия",
+          "Стоматология",
+          "Диагностика",
+          "Семейная медицина"
+        ],
+        "attractions": [
+          "Древний город Сайрам",
+          "Заповедник Аксу-Жабаглы",
+          "Парк Арборетум"
+        ]
       }
     }
   },
@@ -80,8 +109,8 @@
         "description": "Экономьте 40-60% по сравнению с западными странами, получая тот же уровень качества. Прозрачные цены без скрытых расходов гарантируют, что вы точно знаете, чего ожидать."
       },
       "specialists": {
-        "title": "Высококвалифицированные специалисты",
-        "description": "Наши партнёрские больницы нанимают врачей, обученных в ведущих международных учреждениях, многие с десятилетиями специализированного опыта и международными сертификациями."
+        "title": "Квалифицированные специалисты",
+        "description": "Врачи партнёрских клиник проходили обучение в ведущих международных центрах и имеют многолетний опыт в своих специальностях."
       },
       "equipment": {
         "title": "Современное медицинское оборудование",
@@ -128,14 +157,30 @@
     "subtitle": "Мы сотрудничаем с международно признанными и национально аккредитованными медицинскими учреждениями по всему Казахстану.",
     "visit": "Перейти на сайт",
     "items": {
-      "heart-center-umc": { "focus": "Ведущий центр кардиохирургии в Центральной Азии" },
-      "national-hospital": { "focus": "Многопрофильная помощь с международной службой для пациентов" },
-      "nnmc": { "focus": "Высокотехнологичная кардиохирургия, нейрохирургия и аритмология" },
-      "syzganov": { "focus": "Национальный научный центр передовой хирургии" },
-      "umc-fund": { "focus": "Более 1000 коек: центры сердца, матери и ребёнка, диагностики" },
-      "shymkent-heart": { "focus": "Специализированная кардиология и кардиохирургия с 2000 года" },
-      "mediker": { "focus": "Международный отдел с англоязычными специалистами" },
-      "alanda": { "focus": "Современный многопрофильный центр со стационаром" }
+      "heart-center-umc": {
+        "focus": "Ведущий центр кардиохирургии в Центральной Азии"
+      },
+      "national-hospital": {
+        "focus": "Многопрофильная помощь с международной службой для пациентов"
+      },
+      "nnmc": {
+        "focus": "Высокотехнологичная кардиохирургия, нейрохирургия и аритмология"
+      },
+      "syzganov": {
+        "focus": "Национальный научный центр передовой хирургии"
+      },
+      "umc-fund": {
+        "focus": "Более 1000 коек: центры сердца, матери и ребёнка, диагностики"
+      },
+      "shymkent-heart": {
+        "focus": "Специализированная кардиология и кардиохирургия с 2000 года"
+      },
+      "mediker": {
+        "focus": "Международный отдел с англоязычными специалистами"
+      },
+      "alanda": {
+        "focus": "Современный многопрофильный центр со стационаром"
+      }
     }
   },
   "trust": {
@@ -143,12 +188,30 @@
     "title": "Построено на доверии и прозрачности",
     "subtitle": "Каждый этап вашего лечения подкреплён проверенными стандартами и заботой о пациенте.",
     "items": {
-      "accredited": { "title": "Аккредитация JCI и национальная", "desc": "Партнёрские больницы соответствуют международным и национальным стандартам качества и безопасности." },
-      "pricing": { "title": "Прозрачные цены", "desc": "Ориентировочные диапазоны заранее. Итоговая стоимость подтверждается после консультации." },
-      "multilingual": { "title": "Многоязычная координация", "desc": "Профессиональные переводчики и координаторы на 8 языках." },
-      "privacy": { "title": "Конфиденциальность данных", "desc": "Ваши медицинские данные обрабатываются строго конфиденциально." },
-      "patientFirst": { "title": "Пациент на первом месте", "desc": "Персональные координаторы ведут вас от запроса до восстановления." },
-      "network": { "title": "Глобальная сеть пациентов", "desc": "Обслуживаем пациентов из США, Европы, СНГ и Ближнего Востока." }
+      "accredited": {
+        "title": "Аккредитация JCI и национальная",
+        "desc": "Партнёрские больницы соответствуют международным и национальным стандартам качества и безопасности."
+      },
+      "pricing": {
+        "title": "Прозрачные цены",
+        "desc": "Ориентировочные диапазоны заранее. Итоговая стоимость подтверждается после консультации."
+      },
+      "multilingual": {
+        "title": "Многоязычная координация",
+        "desc": "Профессиональные переводчики и координаторы на 8 языках."
+      },
+      "privacy": {
+        "title": "Конфиденциальность данных",
+        "desc": "Ваши медицинские данные обрабатываются строго конфиденциально."
+      },
+      "patientFirst": {
+        "title": "Пациент на первом месте",
+        "desc": "Персональные координаторы ведут вас от запроса до восстановления."
+      },
+      "network": {
+        "title": "Глобальная сеть пациентов",
+        "desc": "Обслуживаем пациентов из США, Европы, СНГ и Ближнего Востока."
+      }
     }
   },
   "why": {
@@ -156,10 +219,22 @@
     "title": "Лучшее направление для медицинского туризма",
     "subtitle": "Казахстан предлагает медицинскую инфраструктуру мирового уровня, конкурентные цены и гостеприимную среду для международных пациентов из США, Европы, СНГ и Ближнего Востока.",
     "cards": {
-      "recognized": { "title": "Международно признанные больницы", "desc": "Учреждения с аккредитацией JCI и сертификатом ISO, современным оборудованием, опытными специалистами и международными стандартами качества." },
-      "affordable": { "title": "Доступная медицина", "desc": "Экономия 40–60% по сравнению с США и Западной Европой при сопоставимых клинических результатах и премиальном уходе." },
-      "fast": { "title": "Быстрый доступ к специалистам", "desc": "Без долгих очередей. Запись на консультации и процедуры в течение нескольких дней через нашу систему бронирования." },
-      "packages": { "title": "Пакеты медицинского туризма", "desc": "Пакеты «всё включено»: лечение, проживание, трансферы, перевод и поддержка в восстановлении одним бронированием." }
+      "recognized": {
+        "title": "Международно признанные больницы",
+        "desc": "Учреждения с аккредитацией JCI и сертификатом ISO, современным оборудованием, опытными специалистами и международными стандартами качества."
+      },
+      "affordable": {
+        "title": "Доступная медицина",
+        "desc": "Экономия 40–60% по сравнению с США и Западной Европой при сопоставимых клинических результатах и премиальном уходе."
+      },
+      "fast": {
+        "title": "Быстрый доступ к специалистам",
+        "desc": "Без долгих очередей. Запись на консультации и процедуры в течение нескольких дней через нашу систему бронирования."
+      },
+      "packages": {
+        "title": "Пакеты медицинского туризма",
+        "desc": "Пакеты «всё включено»: лечение, проживание, трансферы, перевод и поддержка в восстановлении одним бронированием."
+      }
     }
   },
   "platform": {
@@ -167,14 +242,38 @@
     "title": "Одна платформа для всего",
     "subtitle": "MedTour Kazakhstan объединяет все этапы вашего лечения — от выбора больницы до наблюдения после процедуры — в единой согласованной экосистеме.",
     "features": {
-      "search": { "title": "Поиск больниц", "desc": "Аккредитованные больницы в Алматы, Астане и Шымкенте." },
-      "comparison": { "title": "Сравнение лечения", "desc": "Сравнивайте процедуры, специалистов и прозрачные цены рядом." },
-      "accommodation": { "title": "Бронирование жилья", "desc": "Удобные для восстановления отели рядом с выбранной клиникой." },
-      "transfers": { "title": "Трансферы из аэропорта", "desc": "Организованная встреча и проводы — от прилёта до вылета." },
-      "translation": { "title": "Услуги перевода", "desc": "Профессиональные медицинские переводчики на 5+ языках." },
-      "visa": { "title": "Помощь с визой", "desc": "Сопровождение по требованиям к медицинской визе и документам." },
-      "tourism": { "title": "Туристические пакеты", "desc": "Подобранные местные впечатления в период восстановления." },
-      "support": { "title": "Поддержка 24/7", "desc": "Круглосуточная координация через единый контакт-центр." }
+      "search": {
+        "title": "Поиск больниц",
+        "desc": "Аккредитованные больницы в Алматы, Астане и Шымкенте."
+      },
+      "comparison": {
+        "title": "Сравнение лечения",
+        "desc": "Сравнивайте процедуры, специалистов и прозрачные цены рядом."
+      },
+      "accommodation": {
+        "title": "Бронирование жилья",
+        "desc": "Удобные для восстановления отели рядом с выбранной клиникой."
+      },
+      "transfers": {
+        "title": "Трансферы из аэропорта",
+        "desc": "Организованная встреча и проводы — от прилёта до вылета."
+      },
+      "translation": {
+        "title": "Услуги перевода",
+        "desc": "Профессиональные медицинские переводчики на 5+ языках."
+      },
+      "visa": {
+        "title": "Помощь с визой",
+        "desc": "Сопровождение по требованиям к медицинской визе и документам."
+      },
+      "tourism": {
+        "title": "Туристические пакеты",
+        "desc": "Подобранные местные впечатления в период восстановления."
+      },
+      "support": {
+        "title": "Поддержка 24/7",
+        "desc": "Круглосуточная координация через единый контакт-центр."
+      }
     }
   },
   "search": {
@@ -312,12 +411,36 @@
   },
   "treatmentCats": {
     "search": "Поиск",
-    "dentistry": { "name": "Стоматология", "desc": "Импланты, виниры, полное восстановление и эстетическая стоматология", "procedures": "45+ процедур" },
-    "ivf": { "name": "ЭКО", "desc": "Лечение бесплодия с ведущими специалистами репродуктивной медицины", "procedures": "12+ программ" },
-    "cardiology": { "name": "Кардиология", "desc": "Операции на сердце, стенты, шунтирование и кардиореабилитация", "procedures": "30+ процедур" },
-    "orthopedics": { "name": "Ортопедия", "desc": "Замена суставов, хирургия позвоночника и спортивная медицина", "procedures": "25+ процедур" },
-    "plasticSurgery": { "name": "Пластическая хирургия", "desc": "Эстетическая и реконструктивная хирургия у сертифицированных хирургов", "procedures": "40+ процедур" },
-    "checkups": { "name": "Профилактические чек-апы", "desc": "Комплексные обследования и программы корпоративного здоровья", "procedures": "20+ пакетов" }
+    "dentistry": {
+      "name": "Стоматология",
+      "desc": "Импланты, виниры, полное восстановление и эстетическая стоматология",
+      "procedures": "45+ процедур"
+    },
+    "ivf": {
+      "name": "ЭКО",
+      "desc": "Лечение бесплодия с ведущими специалистами репродуктивной медицины",
+      "procedures": "12+ программ"
+    },
+    "cardiology": {
+      "name": "Кардиология",
+      "desc": "Операции на сердце, стенты, шунтирование и кардиореабилитация",
+      "procedures": "30+ процедур"
+    },
+    "orthopedics": {
+      "name": "Ортопедия",
+      "desc": "Замена суставов, хирургия позвоночника и спортивная медицина",
+      "procedures": "25+ процедур"
+    },
+    "plasticSurgery": {
+      "name": "Пластическая хирургия",
+      "desc": "Эстетическая и реконструктивная хирургия у сертифицированных хирургов",
+      "procedures": "40+ процедур"
+    },
+    "checkups": {
+      "name": "Профилактические чек-апы",
+      "desc": "Комплексные обследования и программы корпоративного здоровья",
+      "procedures": "20+ пакетов"
+    }
   },
   "clinics": {
     "badge": "Избранные клиники",
@@ -349,12 +472,24 @@
       "recoveryMenu": "Меню для восстановления"
     },
     "items": {
-      "ritz-carlton-almaty": { "distance": "Башня Esentai, центральный деловой район" },
-      "ritz-carlton-astana": { "distance": "13 км от аэропорта, рядом с медицинским районом" },
-      "rixos-almaty": { "distance": "Центр города, рядом с крупными клиниками" },
-      "hilton-astana": { "distance": "Центр, рядом с медкампусом UMC" },
-      "holiday-inn-almaty": { "distance": "Недалеко от медицинских центров" },
-      "rixos-khadisha-shymkent": { "distance": "Центр города, рядом с медицинским районом" }
+      "ritz-carlton-almaty": {
+        "distance": "Башня Esentai, центральный деловой район"
+      },
+      "ritz-carlton-astana": {
+        "distance": "13 км от аэропорта, рядом с медицинским районом"
+      },
+      "rixos-almaty": {
+        "distance": "Центр города, рядом с крупными клиниками"
+      },
+      "hilton-astana": {
+        "distance": "Центр, рядом с медкампусом UMC"
+      },
+      "holiday-inn-almaty": {
+        "distance": "Недалеко от медицинских центров"
+      },
+      "rixos-khadisha-shymkent": {
+        "distance": "Центр города, рядом с медицинским районом"
+      }
     }
   },
   "travelPackages": {
@@ -451,10 +586,22 @@
     "title": "Ваш путь лечения в четыре шага",
     "subtitle": "От первого запроса до наблюдения после процедуры MedTour координирует каждую деталь.",
     "steps": {
-      "choose": { "title": "Выберите лечение", "desc": "Просмотрите категории лечения или найдите в каталоге нужную специальность и клинику." },
-      "recommend": { "title": "Получите рекомендации", "desc": "Наш консьерж подбирает клинику, проживание и пакеты под ваши требования." },
-      "book": { "title": "Забронируйте поездку", "desc": "Подтвердите пакет — лечение, отель, трансферы, переводчик и туризм в одном бронировании." },
-      "travel": { "title": "Приезжайте в Казахстан", "desc": "Приезжайте с полной поддержкой. Координатор организует встречу, приёмы и наблюдение." }
+      "choose": {
+        "title": "Выберите лечение",
+        "desc": "Просмотрите категории лечения или найдите в каталоге нужную специальность и клинику."
+      },
+      "recommend": {
+        "title": "Получите рекомендации",
+        "desc": "Наш консьерж подбирает клинику, проживание и пакеты под ваши требования."
+      },
+      "book": {
+        "title": "Забронируйте поездку",
+        "desc": "Подтвердите пакет — лечение, отель, трансферы, переводчик и туризм в одном бронировании."
+      },
+      "travel": {
+        "title": "Приезжайте в Казахстан",
+        "desc": "Приезжайте с полной поддержкой. Координатор организует встречу, приёмы и наблюдение."
+      }
     }
   },
   "contact": {
@@ -464,11 +611,26 @@
     "availability": "Доступно 24/7 · английский · русский · казахский · арабский · китайский",
     "call": "Звонок 1717",
     "features": {
-      "support": { "title": "Поддержка 24/7", "desc": "Круглосуточная помощь пациентам на 5 языках." },
-      "appointment": { "title": "Координация записи", "desc": "Запись на консультации, процедуры и повторные приёмы." },
-      "planning": { "title": "Планирование лечения", "desc": "Персональное планирование лечения и выбор пакета." },
-      "emergency": { "title": "Экстренная помощь", "desc": "Немедленная поддержка при срочных медицинских поездках." },
-      "interpreter": { "title": "Координация переводчиков", "desc": "Профессиональные медицинские переводчики по запросу." }
+      "support": {
+        "title": "Поддержка 24/7",
+        "desc": "Круглосуточная помощь пациентам на 5 языках."
+      },
+      "appointment": {
+        "title": "Координация записи",
+        "desc": "Запись на консультации, процедуры и повторные приёмы."
+      },
+      "planning": {
+        "title": "Планирование лечения",
+        "desc": "Персональное планирование лечения и выбор пакета."
+      },
+      "emergency": {
+        "title": "Экстренная помощь",
+        "desc": "Немедленная поддержка при срочных медицинских поездках."
+      },
+      "interpreter": {
+        "title": "Координация переводчиков",
+        "desc": "Профессиональные медицинские переводчики по запросу."
+      }
     }
   },
   "testimonials": {
@@ -476,12 +638,36 @@
     "title": "Нам доверяют пациенты по всему миру",
     "subtitle": "Международные пациенты из США, Европы, СНГ и Ближнего Востока делятся опытом MedTour.",
     "items": {
-      "1": { "country": "Великобритания", "treatment": "Зубные импланты", "quote": "MedTour сделал всё простым — от выбора клиники до брони отеля. Я сэкономила более 50% по сравнению с ценами Лондона и получила отличный уход в Premium Dental Center в Алматы." },
-      "2": { "country": "ОАЭ", "treatment": "Кардиопроцедура", "quote": "Контакт-центр организовал весь мой путь. Переводчик, трансферы и повторные приёмы — всё профессионально. Превосходный опыт." },
-      "3": { "country": "Россия", "treatment": "Лечение ЭКО", "quote": "Мы выбрали Казахстан для ЭКО, сравнив варианты по Европе. 7-дневный пакет включал всё необходимое. Команда Almaty IVF Institute превзошла наши ожидания." },
-      "4": { "country": "США", "treatment": "Ортопедическая операция", "quote": "Как американского пациента, меня впечатлили учреждения с аккредитацией JCI и прозрачные цены. Консьерж ответил на все вопросы ещё до бронирования билета." },
-      "5": { "country": "Казахстан", "treatment": "Рекомендация платформы", "quote": "Я порекомендовала MedTour своему двоюродному брату из Германии. Единая платформа позволила легко сравнить клиники, пакеты и проживание в одном месте." },
-      "6": { "country": "Италия", "treatment": "Пластическая хирургия", "quote": "Профессионально от начала до конца. 14-дневный пакет дал время восстановиться и посмотреть Астану. Я чувствовал поддержку на каждом шаге." }
+      "1": {
+        "country": "Великобритания",
+        "treatment": "Зубные импланты",
+        "quote": "MedTour сделал всё простым — от выбора клиники до брони отеля. Я сэкономила более 50% по сравнению с ценами Лондона и получила отличный уход в Premium Dental Center в Алматы."
+      },
+      "2": {
+        "country": "ОАЭ",
+        "treatment": "Кардиопроцедура",
+        "quote": "Контакт-центр организовал весь мой путь. Переводчик, трансферы и повторные приёмы — всё профессионально. Превосходный опыт."
+      },
+      "3": {
+        "country": "Россия",
+        "treatment": "Лечение ЭКО",
+        "quote": "Мы выбрали Казахстан для ЭКО, сравнив варианты по Европе. 7-дневный пакет включал всё необходимое. Команда Almaty IVF Institute превзошла наши ожидания."
+      },
+      "4": {
+        "country": "США",
+        "treatment": "Ортопедическая операция",
+        "quote": "Как американского пациента, меня впечатлили учреждения с аккредитацией JCI и прозрачные цены. Консьерж ответил на все вопросы ещё до бронирования билета."
+      },
+      "5": {
+        "country": "Казахстан",
+        "treatment": "Рекомендация платформы",
+        "quote": "Я порекомендовала MedTour своему двоюродному брату из Германии. Единая платформа позволила легко сравнить клиники, пакеты и проживание в одном месте."
+      },
+      "6": {
+        "country": "Италия",
+        "treatment": "Пластическая хирургия",
+        "quote": "Профессионально от начала до конца. 14-дневный пакет дал время восстановиться и посмотреть Астану. Я чувствовал поддержку на каждом шаге."
+      }
     }
   },
   "cta": {
@@ -531,6 +717,524 @@
       "hotels": "Размещение",
       "transportation": "Транспорт",
       "tourism": "Туризм"
+    },
+    "medicalProcedures": "Медицинские процедуры"
+  },
+  "callCenter": {
+    "badge": "24/7",
+    "title": "Круглосуточный международный медицинский колл-центр",
+    "callLabel": "Колл-центр",
+    "features": {
+      "booking": "Запись на приём",
+      "consultations": "Медицинские консультации",
+      "travel": "Помощь в поездке"
+    }
+  },
+  "procedures": {
+    "badge": "Медицинские процедуры",
+    "title": "Медицинские процедуры в Казахстане",
+    "subtitle": "Диагностика, лечение и оздоровление в партнёрских клиниках. Прозрачные цены в USD.",
+    "total": "Всего процедур",
+    "viewAll": "Все процедуры",
+    "viewAllCategories": "Все категории",
+    "bySpecialty": "Процедуры по специальностям",
+    "browseOther": "Другие категории",
+    "medicalProceduresIn": "Медицинские процедуры в",
+    "startingFrom": "от",
+    "estimatedPrice": "Ориентировочная цена",
+    "priceNote": "Примерная цена в USD по курсу KZT. Точная стоимость после консультации.",
+    "breadcrumb": {
+      "home": "Главная",
+      "all": "Все процедуры"
+    },
+    "form": {
+      "title": "Запросить консультацию",
+      "subtitle": "Наш международный медицинский координатор свяжется с вами с подробной информацией о процедуре, доступных клиниках и вариантах поездки.",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Электронная почта",
+      "phone": "Телефон",
+      "submit": "Запросить консультацию",
+      "sending": "Отправка…",
+      "successTitle": "Заявка получена",
+      "successMessage": "Спасибо. Наш координатор скоро свяжется с вами с деталями процедуры и следующими шагами.",
+      "coordinator": "Международный медицинский координатор",
+      "privacy": "Ваши данные конфиденциальны и передаются только координационной команде.",
+      "error": "Не удалось отправить заявку. Попробуйте снова или позвоните 1717."
+    },
+    "categories": {
+      "check-up": "Check-up",
+      "ct": "КТ",
+      "mri": "МРТ",
+      "ultrasound": "УЗИ",
+      "dentistry": "Стоматология",
+      "xray": "Рентген",
+      "massage": "Массаж",
+      "functional-diagnostics": "Функциональная диагностика",
+      "treatment-room": "Процедурная",
+      "certificates": "Справки",
+      "cardiology": "Кардиология",
+      "gynecology": "Гинекология",
+      "neurology": "Неврология",
+      "orthopedics": "Ортопедия",
+      "ophthalmology": "Офтальмология",
+      "urology": "Урология",
+      "surgery": "Хирургия",
+      "pediatrics": "Педиатрия",
+      "dermatology": "Дерматология",
+      "endocrinology": "Эндокринология"
+    },
+    "mainCategories": "Диагностика и оздоровление",
+    "categorySubtitle": "Выберите процедуру, чтобы увидеть детали, цену и запросить консультацию.",
+    "procedureColumn": "Процедура",
+    "priceColumn": "Ориентировочная цена",
+    "detailSubtitle": "Информация для международных пациентов",
+    "aboutProcedure": "О процедуре",
+    "trust": {
+      "accredited": "Аккредитованные клиники-партнёры",
+      "fast": "Быстрая запись на приём",
+      "support": "Поддержка координатора 24/7 — 1717"
+    },
+    "items": {
+      "cardio-checkup": {
+        "name": "Cardiological Check-up",
+        "description": "Comprehensive cardiac screening including ECG, blood tests, and specialist consultation at accredited partner clinics."
+      },
+      "full-body-ct-checkup": {
+        "name": "Full Body CT Check-up",
+        "description": "Advanced CT imaging package for full-body health assessment with radiologist report."
+      },
+      "full-body-mri-checkup": {
+        "name": "Full Body MRI Check-up",
+        "description": "High-resolution MRI screening package covering major organ systems."
+      },
+      "womens-checkup": {
+        "name": "Women's Health Check-up",
+        "description": "Gynecological exam, ultrasound, and laboratory screening tailored for women."
+      },
+      "mens-checkup": {
+        "name": "Men's Health Check-up",
+        "description": "Urological and general health screening package for men."
+      },
+      "executive-checkup": {
+        "name": "Executive Health Check-up",
+        "description": "Premium multi-day screening with advanced diagnostics and specialist reviews."
+      },
+      "ct-head": {
+        "name": "CT Head Scan",
+        "description": "Computed tomography of the brain and skull with specialist interpretation."
+      },
+      "ct-chest": {
+        "name": "CT Chest Scan",
+        "description": "Chest CT for lungs, heart, and mediastinum evaluation."
+      },
+      "ct-abdomen": {
+        "name": "CT Abdomen Scan",
+        "description": "Abdominal CT for liver, kidneys, pancreas, and digestive organs."
+      },
+      "ct-full-body": {
+        "name": "Full Body CT",
+        "description": "Comprehensive CT imaging from head to pelvis."
+      },
+      "ct-angiography": {
+        "name": "CT Angiography",
+        "description": "Contrast-enhanced CT for blood vessel assessment."
+      },
+      "mri-brain": {
+        "name": "MRI Brain",
+        "description": "High-resolution magnetic resonance imaging of the brain."
+      },
+      "mri-spine": {
+        "name": "MRI Spine",
+        "description": "MRI of cervical, thoracic, or lumbar spine segments."
+      },
+      "mri-joint": {
+        "name": "MRI Joint",
+        "description": "MRI of knee, shoulder, hip, or other joint structures."
+      },
+      "mri-full-body": {
+        "name": "Full Body MRI",
+        "description": "Comprehensive MRI screening package."
+      },
+      "mri-cardiac": {
+        "name": "Cardiac MRI",
+        "description": "Specialized MRI for heart structure and function."
+      },
+      "us-abdomen": {
+        "name": "Abdominal Ultrasound",
+        "description": "Ultrasound examination of abdominal organs."
+      },
+      "us-thyroid": {
+        "name": "Thyroid Ultrasound",
+        "description": "Ultrasound of thyroid gland and neck structures."
+      },
+      "us-pregnancy": {
+        "name": "Pregnancy Ultrasound",
+        "description": "Obstetric ultrasound at various stages of pregnancy."
+      },
+      "us-doppler": {
+        "name": "Doppler Ultrasound",
+        "description": "Vascular ultrasound with blood flow assessment."
+      },
+      "us-heart": {
+        "name": "Echocardiography",
+        "description": "Ultrasound examination of the heart."
+      },
+      "dental-implant": {
+        "name": "Dental Implant",
+        "description": "Single tooth implant with crown at partner dental clinics."
+      },
+      "dental-crown": {
+        "name": "Dental Crown",
+        "description": "Ceramic or zirconia crown placement."
+      },
+      "teeth-whitening": {
+        "name": "Teeth Whitening",
+        "description": "Professional in-office teeth whitening."
+      },
+      "dental-cleaning": {
+        "name": "Professional Dental Cleaning",
+        "description": "Ultrasonic cleaning and polishing."
+      },
+      "root-canal": {
+        "name": "Root Canal Treatment",
+        "description": "Endodontic treatment for infected tooth pulp."
+      },
+      "xray-chest": {
+        "name": "Chest X-Ray",
+        "description": "Standard posteroanterior chest radiograph."
+      },
+      "xray-spine": {
+        "name": "Spine X-Ray",
+        "description": "X-ray of spinal column segments."
+      },
+      "xray-dental": {
+        "name": "Dental X-Ray",
+        "description": "Panoramic or periapical dental radiograph."
+      },
+      "xray-joint": {
+        "name": "Joint X-Ray",
+        "description": "X-ray imaging of major joints."
+      },
+      "therapeutic-massage": {
+        "name": "Therapeutic Massage",
+        "description": "Medical massage for pain relief and recovery."
+      },
+      "sports-massage": {
+        "name": "Sports Massage",
+        "description": "Massage for athletes and active recovery."
+      },
+      "lymphatic-massage": {
+        "name": "Lymphatic Drainage Massage",
+        "description": "Gentle massage to reduce swelling and improve circulation."
+      },
+      "recovery-massage": {
+        "name": "Post-Treatment Recovery Massage",
+        "description": "Massage tailored for medical tourism recovery stays."
+      },
+      "ecg": {
+        "name": "Electrocardiogram (ECG)",
+        "description": "Heart rhythm and electrical activity recording."
+      },
+      "holter-monitor": {
+        "name": "24-Hour Holter Monitor",
+        "description": "Continuous cardiac monitoring over 24 hours."
+      },
+      "spirometry": {
+        "name": "Spirometry",
+        "description": "Lung function testing for respiratory assessment."
+      },
+      "stress-test": {
+        "name": "Cardiac Stress Test",
+        "description": "Exercise or pharmacological stress testing."
+      },
+      "iv-therapy": {
+        "name": "IV Therapy",
+        "description": "Intravenous vitamin and hydration therapy."
+      },
+      "injection-therapy": {
+        "name": "Injection Therapy",
+        "description": "Intramuscular or subcutaneous medical injections."
+      },
+      "wound-dressing": {
+        "name": "Wound Dressing",
+        "description": "Professional wound care and dressing change."
+      },
+      "medical-certificate": {
+        "name": "Medical Certificate",
+        "description": "Official medical certificate for work or study."
+      },
+      "fitness-certificate": {
+        "name": "Fitness Certificate",
+        "description": "Medical clearance for sports and fitness activities."
+      },
+      "travel-medical-cert": {
+        "name": "Travel Medical Certificate",
+        "description": "Medical documentation for international travel."
+      },
+      "cardio-consultation": {
+        "name": "Cardiology Consultation",
+        "description": "Specialist consultation with a cardiologist."
+      },
+      "echo-cardiogram": {
+        "name": "Echocardiogram",
+        "description": "Ultrasound heart examination with cardiologist review."
+      },
+      "gyno-consultation": {
+        "name": "Gynecology Consultation",
+        "description": "Consultation with a gynecologist."
+      },
+      "pap-smear": {
+        "name": "Pap Smear Test",
+        "description": "Cervical screening cytology test."
+      },
+      "neuro-consultation": {
+        "name": "Neurology Consultation",
+        "description": "Consultation with a neurologist."
+      },
+      "eeg": {
+        "name": "EEG (Electroencephalogram)",
+        "description": "Brain electrical activity recording."
+      },
+      "ortho-consultation": {
+        "name": "Orthopedics Consultation",
+        "description": "Consultation for bone and joint conditions."
+      },
+      "joint-injection": {
+        "name": "Joint Injection",
+        "description": "Therapeutic injection for joint pain and inflammation."
+      },
+      "eye-exam": {
+        "name": "Comprehensive Eye Exam",
+        "description": "Full ophthalmological examination."
+      },
+      "lasik-consultation": {
+        "name": "LASIK Consultation",
+        "description": "Pre-operative assessment for laser vision correction."
+      },
+      "urology-consultation": {
+        "name": "Urology Consultation",
+        "description": "Consultation with a urologist."
+      },
+      "prostate-screening": {
+        "name": "Prostate Screening",
+        "description": "PSA testing and prostate ultrasound."
+      },
+      "general-surgery-consult": {
+        "name": "General Surgery Consultation",
+        "description": "Pre-operative surgical consultation."
+      },
+      "hernia-repair": {
+        "name": "Hernia Repair Surgery",
+        "description": "Inguinal or abdominal hernia surgical repair."
+      },
+      "pediatric-consultation": {
+        "name": "Pediatric Consultation",
+        "description": "Consultation with a pediatrician."
+      },
+      "child-vaccination": {
+        "name": "Child Vaccination",
+        "description": "Routine childhood immunization."
+      },
+      "dermatology-consultation": {
+        "name": "Dermatology Consultation",
+        "description": "Skin condition assessment and treatment plan."
+      },
+      "skin-biopsy": {
+        "name": "Skin Biopsy",
+        "description": "Minor procedure for skin lesion analysis."
+      },
+      "endocrinology-consultation": {
+        "name": "Endocrinology Consultation",
+        "description": "Hormonal and metabolic disorder consultation."
+      },
+      "thyroid-panel": {
+        "name": "Thyroid Panel",
+        "description": "Blood tests and ultrasound for thyroid function."
+      }
+    },
+    "flow": {
+      "aria": "Маршрут записи",
+      "city": "Выбор города",
+      "category": "Выбор категории",
+      "details": "Процедура и цена",
+      "consult": "Запрос консультации",
+      "clinic": "Выбор клиники"
+    },
+    "clinics": {
+      "title": "Выберите клинику-партнёра",
+      "subtitle": "Выберите аккредитованную больницу для процедуры",
+      "available": "Доступно клиник: {count}",
+      "selected": "Выбранная клиника",
+      "chooseClinic": "Выбрать клинику и продолжить",
+      "nextStep": "Далее: выбор клиники",
+      "nextStepDesc": "{count} аккредитованных клиник в этом городе предлагают эту процедуру."
+    },
+    "home": {
+      "howTitle": "Как записаться на процедуру",
+      "howSubtitle": "От выбора города до клиники — понятный путь для международных пациентов.",
+      "step1": "Выберите медицинский город",
+      "step2": "Просмотрите категории процедур",
+      "step3": "Сравните цены и детали",
+      "step4": "Выберите клинику-партнёра",
+      "statsProcedures": "Медицинских процедур",
+      "statsCities": "Медицинских городов",
+      "statsClinics": "Клиник-партнёров",
+      "statsSavings": "Средняя экономия",
+      "popularTitle": "Популярные процедуры",
+      "popularSubtitle": "Стартовые цены в USD для выбранного города",
+      "benefit1Title": "Прозрачные цены в USD",
+      "benefit1Desc": "Ориентировочные цены до обращения — без скрытых платежей.",
+      "benefit2Title": "Только аккредитованные клиники",
+      "benefit2Desc": "Каждая клиника соответствует национальным или международным стандартам.",
+      "benefit3Title": "Полное сопровождение",
+      "benefit3Desc": "Координаторы 24/7 помогают с записью, поездкой и наблюдением."
+    },
+    "whatsIncluded": "Что входит",
+    "learnMore": "Подробнее о процедуре",
+    "includesByCategory": {
+      "check-up": [
+        "Консультация врача",
+        "Базовые анализы",
+        "Письменное заключение",
+        "Поддержка координатора на вашем языке"
+      ],
+      "ct": [
+        "КТ высокого разрешения",
+        "Заключение радиолога",
+        "Цифровой отчёт",
+        "Копия снимков"
+      ],
+      "mri": [
+        "МРТ высокого разрешения",
+        "Заключение радиолога",
+        "Подробный отчёт",
+        "Файлы снимков"
+      ],
+      "ultrasound": [
+        "УЗИ-обследование",
+        "Осмотр специалиста",
+        "Печатный или цифровой отчёт",
+        "Результаты в день обследования при возможности"
+      ],
+      "dentistry": [
+        "Клинический осмотр",
+        "Индивидуальный план лечения",
+        "Прозрачная оценка стоимости",
+        "Сопровождение иностранных пациентов"
+      ],
+      "xray": [
+        "Цифровая рентгенография",
+        "Заключение врача или радиолога",
+        "Письменный отчёт",
+        "Быстрый результат"
+      ],
+      "massage": [
+        "Сеанс у лицензированного терапевта",
+        "Предварительная оценка состояния",
+        "Восстановительная техника",
+        "Процедурный кабинет"
+      ],
+      "functional-diagnostics": [
+        "Неинвазивное обследование",
+        "Интерпретация специалистом",
+        "Разъяснение результатов",
+        "Рекомендации по дальнейшему наблюдению"
+      ],
+      "treatment-room": [
+        "Уход квалифицированного персонала",
+        "Стерильные условия",
+        "Наблюдение после процедуры",
+        "Рекомендации при выписке"
+      ],
+      "certificates": [
+        "Осмотр лицензированного врача",
+        "Официальная медицинская справка",
+        "Возможность оформления на разных языках",
+        "Выдача в день обращения при возможности"
+      ],
+      "cardiology": [
+        "Консультация кардиолога",
+        "Кардиологическая диагностика по показаниям",
+        "Письменный план лечения",
+        "Координация направлений при необходимости"
+      ],
+      "gynecology": [
+        "Консультация гинеколога",
+        "Осмотр и скрининг",
+        "Конфиденциальная среда",
+        "Рекомендации по наблюдению"
+      ],
+      "neurology": [
+        "Консультация невролога",
+        "Неврологическое обследование",
+        "Рекомендации по диагностике",
+        "Планирование лечения"
+      ],
+      "orthopedics": [
+        "Осмотр ортопеда",
+        "Анализ снимков при наличии",
+        "Оценка боли и подвижности",
+        "Обсуждение вариантов лечения"
+      ],
+      "ophthalmology": [
+        "Комплексное обследование глаз",
+        "Скрининг зрения",
+        "Рекомендации специалиста",
+        "Оценка показаний к операции при необходимости"
+      ],
+      "urology": [
+        "Консультация уролога",
+        "Целевые скрининговые тесты",
+        "Приватный кабинет",
+        "Индивидуальный план лечения"
+      ],
+      "surgery": [
+        "Предоперационная консультация",
+        "Оценка хирургических рисков",
+        "Планирование госпитализации",
+        "Обзор послеоперационного ухода"
+      ],
+      "pediatrics": [
+        "Консультация педиатра",
+        "Осмотр с учётом возраста",
+        "План вакцинации или лечения",
+        "Рекомендации для родителей"
+      ],
+      "dermatology": [
+        "Консультация дерматолога",
+        "Оценка состояния кожи",
+        "Биопсия или лечение по показаниям",
+        "Инструкции по уходу"
+      ],
+      "endocrinology": [
+        "Консультация эндокринолога",
+        "Оценка гормонального статуса",
+        "Координация анализов",
+        "План длительного наблюдения"
+      ]
+    },
+    "categoryDetailsSuffix": {
+      "check-up": "Программы проводятся в аккредитованных клиниках-партнёрах с многоязычными координаторами. Большинство check-up можно записать в течение нескольких дней.",
+      "ct": "КТ выполняется на современном оборудовании, заключения готовят опытные радиологи. Иностранные пациенты получают документы для наблюдения дома.",
+      "mri": "МРТ проводится на высокопольных аппаратах. Клиники координируют запись, перевод и передачу результатов.",
+      "ultrasound": "УЗИ — безопасный метод без облучения. Запись часто доступна в краткие сроки.",
+      "dentistry": "Стоматология включает имплантацию и протезирование с прозрачными ценами для иностранных пациентов.",
+      "xray": "Цифровой рентген обеспечивает быстрый результат с минимальной дозой облучения.",
+      "massage": "Массаж поддерживает восстановление после лечения или перелёта.",
+      "functional-diagnostics": "Функциональные тесты помогают точно оценить работу сердца, лёгких и обмена веществ.",
+      "treatment-room": "Процедуры выполняются под медицинским контролем — удобно для амбулаторной помощи в поездке.",
+      "certificates": "Справки выдаются после осмотра врача для работы, спорта или путешествий.",
+      "cardiology": "Кардиологическая помощь включает расширенную диагностику в ведущих центрах Казахстана.",
+      "gynecology": "Женское здоровье — с конфиденциальностью и соблюдением международных стандартов.",
+      "neurology": "Неврологические консультации при головных болях, судорогах и нарушениях нервной системы.",
+      "orthopedics": "Ортопеды лечат боль в суставах, травмы и дегенеративные заболевания.",
+      "ophthalmology": "Офтальмология — от планового осмотра до оценки показаний к лазерной коррекции.",
+      "urology": "Урология охватывает здоровье простаты, почек и мужское здоровье.",
+      "surgery": "Хирургические консультации включают оценку показаний и подготовку к операции.",
+      "pediatrics": "Педиатрия — плановые осмотры, вакцинация и лечение детских заболеваний.",
+      "dermatology": "Дерматология — акне, экзема, родинки и другие кожные проблемы.",
+      "endocrinology": "Эндокринология — щитовидная железа, диабет и гормональные нарушения."
     }
   }
 }

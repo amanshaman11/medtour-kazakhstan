@@ -1,13 +1,15 @@
 {
   "nav": {
-    "why": "Эмне үчүн Казакстан",
+    "why": "Эмне үчүн",
     "platform": "Платформа",
     "treatments": "Дарылоо",
     "clinics": "Клиникалар",
     "packages": "Пакеттер",
     "contact": "Байланыш",
     "concierge": "Медициналык консьерж",
-    "findTreatment": "Дарылоону табуу"
+    "findTreatment": "Дарылоо",
+    "procedures": "Процедуралар",
+    "menu": "Меню"
   },
   "common": {
     "est": "Болж."
@@ -21,7 +23,7 @@
     "eyebrow": "Медициналык туризм платформасы · Казакстан",
     "title": "Казакстанда дүйнөлүк деңгээлдеги медициналык жардам",
     "subtitle": "Ооруканаларды салыштырыңыз, дарылоо вариантдарын изилдеңиз, жашоо жайын уюштуруңуз жана бирдиктүү платформа аркылуу жеке жардам алыңыз.",
-    "findTreatment": "Дарылоону табуу",
+    "findTreatment": "Дарылоо",
     "contactConcierge": "Консьерж менен байланышуу",
     "trust1": "Аккредитацияланган ооруканалар",
     "trust2": "Эл аралык бейтаптар",
@@ -572,7 +574,7 @@
   "cta": {
     "title": "Казакстанда дарылануу жолуңузду баштаңыз",
     "subtitle": "Ооруканалар, дарылоо, жашоо жай жана бейтаптарды колдоо үчүн бирдиктүү платформа. Баштоо үчүн медициналык консьерж менен байланышыңыз.",
-    "findTreatment": "Дарылоону табуу",
+    "findTreatment": "Дарылоо",
     "call": "1717 чалуу",
     "note": "Акысыз кеңеш · Милдеттенмесиз · 40+ өлкөдөн бейтаптарга кызмат"
   },
@@ -591,7 +593,7 @@
     "contactCenter": "Байланыш борбору",
     "about": "MedTour жөнүндө",
     "howItWorks": "Кантип иштейт",
-    "why": "Эмне үчүн Казакстан",
+    "why": "Эмне үчүн",
     "partnerWithUs": "Биз менен өнөктөштүк",
     "rights": "Бардык укуктар корголгон.",
     "privacy": "Купуялык саясаты",
@@ -616,7 +618,8 @@
       "hotels": "Жайгашуу",
       "transportation": "Транспорт",
       "tourism": "Туризм"
-    }
+    },
+    "medicalProcedures": "Медициналык процедуралар"
   },
   "citySelection": {
     "badge": "Багытыңызды тандаңыз",
@@ -721,6 +724,523 @@
       "hospitals": "Аккредитацияланган ооруканалар",
       "patients": "Эл аралык ооруканалар",
       "support": "Көп тилдүү колдоо"
+    }
+  },
+  "callCenter": {
+    "badge": "24/7",
+    "title": "24/7 эл аралык медициналык байланыш борбору",
+    "callLabel": "Байланыш борбору",
+    "features": {
+      "booking": "Жазылуу",
+      "consultations": "Медициналык консультациялар",
+      "travel": "Саякат жардамы"
+    }
+  },
+  "procedures": {
+    "badge": "Медициналык процедуралар",
+    "title": "Кыргызстандагы медициналык процедуралар",
+    "subtitle": "Өнөктөш клиникалардагы диагностика жана дарылоо.",
+    "total": "Жалпы процедуралар",
+    "viewAll": "View all procedures",
+    "viewAllCategories": "View all categories",
+    "bySpecialty": "Procedures by specialty",
+    "browseOther": "Browse other categories",
+    "medicalProceduresIn": "Медициналык процедуралар",
+    "mainCategories": "Диагностика жана wellness",
+    "categorySubtitle": "Процедураны тандап, баасын жана маалыматын көрүңүз.",
+    "procedureColumn": "Процедура",
+    "priceColumn": "Баа",
+    "detailSubtitle": "International patient procedure details",
+    "aboutProcedure": "Процедура жөнүндө",
+    "startingFrom": "Баштап",
+    "estimatedPrice": "Estimated price",
+    "priceNote": "Approximate price converted from KZT. Final cost confirmed after consultation.",
+    "breadcrumb": {
+      "home": "Башкы бет",
+      "all": "Бардык процедуралар"
+    },
+    "form": {
+      "title": "Консультация суроо",
+      "subtitle": "Эл аралык медициналык координаторубуз процедура, клиника жана саякат жөнүндө кабарлайт.",
+      "firstName": "Аты",
+      "lastName": "Фамилиясы",
+      "email": "Электрондук почта",
+      "phone": "Телефон",
+      "submit": "Консультация суроо",
+      "sending": "Жөнөтүлүүдө…",
+      "successTitle": "Суроо кабыл алынды",
+      "successMessage": "Рахмат. Координаторубуз жакында байланышат.",
+      "coordinator": "Эл аралык медициналык координатор",
+      "privacy": "Маалыматыңыз купуя жана координация командасына гана берилет.",
+      "error": "Жөнөтүү ишке ашкан жок. Кайра аракет кылыңыз же 1717 чалыңыз."
+    },
+    "trust": {
+      "accredited": "Аккредитацияланган клиникалар",
+      "fast": "Тез жазылуу",
+      "support": "24/7 — 1717"
+    },
+    "categories": {
+      "check-up": "Check-up",
+      "ct": "КТ",
+      "mri": "МРТ",
+      "ultrasound": "УЗИ",
+      "dentistry": "Стоматология",
+      "xray": "Рентген",
+      "massage": "Массаж",
+      "functional-diagnostics": "Functional Diagnostics",
+      "treatment-room": "Treatment Room",
+      "certificates": "Medical Certificates",
+      "cardiology": "Кардиология",
+      "gynecology": "Гинекология",
+      "neurology": "Неврология",
+      "orthopedics": "Ортопедия",
+      "ophthalmology": "Офтальмология",
+      "urology": "Урология",
+      "surgery": "Хирургия",
+      "pediatrics": "Педиатрия",
+      "dermatology": "Дерматология",
+      "endocrinology": "Эндокринология"
+    },
+    "items": {
+      "cardio-checkup": {
+        "name": "Cardiological Check-up",
+        "description": "Comprehensive cardiac screening including ECG, blood tests, and specialist consultation at accredited partner clinics."
+      },
+      "full-body-ct-checkup": {
+        "name": "Full Body CT Check-up",
+        "description": "Advanced CT imaging package for full-body health assessment with radiologist report."
+      },
+      "full-body-mri-checkup": {
+        "name": "Full Body MRI Check-up",
+        "description": "High-resolution MRI screening package covering major organ systems."
+      },
+      "womens-checkup": {
+        "name": "Women's Health Check-up",
+        "description": "Gynecological exam, ultrasound, and laboratory screening tailored for women."
+      },
+      "mens-checkup": {
+        "name": "Men's Health Check-up",
+        "description": "Urological and general health screening package for men."
+      },
+      "executive-checkup": {
+        "name": "Executive Health Check-up",
+        "description": "Premium multi-day screening with advanced diagnostics and specialist reviews."
+      },
+      "ct-head": {
+        "name": "CT Head Scan",
+        "description": "Computed tomography of the brain and skull with specialist interpretation."
+      },
+      "ct-chest": {
+        "name": "CT Chest Scan",
+        "description": "Chest CT for lungs, heart, and mediastinum evaluation."
+      },
+      "ct-abdomen": {
+        "name": "CT Abdomen Scan",
+        "description": "Abdominal CT for liver, kidneys, pancreas, and digestive organs."
+      },
+      "ct-full-body": {
+        "name": "Full Body CT",
+        "description": "Comprehensive CT imaging from head to pelvis."
+      },
+      "ct-angiography": {
+        "name": "CT Angiography",
+        "description": "Contrast-enhanced CT for blood vessel assessment."
+      },
+      "mri-brain": {
+        "name": "MRI Brain",
+        "description": "High-resolution magnetic resonance imaging of the brain."
+      },
+      "mri-spine": {
+        "name": "MRI Spine",
+        "description": "MRI of cervical, thoracic, or lumbar spine segments."
+      },
+      "mri-joint": {
+        "name": "MRI Joint",
+        "description": "MRI of knee, shoulder, hip, or other joint structures."
+      },
+      "mri-full-body": {
+        "name": "Full Body MRI",
+        "description": "Comprehensive MRI screening package."
+      },
+      "mri-cardiac": {
+        "name": "Cardiac MRI",
+        "description": "Specialized MRI for heart structure and function."
+      },
+      "us-abdomen": {
+        "name": "Abdominal Ultrasound",
+        "description": "Ultrasound examination of abdominal organs."
+      },
+      "us-thyroid": {
+        "name": "Thyroid Ultrasound",
+        "description": "Ultrasound of thyroid gland and neck structures."
+      },
+      "us-pregnancy": {
+        "name": "Pregnancy Ultrasound",
+        "description": "Obstetric ultrasound at various stages of pregnancy."
+      },
+      "us-doppler": {
+        "name": "Doppler Ultrasound",
+        "description": "Vascular ultrasound with blood flow assessment."
+      },
+      "us-heart": {
+        "name": "Echocardiography",
+        "description": "Ultrasound examination of the heart."
+      },
+      "dental-implant": {
+        "name": "Dental Implant",
+        "description": "Single tooth implant with crown at partner dental clinics."
+      },
+      "dental-crown": {
+        "name": "Dental Crown",
+        "description": "Ceramic or zirconia crown placement."
+      },
+      "teeth-whitening": {
+        "name": "Teeth Whitening",
+        "description": "Professional in-office teeth whitening."
+      },
+      "dental-cleaning": {
+        "name": "Professional Dental Cleaning",
+        "description": "Ultrasonic cleaning and polishing."
+      },
+      "root-canal": {
+        "name": "Root Canal Treatment",
+        "description": "Endodontic treatment for infected tooth pulp."
+      },
+      "xray-chest": {
+        "name": "Chest X-Ray",
+        "description": "Standard posteroanterior chest radiograph."
+      },
+      "xray-spine": {
+        "name": "Spine X-Ray",
+        "description": "X-ray of spinal column segments."
+      },
+      "xray-dental": {
+        "name": "Dental X-Ray",
+        "description": "Panoramic or periapical dental radiograph."
+      },
+      "xray-joint": {
+        "name": "Joint X-Ray",
+        "description": "X-ray imaging of major joints."
+      },
+      "therapeutic-massage": {
+        "name": "Therapeutic Massage",
+        "description": "Medical massage for pain relief and recovery."
+      },
+      "sports-massage": {
+        "name": "Sports Massage",
+        "description": "Massage for athletes and active recovery."
+      },
+      "lymphatic-massage": {
+        "name": "Lymphatic Drainage Massage",
+        "description": "Gentle massage to reduce swelling and improve circulation."
+      },
+      "recovery-massage": {
+        "name": "Post-Treatment Recovery Massage",
+        "description": "Massage tailored for medical tourism recovery stays."
+      },
+      "ecg": {
+        "name": "Electrocardiogram (ECG)",
+        "description": "Heart rhythm and electrical activity recording."
+      },
+      "holter-monitor": {
+        "name": "24-Hour Holter Monitor",
+        "description": "Continuous cardiac monitoring over 24 hours."
+      },
+      "spirometry": {
+        "name": "Spirometry",
+        "description": "Lung function testing for respiratory assessment."
+      },
+      "stress-test": {
+        "name": "Cardiac Stress Test",
+        "description": "Exercise or pharmacological stress testing."
+      },
+      "iv-therapy": {
+        "name": "IV Therapy",
+        "description": "Intravenous vitamin and hydration therapy."
+      },
+      "injection-therapy": {
+        "name": "Injection Therapy",
+        "description": "Intramuscular or subcutaneous medical injections."
+      },
+      "wound-dressing": {
+        "name": "Wound Dressing",
+        "description": "Professional wound care and dressing change."
+      },
+      "medical-certificate": {
+        "name": "Medical Certificate",
+        "description": "Official medical certificate for work or study."
+      },
+      "fitness-certificate": {
+        "name": "Fitness Certificate",
+        "description": "Medical clearance for sports and fitness activities."
+      },
+      "travel-medical-cert": {
+        "name": "Travel Medical Certificate",
+        "description": "Medical documentation for international travel."
+      },
+      "cardio-consultation": {
+        "name": "Cardiology Consultation",
+        "description": "Specialist consultation with a cardiologist."
+      },
+      "echo-cardiogram": {
+        "name": "Echocardiogram",
+        "description": "Ultrasound heart examination with cardiologist review."
+      },
+      "gyno-consultation": {
+        "name": "Gynecology Consultation",
+        "description": "Consultation with a gynecologist."
+      },
+      "pap-smear": {
+        "name": "Pap Smear Test",
+        "description": "Cervical screening cytology test."
+      },
+      "neuro-consultation": {
+        "name": "Neurology Consultation",
+        "description": "Consultation with a neurologist."
+      },
+      "eeg": {
+        "name": "EEG (Electroencephalogram)",
+        "description": "Brain electrical activity recording."
+      },
+      "ortho-consultation": {
+        "name": "Orthopedics Consultation",
+        "description": "Consultation for bone and joint conditions."
+      },
+      "joint-injection": {
+        "name": "Joint Injection",
+        "description": "Therapeutic injection for joint pain and inflammation."
+      },
+      "eye-exam": {
+        "name": "Comprehensive Eye Exam",
+        "description": "Full ophthalmological examination."
+      },
+      "lasik-consultation": {
+        "name": "LASIK Consultation",
+        "description": "Pre-operative assessment for laser vision correction."
+      },
+      "urology-consultation": {
+        "name": "Urology Consultation",
+        "description": "Consultation with a urologist."
+      },
+      "prostate-screening": {
+        "name": "Prostate Screening",
+        "description": "PSA testing and prostate ultrasound."
+      },
+      "general-surgery-consult": {
+        "name": "General Surgery Consultation",
+        "description": "Pre-operative surgical consultation."
+      },
+      "hernia-repair": {
+        "name": "Hernia Repair Surgery",
+        "description": "Inguinal or abdominal hernia surgical repair."
+      },
+      "pediatric-consultation": {
+        "name": "Pediatric Consultation",
+        "description": "Consultation with a pediatrician."
+      },
+      "child-vaccination": {
+        "name": "Child Vaccination",
+        "description": "Routine childhood immunization."
+      },
+      "dermatology-consultation": {
+        "name": "Dermatology Consultation",
+        "description": "Skin condition assessment and treatment plan."
+      },
+      "skin-biopsy": {
+        "name": "Skin Biopsy",
+        "description": "Minor procedure for skin lesion analysis."
+      },
+      "endocrinology-consultation": {
+        "name": "Endocrinology Consultation",
+        "description": "Hormonal and metabolic disorder consultation."
+      },
+      "thyroid-panel": {
+        "name": "Thyroid Panel",
+        "description": "Blood tests and ultrasound for thyroid function."
+      }
+    },
+    "flow": {
+      "aria": "Procedure booking journey",
+      "city": "Choose City",
+      "category": "Choose Category",
+      "details": "Procedure & Price",
+      "consult": "Request Consultation",
+      "clinic": "Клиника тандоо"
+    },
+    "clinics": {
+      "title": "Өнөктөш клиниканы тандаңыз",
+      "subtitle": "Процедура үчүн аккредитацияланган оорукананы тандаңыз",
+      "available": "{count} өнөктөш клиника бар",
+      "selected": "Тандалган клиника",
+      "chooseClinic": "Клиниканы тандоо жана улантуу",
+      "nextStep": "Кийинки: клиника тандоо",
+      "nextStepDesc": "Бул шаарда {count} аккредитацияланган клиника бул процедураны сунуштайт."
+    },
+    "home": {
+      "howTitle": "Процедурага кантип жазылуу керек",
+      "howSubtitle": "Шаар тандоодон клиникага чейин — эл аралык оорулуулар үчүн так жол.",
+      "step1": "Медициналык шаарыңызды тандаңыз",
+      "step2": "Процедура категорияларын караңыз",
+      "step3": "Баа жана маалыматты салыштырыңыз",
+      "step4": "Өнөктөш клиниканы тандаңыз",
+      "statsProcedures": "Медициналык процедуралар",
+      "statsCities": "Медициналык шаарлар",
+      "statsClinics": "Өнөктөш клиникалар",
+      "statsSavings": "Орточо үнөм",
+      "popularTitle": "Популярдуу процедуралар",
+      "popularSubtitle": "Тандалган шаар үчүн USD баштапкы баалары",
+      "benefit1Title": "Ачык USD баалары",
+      "benefit1Desc": "Биз менен байланышпастан мурун болжолдуу бааларды көрүңүз.",
+      "benefit2Title": "Аккредитацияланган ооруканалар гана",
+      "benefit2Desc": "Ар бир клиника улуттук же эл аралык стандарттарга жооп берет.",
+      "benefit3Title": "Толук колдоо",
+      "benefit3Desc": "24/7 координаторлор жазылуу, саякат жана көзөмөлдөөгө жардам берет."
+    },
+    "whatsIncluded": "Камтылгандар",
+    "learnMore": "Процедура жөнүндө кененирээк",
+    "includesByCategory": {
+      "check-up": [
+        "Дарыгер консультациясы",
+        "Негизги анализдер",
+        "Жазма жыйынтык",
+        "Көптилдүү координатор колдоосу"
+      ],
+      "ct": [
+        "Жогорку сапаттуу КТ",
+        "Радиолог жыйынтыгы",
+        "Санарип отчет",
+        "Сүрөттөрдүн көчүрмөсү"
+      ],
+      "mri": [
+        "Жогорку сапаттуу МРТ",
+        "Радиолог баалоосу",
+        "Толук отчет",
+        "Сүрөт файлдары"
+      ],
+      "ultrasound": [
+        "УЗИ текшерүү",
+        "Адис текшерүүсү",
+        "Басма же санарип отчет",
+        "Мүмкүн болсо ошол күн натыйжа"
+      ],
+      "dentistry": [
+        "Клиникалык текшерүү",
+        "Жеке дарылоо планы",
+        "Ачык баа баалоосу",
+        "Эл аралык оорулуу координациясы"
+      ],
+      "xray": [
+        "Санарип рентген",
+        "Дарыгер же радиолог баалоосу",
+        "Жазма отчет",
+        "Тез натыйжа"
+      ],
+      "massage": [
+        "Лицензиялуу массаж сеансы",
+        "Алдын ала баалоо",
+        "Калыбына келтирүү ыкмасы",
+        "Жеке кабинет"
+      ],
+      "functional-diagnostics": [
+        "Инвазивдүү эмес тест",
+        "Адис түшүндүрмөсү",
+        "Натыйжа түшүндүрмөсү",
+        "Кийинки сунуштар"
+      ],
+      "treatment-room": [
+        "Квалификациялуу медсестра камкордугу",
+        "Стерилдүү чөйрө",
+        "Процедурадан кийин байкоо",
+        "Чыгуу көрсөтмөлөрү"
+      ],
+      "certificates": [
+        "Лицензиялуу дарыгер текшерүүсү",
+        "Расмий медициналык маалымкат",
+        "Тил опциялары",
+        "Мүмкүн болсо ошол күн берүү"
+      ],
+      "cardiology": [
+        "Кардиолог консультациясы",
+        "Кардио диагностика",
+        "Дарылоо планы",
+        "Зарыл болсо багыттоо"
+      ],
+      "gynecology": [
+        "Гинеколог консультациясы",
+        "Текшерүү жана скрининг",
+        "Купуялык",
+        "Кийинки көрсөтмөлөр"
+      ],
+      "neurology": [
+        "Невролог консультациясы",
+        "Неврологиялык баалоо",
+        "Диагностика сунуштары",
+        "Дарылоо жол картасы"
+      ],
+      "orthopedics": [
+        "Ортопед адис текшерүүсү",
+        "Сүрөттөрдү талдоо",
+        "Оору жана кыймыл баалоосу",
+        "Дарылоо варианттары"
+      ],
+      "ophthalmology": [
+        "Көздүн толук текшерүүсү",
+        "Көрүү скрининги",
+        "Адис сунуштары",
+        "Операция мүмкүнчүлүгү"
+      ],
+      "urology": [
+        "Уролог консультациясы",
+        "Максаттуу скрининг",
+        "Жеке кабинет",
+        "Жеке дарылоо планы"
+      ],
+      "surgery": [
+        "Операцияга чейинки консультация",
+        "Хирургиялык тобокел баалоосу",
+        "Оорукана планы",
+        "Операциядан кийинки камкордук"
+      ],
+      "pediatrics": [
+        "Педиатр консультациясы",
+        "Жашка ылайык текшерүү",
+        "Эмделүү же эмдөө планы",
+        "Ата-эне көрсөтмөлөрү"
+      ],
+      "dermatology": [
+        "Дерматолог консультациясы",
+        "Тери баалоосу",
+        "Биопсия же дарылоо",
+        "Кам көрүү көрсөтмөлөрү"
+      ],
+      "endocrinology": [
+        "Эндокринолог консультациясы",
+        "Гормоналдык баалоо",
+        "Лаборатория координациясы",
+        "Узак мөөнөттүү план"
+      ]
+    },
+    "categoryDetailsSuffix": {
+      "check-up": "Программалар аккредитацияланган клиникаларда өткөрүлөт. Көптөгөн текшерүүлөр бир нече күндүн ичинде дайындалат.",
+      "ct": "КТ заманбап жабдууда аткарылат, радиологдор отчет даяштат.",
+      "mri": "МРТ жогорку талаа сканерлеринде жүргүзүлөт, натыйжалар координацияланат.",
+      "ultrasound": "УЗИ коопсуз диагностикалык ыкмасы, кыска мөөнөттө дайындоо мүмкүн.",
+      "dentistry": "Стоматология имплантация жана протездеү менен ачык бааларды камтыйт.",
+      "xray": "Санарип рентген тез натыйжа берет.",
+      "massage": "Массаж саякаттан же дарылоодон кийин калыбына келүүгө жардам берет.",
+      "functional-diagnostics": "Функционалдык тесттер жүрөк, өпкө жана алмашуу процесстерин баалайт.",
+      "treatment-room": "Процедуралар медициналык көзөмөлдө — амбулатордук жардам үчүн ыңгайлуу.",
+      "certificates": "Маалымкаттар дарыгер текшерүүсүнөн кийин берилет.",
+      "cardiology": "Кардиология кеңейтилген диагностиканы камтыйт.",
+      "gynecology": "Аялдар ден соолугу купуялык менен камсыз кылынат.",
+      "neurology": "Неврология баш ооруусу жана нерв системасы көйгөйлөрүн камтыйт.",
+      "orthopedics": "Ортопедтер буун ооруларын жана спорт жаракаттарын дарылейт.",
+      "ophthalmology": "Көз кароо кеңири текшерүүдөн хирургиялык баалоого чейин.",
+      "urology": "Урология простата жана боор ден соолугун камтыйт.",
+      "surgery": "Хирургиялык консультациялар операцияга даярдыкты камтыйт.",
+      "pediatrics": "Педиатрия пландык текшерүүлөрдү жана эмдөөнү камтыйт.",
+      "dermatology": "Дерматология тери көйгөйлөрүн дарылейт.",
+      "endocrinology": "Эндокринология гормоналдык бузулууларга багытталган."
     }
   }
 }

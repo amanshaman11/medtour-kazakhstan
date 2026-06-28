@@ -95,16 +95,18 @@ export function WhyChooseKazakhstan() {
                   transition={{ duration: 0.3 }}
                   className="group h-full"
                 >
-                  <div className="relative h-full p-6 rounded-2xl bg-gradient-to-br from-surface to-white border border-border hover:border-navy-200 transition-all duration-300 shadow-sm hover:shadow-xl card-shine overflow-hidden">
+                  <div className="relative h-full p-6 rounded-2xl bg-gradient-to-br from-surface to-white border border-border hover:border-navy-200 transition-all duration-300 shadow-sm hover:shadow-xl card-shine overflow-hidden flex flex-col">
                     <div
-                      className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${styles.iconBg} mb-5 group-hover:scale-110 transition-transform duration-300`}
+                      className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${styles.iconBg} mb-5 group-hover:scale-110 transition-transform duration-300 shrink-0`}
                     >
                       <Icon className={`w-7 h-7 ${styles.icon}`} />
                     </div>
 
-                    <h3 className="text-xl font-bold text-navy-900 mb-3">{t(titleKey)}</h3>
+                    <h3 className="text-[1.05rem] lg:text-lg font-bold text-navy-900 mb-3 leading-snug text-balance break-words min-h-[2.75rem] lg:min-h-[3rem]">
+                      {t(titleKey)}
+                    </h3>
 
-                    <p className="text-sm text-muted leading-relaxed">{t(descriptionKey)}</p>
+                    <p className="text-sm text-muted leading-relaxed flex-1 break-words">{t(descriptionKey)}</p>
 
                     <div
                       className={`absolute bottom-0 left-0 h-1 ${styles.line} w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl`}

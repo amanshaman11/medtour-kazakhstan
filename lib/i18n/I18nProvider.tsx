@@ -17,8 +17,30 @@ import ky from "./translations/ky.json";
 import tg from "./translations/tg.json";
 import ar from "./translations/ar.json";
 import zh from "./translations/zh.json";
+import ruProcedureItems from "./procedure-items/ru.json";
+import kkProcedureItems from "./procedure-items/kk.json";
+import uzProcedureItems from "./procedure-items/uz.json";
+import kyProcedureItems from "./procedure-items/ky.json";
+import tgProcedureItems from "./procedure-items/tg.json";
+import arProcedureItems from "./procedure-items/ar.json";
+import zhProcedureItems from "./procedure-items/zh.json";
 
 type Dict = Record<string, unknown>;
+type ProcedureItemFields = {
+  name?: string;
+  description?: string;
+  summary?: string;
+};
+
+const procedureItemOverrides: Partial<Record<Locale, Record<string, ProcedureItemFields>>> = {
+  ru: ruProcedureItems as Record<string, ProcedureItemFields>,
+  kk: kkProcedureItems as Record<string, ProcedureItemFields>,
+  uz: uzProcedureItems as Record<string, ProcedureItemFields>,
+  ky: kyProcedureItems as Record<string, ProcedureItemFields>,
+  tg: tgProcedureItems as Record<string, ProcedureItemFields>,
+  ar: arProcedureItems as Record<string, ProcedureItemFields>,
+  zh: zhProcedureItems as Record<string, ProcedureItemFields>,
+};
 
 const dictionaries: Record<Locale, Dict> = {
   en,
@@ -53,6 +75,15 @@ function resolveArray(dict: Dict, key: string): string[] | undefined {
   return Array.isArray(value) && value.every((v) => typeof v === "string")
     ? (value as string[])
     : undefined;
+}
+
+function resolveProcedureItem(locale: Locale, key: string): string | undefined {
+  const match = key.match(/^procedures\.items\.([^.]+)\.(name|description|summary)$/);
+  if (!match || locale === "en") return undefined;
+  const [, id, field] = match;
+  const item = procedureItemOverrides[locale]?.[id];
+  const value = item?.[field as keyof ProcedureItemFields];
+  return typeof value === "string" ? value : undefined;
 }
 
 interface I18nContextValue {
@@ -93,6 +124,9 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   const t = useCallback(
     (key: string): string => {
+      const procedureItem = resolveProcedureItem(locale, key);
+      if (procedureItem) return procedureItem;
+
       return (
         resolveKey(dictionaries[locale], key) ??
         resolveKey(dictionaries.en, key) ??
