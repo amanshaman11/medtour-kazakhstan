@@ -10,3 +10,9 @@ export function homeHref(href: string): string {
   }
   return href;
 }
+
+export const DEFAULT_PROCEDURE_CITY = "almaty" as const;
+
+export function procedureCityPath(city: string = DEFAULT_PROCEDURE_CITY) {
+  return `/procedures/${city}`;
+}

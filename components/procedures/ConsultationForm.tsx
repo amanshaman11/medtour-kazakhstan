@@ -93,7 +93,7 @@ export function ConsultationForm({
   }
 
   return (
-    <div className="rounded-2xl border border-kz-blue/15 bg-white shadow-lg shadow-navy-900/5 overflow-hidden sticky top-24">
+    <div className="rounded-2xl border border-kz-blue/15 bg-white shadow-lg shadow-navy-900/5 overflow-hidden lg:sticky lg:top-24">
       <div className="bg-gradient-to-r from-navy-900 to-kz-blue-dark px-6 py-5">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
@@ -125,7 +125,7 @@ export function ConsultationForm({
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form id="consultation-request-form" onSubmit={handleSubmit} className="space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="firstName" className="block text-[12px] font-semibold text-navy-800 mb-1.5 uppercase tracking-wide">

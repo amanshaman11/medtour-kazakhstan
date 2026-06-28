@@ -778,6 +778,12 @@
       "nextStep": "Next: Choose Your Clinic",
       "nextStepDesc": "{count} accredited partner clinics in this city offer this procedure. Compare ratings, specialties, and estimated pricing."
     },
+    "mobile": {
+      "bookAppointment": "Book Appointment",
+      "selectClinicFirst": "Select a clinic to continue",
+      "fillForm": "Fill in the form below",
+      "homeHint": "Choose city, category & procedure"
+    },
     "home": {
       "howTitle": "How to Book a Procedure",
       "howSubtitle": "From city selection to clinic booking — a clear path for international patients.",

@@ -1076,6 +1076,12 @@
       "nextStep": "Keyingi: klinika tanlash",
       "nextStepDesc": "Bu shaharda {count} ta akkreditatsiyalangan klinika ushbu protsedurani taklif etadi."
     },
+    "mobile": {
+      "bookAppointment": "Qabulga yozilish",
+      "selectClinicFirst": "Avval klinikani tanlang",
+      "fillForm": "Quyidagi formani to'ldiring",
+      "homeHint": "Shahar, kategoriya va protsedurani tanlang"
+    },
     "home": {
       "howTitle": "Protseduraga qanday yozilish",
       "howSubtitle": "Shahar tanlashdan klinikagacha — xalqaro bemorlar uchun aniq yo'l.",

@@ -64,10 +64,10 @@ export function ProcedureFlowBar({
 
   return (
     <div className="sticky top-16 lg:top-[4.5rem] z-40 bg-white/95 backdrop-blur-md border-b border-kz-blue/15 shadow-sm">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8 py-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-8 py-2.5 sm:py-3">
         <nav
           aria-label={t("procedures.flow.aria")}
-          className="flex flex-wrap items-center gap-1.5 text-[12px] sm:text-[13px] text-muted mb-3"
+          className="flex flex-wrap items-center gap-1.5 text-[11px] sm:text-[13px] text-muted mb-2 sm:mb-3"
         >
           {crumbs.map((item, i) => (
             <span key={`${item.label}-${i}`} className="flex items-center gap-1.5 min-w-0">

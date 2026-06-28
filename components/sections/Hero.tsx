@@ -2,9 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { Play, MapPin, Award } from "lucide-react";
+import Link from "next/link";
+import { Play, MapPin, Award, CalendarCheck } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { CallCenterBanner } from "@/components/sections/CallCenterBanner";
+import { procedureCityPath } from "@/lib/utils/routes";
 
 export function Hero({ background }: { background: React.ReactNode }) {
   const { t } = useTranslation();
@@ -55,8 +57,15 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-3 mb-10"
+            className="flex flex-col sm:flex-row flex-wrap gap-3 mb-10"
           >
+            <Link
+              href={procedureCityPath()}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-kz-gold text-navy-900 text-sm font-bold rounded-xl border-2 border-white/20 shadow-lg shadow-kz-gold/30 hover:bg-[#f5b800] transition-all hover:scale-[1.02]"
+            >
+              <CalendarCheck className="w-4 h-4" />
+              {t("procedures.mobile.bookAppointment")}
+            </Link>
             <a
               href="#search"
               className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-kz text-white text-sm font-semibold rounded-xl hover:shadow-2xl hover:shadow-kz-blue/30 transition-all hover:scale-[1.02]"

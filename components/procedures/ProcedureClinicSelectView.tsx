@@ -44,6 +44,10 @@ export function ProcedureClinicSelectView({
   const clinics = getClinicsForProcedure(city, categoryId);
   const selectedClinic = clinics.find((c) => c.id === selectedClinicId) ?? null;
 
+  const scrollToForm = () => {
+    document.getElementById("consultation-form")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <ProceduresPageShell>
       <ProcedureFlowBar
@@ -90,7 +94,7 @@ export function ProcedureClinicSelectView({
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4 mb-10">
+          <div id="clinic-list" className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 scroll-mt-32">
             {clinics.map((clinic) => (
               <ProcedureClinicCard
                 key={clinic.id}
@@ -104,7 +108,21 @@ export function ProcedureClinicSelectView({
 
         {selectedClinic && (
           <AnimatedSection delay={0.1}>
-            <div id="consultation-form" className="max-w-xl mx-auto lg:max-w-none lg:grid lg:grid-cols-5 lg:gap-8">
+            <div className="lg:hidden mb-6 rounded-xl border border-kz-blue/20 bg-kz-blue/5 p-4">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-kz-blue-dark mb-1">
+                {t("procedures.clinics.selected")}
+              </p>
+              <h3 className="text-base font-bold text-navy-900">{selectedClinic.name}</h3>
+              <button
+                type="button"
+                onClick={scrollToForm}
+                className="mt-3 text-sm font-semibold text-kz-blue-dark underline underline-offset-2"
+              >
+                {t("procedures.mobile.fillForm")}
+              </button>
+            </div>
+
+            <div id="consultation-form" className="max-w-xl mx-auto lg:max-w-none lg:grid lg:grid-cols-5 lg:gap-8 scroll-mt-28">
               <div className="hidden lg:block lg:col-span-2">
                 <div className="rounded-2xl border border-border bg-surface p-6 sticky top-40">
                   <p className="text-[12px] font-semibold uppercase tracking-wider text-muted mb-2">

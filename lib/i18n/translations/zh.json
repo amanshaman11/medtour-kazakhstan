@@ -1076,6 +1076,12 @@
       "nextStep": "下一步：选择诊所",
       "nextStepDesc": "该城市有 {count} 家认证合作诊所提供此项目。"
     },
+    "mobile": {
+      "bookAppointment": "预约就诊",
+      "selectClinicFirst": "请先选择诊所",
+      "fillForm": "请填写下方表单",
+      "homeHint": "选择城市、类别和医疗项目"
+    },
     "home": {
       "howTitle": "如何预约医疗项目",
       "howSubtitle": "从选择城市到选择诊所——为国际患者提供的清晰路径。",

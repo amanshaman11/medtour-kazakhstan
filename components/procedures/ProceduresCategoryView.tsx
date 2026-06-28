@@ -48,7 +48,7 @@ export function ProceduresCategoryView({ city, categoryId }: ProceduresCategoryV
 
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-8 lg:py-12">
         <AnimatedSection delay={0.05}>
-          <div className="rounded-2xl border border-border bg-white shadow-sm overflow-hidden mb-12">
+          <div id="procedure-list" className="rounded-2xl border border-border bg-white shadow-sm overflow-hidden mb-12 scroll-mt-32">
             <div className="hidden sm:grid sm:grid-cols-[1fr_auto] gap-4 px-6 py-3 bg-navy-50 border-b border-border text-[11px] font-semibold uppercase tracking-wider text-muted">
               <span>{t("procedures.procedureColumn")}</span>
               <span>{t("procedures.priceColumn")}</span>
@@ -59,7 +59,7 @@ export function ProceduresCategoryView({ city, categoryId }: ProceduresCategoryV
                 <Link
                   key={item.id}
                   href={`/procedures/${city}/${categoryId}/${item.id}`}
-                  className={`group flex items-center justify-between gap-4 px-5 sm:px-6 py-4 sm:py-5 hover:bg-kz-blue/[0.03] transition-colors ${
+                  className={`group flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 px-4 sm:px-6 py-4 sm:py-5 hover:bg-kz-blue/[0.03] transition-colors ${
                     i < items.length - 1 ? "border-b border-border" : ""
                   }`}
                 >
@@ -67,12 +67,12 @@ export function ProceduresCategoryView({ city, categoryId }: ProceduresCategoryV
                     <div className="hidden sm:flex w-9 h-9 rounded-lg bg-kz-blue/10 items-center justify-center shrink-0">
                       <BadgeDollarSign className="w-4 h-4 text-kz-blue" />
                     </div>
-                    <span className="text-[14px] sm:text-[15px] font-medium text-kz-blue-dark group-hover:text-kz-blue group-hover:underline">
+                    <span className="text-[15px] font-medium text-kz-blue-dark group-hover:text-kz-blue group-hover:underline leading-snug">
                       {t(`procedures.items.${item.id}.name`)}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-[13px] sm:text-[14px] text-navy-800 font-semibold">
+                  <div className="flex items-center justify-between sm:justify-end gap-2 shrink-0 pl-0 sm:pl-0">
+                    <span className="text-[14px] text-navy-800 font-semibold">
                       {t("procedures.startingFrom")} {formatUsdFromKzt(priceKzt)}
                     </span>
                     <ChevronRight className="w-4 h-4 text-muted group-hover:text-kz-blue rtl-flip" />
