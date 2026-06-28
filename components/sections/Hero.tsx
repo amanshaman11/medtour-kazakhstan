@@ -15,11 +15,14 @@ export function Hero({ background }: { background: React.ReactNode }) {
     document.getElementById("procedures")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const discoverButtonClass =
+    "flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer";
+
   return (
-    <section className="relative min-h-[100dvh] h-screen overflow-hidden">
+    <section className="relative min-h-[calc(100dvh+8rem)] lg:h-screen lg:min-h-[600px] overflow-x-hidden">
       {background}
 
-      <div className="relative h-full max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between gap-10 pb-[11.5rem] sm:pb-36 lg:pb-36 lg:translate-y-[1cm]">
+      <div className="relative w-full max-w-7xl mx-auto px-5 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-10 pt-[5.25rem] sm:pt-24 lg:pt-0 pb-[13.5rem] sm:pb-36 lg:pb-36 lg:h-full lg:translate-y-[1cm]">
         <motion.div style={{ opacity }} className="max-w-3xl flex-1 min-w-0 w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +56,7 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-[1.75rem] sm:text-[2.35rem] md:text-4xl lg:text-[3rem] xl:text-[3.35rem] font-bold tracking-tight leading-[1.12] text-white mb-4 sm:mb-6 pr-0"
+            className="text-[1.75rem] sm:text-[2.35rem] md:text-4xl lg:text-[3rem] xl:text-[3.35rem] font-bold tracking-tight leading-[1.12] text-white mb-4 sm:mb-6"
           >
             {t("hero.title")}
           </motion.h1>
@@ -97,17 +100,39 @@ export function Hero({ background }: { background: React.ReactNode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-5"
+            className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-5"
           >
-            <div className="flex items-center gap-2 min-w-0">
-              <MapPin className="w-4 h-4 text-kz-blue shrink-0" />
+            <div className="flex items-start gap-2 min-w-0">
+              <MapPin className="w-4 h-4 text-kz-blue shrink-0 mt-0.5" />
               <span className="text-xs sm:text-sm text-white/70 leading-snug">{t("hero.trust1")}</span>
             </div>
-            <div className="flex items-center gap-2 min-w-0">
-              <Award className="w-4 h-4 text-kz-gold shrink-0" />
+            <div className="flex items-start gap-2 min-w-0">
+              <Award className="w-4 h-4 text-kz-gold shrink-0 mt-0.5" />
               <span className="text-xs sm:text-sm text-white/70 leading-snug">{t("hero.trust2")}</span>
             </div>
           </motion.div>
+
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1.15 }}
+            onClick={scrollToProcedures}
+            className={`lg:hidden mt-10 ${discoverButtonClass}`}
+            aria-label={t("hero.scrollDown")}
+          >
+            <span className="text-[10px] sm:text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="w-5 h-8 rounded-full border-2 border-white/40 flex items-start justify-center p-1.5 group-hover:border-kz-blue/60 transition-colors"
+            >
+              <motion.div
+                animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="w-1 h-2 rounded-full bg-kz-blue/80"
+              />
+            </motion.div>
+          </motion.button>
         </motion.div>
 
         <motion.div
@@ -139,10 +164,10 @@ export function Hero({ background }: { background: React.ReactNode }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.2 }}
         onClick={scrollToProcedures}
-        className="absolute bottom-[10.5rem] sm:bottom-[5rem] lg:bottom-[5.25rem] left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer"
+        className={`hidden lg:flex absolute bottom-[5.25rem] left-1/2 -translate-x-1/2 z-30 ${discoverButtonClass}`}
         aria-label={t("hero.scrollDown")}
       >
-        <span className="text-[10px] sm:text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
+        <span className="text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
