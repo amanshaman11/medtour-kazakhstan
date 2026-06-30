@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { Globe, Check, ChevronDown } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { localeMeta, locales, type Locale } from "@/lib/i18n/config";
@@ -43,7 +43,7 @@ export function LanguageSelector({ light = false }: { light?: boolean }) {
 
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 8, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.98 }}
@@ -77,7 +77,7 @@ export function LanguageSelector({ light = false }: { light?: boolean }) {
                 </button>
               );
             })}
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>

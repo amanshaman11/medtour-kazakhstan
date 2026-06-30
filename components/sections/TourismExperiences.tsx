@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Image from "next/image";
 import { MapPin, ArrowRight } from "lucide-react";
 import { tourismCities } from "@/lib/data/tourism";
@@ -30,7 +30,7 @@ export function TourismExperiences() {
         <div className="grid lg:grid-cols-3 gap-6">
           {tourismCities.map((city, i) => (
             <AnimatedSection key={city.id} delay={i * 0.1}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -5 }}
                 className="group h-full rounded-xl overflow-hidden border border-border bg-white hover:shadow-lg transition-all duration-300"
               >
@@ -79,7 +79,7 @@ export function TourismExperiences() {
                     <ArrowRight className="w-3.5 h-3.5 rtl-flip" />
                   </a>
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

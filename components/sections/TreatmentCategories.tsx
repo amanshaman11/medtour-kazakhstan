@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   Smile,
   Baby,
@@ -39,7 +39,7 @@ export function TreatmentCategories() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {categories.map((cat, i) => (
             <AnimatedSection key={cat.key} delay={i * 0.06}>
-              <motion.a
+              <m.a
                 href={cat.href}
                 whileHover={{ y: -3 }}
                 className="group block h-full p-7 rounded-xl bg-white border border-border hover:border-navy-200 hover:shadow-lg transition-all duration-300"
@@ -62,7 +62,7 @@ export function TreatmentCategories() {
                     <ArrowRight className="w-3.5 h-3.5 rtl-flip" />
                   </span>
                 </div>
-              </motion.a>
+              </m.a>
             </AnimatedSection>
           ))}
         </div>

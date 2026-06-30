@@ -11,7 +11,9 @@ const MedicalProcedures = dynamic(() =>
   import("@/components/sections/MedicalProcedures").then((m) => ({ default: m.MedicalProcedures }))
 );
 const WhyChooseKazakhstan = dynamic(() =>
-  import("@/components/sections/WhyChooseKazakhstan").then((m) => ({ default: m.WhyChooseKazakhstan }))
+  import("@/components/sections/WhyChooseKazakhstan").then((m) => ({
+    default: m.WhyChooseKazakhstan,
+  }))
 );
 const Statistics = dynamic(() =>
   import("@/components/sections/Statistics").then((m) => ({ default: m.Statistics }))
@@ -26,10 +28,14 @@ const MedicalConcierge = dynamic(() =>
   import("@/components/sections/MedicalConcierge").then((m) => ({ default: m.MedicalConcierge }))
 );
 const HotelsAccommodation = dynamic(() =>
-  import("@/components/sections/HotelsAccommodation").then((m) => ({ default: m.HotelsAccommodation }))
+  import("@/components/sections/HotelsAccommodation").then((m) => ({
+    default: m.HotelsAccommodation,
+  }))
 );
 const MedicalTravelPackages = dynamic(() =>
-  import("@/components/sections/MedicalTravelPackages").then((m) => ({ default: m.MedicalTravelPackages }))
+  import("@/components/sections/MedicalTravelPackages").then((m) => ({
+    default: m.MedicalTravelPackages,
+  }))
 );
 const HowItWorks = dynamic(() =>
   import("@/components/sections/HowItWorks").then((m) => ({ default: m.HowItWorks }))

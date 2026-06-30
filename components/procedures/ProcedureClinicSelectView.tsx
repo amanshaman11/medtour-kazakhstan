@@ -45,7 +45,7 @@ export function ProcedureClinicSelectView({
   const selectedClinic = clinics.find((c) => c.id === selectedClinicId) ?? null;
 
   const scrollToForm = () => {
-    document.getElementById("consultation-form")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById("consultation-form")?.scrollIntoView({ behavior: "auto", block: "start" });
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { Headset, Send, Phone } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
 import { conciergeScenarios } from "@/lib/data/concierge";
@@ -81,7 +81,7 @@ function ConciergeChat({ scenario }: { scenario: ConciergeScenario }) {
           <div className="px-4 py-3 rounded-xl rounded-tl-sm bg-white/5 border border-white/8">
             <div className="flex gap-1">
               {[0, 1, 2].map((d) => (
-                <motion.span
+                <m.span
                   key={d}
                   animate={{ opacity: [0.3, 1, 0.3] }}
                   transition={{ duration: 1, repeat: Infinity, delay: d * 0.15 }}
@@ -199,14 +199,14 @@ export function MedicalConcierge() {
 
               <div className="p-5 min-h-[380px]">
                 <AnimatePresence mode="wait">
-                  <motion.div
+                  <m.div
                     key={scenario.id}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                   >
                     <ConciergeChat scenario={scenario} />
-                  </motion.div>
+                  </m.div>
                 </AnimatePresence>
               </div>
 

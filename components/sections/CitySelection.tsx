@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Image from "next/image";
 import { MapPin, Building2, Heart, Sparkles, ArrowRight } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -30,7 +30,7 @@ export function CitySelection() {
       <div className="relative max-w-7xl mx-auto px-5 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -39,9 +39,9 @@ export function CitySelection() {
             >
               <MapPin className="w-5 h-5" />
               {t("citySelection.badge")}
-            </motion.div>
+            </m.div>
 
-            <motion.h2
+            <m.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -49,9 +49,9 @@ export function CitySelection() {
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mb-4"
             >
               {t("citySelection.title")}
-            </motion.h2>
+            </m.h2>
 
-            <motion.p
+            <m.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -59,7 +59,7 @@ export function CitySelection() {
               className="text-lg text-muted max-w-2xl mx-auto"
             >
               {t("citySelection.subtitle")}
-            </motion.p>
+            </m.p>
           </div>
         </AnimatedSection>
 
@@ -71,7 +71,7 @@ export function CitySelection() {
 
             return (
               <AnimatedSection key={city.id} delay={index * 0.1}>
-                <motion.a
+                <m.a
                   href={`/procedures/${city.id}`}
                   whileHover={{ y: -8 }}
                   transition={{ duration: 0.3 }}
@@ -85,7 +85,7 @@ export function CitySelection() {
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        priority={index === 0}
+                        loading={index === 0 ? undefined : "lazy"}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent" />
                       <div className="absolute top-5 right-5 w-11 h-11 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center">
@@ -141,7 +141,7 @@ export function CitySelection() {
                       </div>
                     </div>
                   </div>
-                </motion.a>
+                </m.a>
               </AnimatedSection>
             );
           })}

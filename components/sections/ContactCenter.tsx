@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   Phone,
   Clock,
@@ -40,7 +40,7 @@ export function ContactCenter() {
 
         <AnimatedSection delay={0.15}>
           <div className="text-center mb-14">
-            <motion.a
+            <m.a
               href="tel:1717"
               whileHover={{ scale: 1.02 }}
               className="inline-block"
@@ -48,7 +48,7 @@ export function ContactCenter() {
               <p className="text-6xl sm:text-7xl lg:text-8xl font-bold gradient-text tracking-tight">
                 1717
               </p>
-            </motion.a>
+            </m.a>
             <p className="text-white/60 text-[15px] mt-3">
               {t("contact.availability")}
             </p>
@@ -58,7 +58,7 @@ export function ContactCenter() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
           {features.map((feature, i) => (
             <AnimatedSection key={feature.key} delay={i * 0.06}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -3 }}
                 className="h-full p-5 rounded-xl bg-white/5 border border-white/8 hover:border-white/12 transition-all"
               >
@@ -69,7 +69,7 @@ export function ContactCenter() {
                 <p className="text-[12px] text-white/60 leading-relaxed">
                   {t(`contact.features.${feature.key}.desc`)}
                 </p>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

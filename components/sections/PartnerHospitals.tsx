@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { MapPin, BadgeCheck, ExternalLink } from "lucide-react";
 import { partnerHospitals } from "@/lib/data/partners";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -48,7 +48,7 @@ export function PartnerHospitals() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {partnerHospitals.slice(0, 8).map((h, i) => (
             <AnimatedSection key={h.id} delay={i * 0.05}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -4 }}
                 className="gradient-ring group h-full p-6 rounded-2xl bg-white border border-border hover:shadow-xl hover:shadow-navy-900/5 transition-all duration-300 card-shine"
               >
@@ -97,7 +97,7 @@ export function PartnerHospitals() {
                     </a>
                   )}
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

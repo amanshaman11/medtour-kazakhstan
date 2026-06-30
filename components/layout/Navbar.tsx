@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Menu, X, Calendar, LogOut, ChevronDown } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -7,9 +8,13 @@ import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { useAuth } from "@/components/providers/AuthProvider";
 import { LanguageSelector } from "@/components/ui/LanguageSelector";
 import { Logo } from "@/components/ui/Logo";
-import { SignInModal } from "@/components/auth/SignInModal";
 import { homeHref } from "@/lib/utils/routes";
 import { firstName } from "@/lib/auth/storage";
+
+const SignInModal = dynamic(
+  () => import("@/components/auth/SignInModal").then((m) => ({ default: m.SignInModal })),
+  { ssr: false }
+);
 
 const ctaClassName =
   "inline-flex items-center justify-center gap-1.5 h-10 sm:h-11 px-3.5 sm:px-4 text-[13px] sm:text-[14px] font-bold whitespace-nowrap rounded-lg bg-kz-gold text-navy-900 border-2 border-navy-900/15 shadow-lg shadow-kz-gold/30 hover:bg-[#f5b800] transition-colors shrink-0";
@@ -194,7 +199,7 @@ export function Navbar() {
         )}
       </header>
 
-      <SignInModal open={signInOpen} onClose={() => setSignInOpen(false)} />
+      {signInOpen ? <SignInModal open onClose={() => setSignInOpen(false)} /> : null}
     </>
   );
 }

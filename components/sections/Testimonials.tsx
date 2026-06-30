@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import { testimonials } from "@/lib/data/testimonials";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -23,7 +23,7 @@ export function Testimonials() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <AnimatedSection key={t.id} delay={i * 0.06}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -3 }}
                 className="h-full p-6 rounded-xl bg-white border border-border hover:shadow-md transition-all duration-300"
               >
@@ -51,7 +51,7 @@ export function Testimonials() {
                     {tr(`testimonials.items.${t.id}.treatment`)}
                   </p>
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

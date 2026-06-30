@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   ShieldCheck,
   Languages,
@@ -38,7 +38,7 @@ export function TrustIndicators() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {indicators.map((item, i) => (
             <AnimatedSection key={item.key} delay={i * 0.06}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -4 }}
                 className="group h-full flex gap-4 p-6 rounded-2xl glass-card hover:shadow-xl hover:shadow-navy-900/5 transition-all duration-300"
               >
@@ -53,7 +53,7 @@ export function TrustIndicators() {
                     {t(`trust.items.${item.key}.desc`)}
                   </p>
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

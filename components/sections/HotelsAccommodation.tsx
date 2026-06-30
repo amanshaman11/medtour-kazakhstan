@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Image from "next/image";
 import { MapPin, Star, ExternalLink } from "lucide-react";
 import { hotels } from "@/lib/data/hotels";
@@ -24,7 +24,7 @@ export function HotelsAccommodation() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {hotels.map((hotel, i) => (
             <AnimatedSection key={hotel.id} delay={i * 0.06}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -4 }}
                 className="group h-full rounded-xl bg-white border border-border overflow-hidden hover:shadow-lg hover:border-navy-200 transition-all duration-300"
               >
@@ -97,7 +97,7 @@ export function HotelsAccommodation() {
                     </a>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

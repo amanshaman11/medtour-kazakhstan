@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { Search, MapPin, Star, BadgeCheck, Phone, Mail, Globe } from "lucide-react";
 import { useState, useMemo } from "react";
 import { clinics, categoryLabels } from "@/lib/data/clinics";
@@ -98,7 +98,7 @@ export function TreatmentSearch() {
         </AnimatedSection>
 
         <AnimatePresence mode="popLayout">
-          <motion.div
+          <m.div
             key={`${query}-${activeCategory}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -112,7 +112,7 @@ export function TreatmentSearch() {
               </div>
             ) : (
               results.map((clinic, i) => (
-                <motion.div
+                <m.div
                   key={clinic.id}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -196,10 +196,10 @@ export function TreatmentSearch() {
                       </a>
                     )}
                   </div>
-                </motion.div>
+                </m.div>
               ))
             )}
-          </motion.div>
+          </m.div>
         </AnimatePresence>
 
         <p className="text-center text-[13px] text-muted mt-8">

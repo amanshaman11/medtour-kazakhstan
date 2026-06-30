@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Building2, DollarSign, Clock, Package } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { AnimatedSection, SectionHeader } from "@/components/ui/AnimatedSection";
@@ -29,7 +29,7 @@ export function WhyKazakhstan() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {reasons.map((item, i) => (
             <AnimatedSection key={item.key} delay={i * 0.08}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.25 }}
                 className="gradient-ring group h-full p-7 rounded-2xl border border-border bg-white hover:shadow-xl hover:shadow-navy-900/5 transition-all duration-300 card-shine"
@@ -45,7 +45,7 @@ export function WhyKazakhstan() {
                 <p className="text-sm text-muted leading-relaxed">
                   {t(`why.cards.${item.key}.desc`)}
                 </p>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

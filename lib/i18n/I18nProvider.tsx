@@ -10,20 +10,6 @@ import {
 } from "react";
 import { defaultLocale, isRtl, locales, type Locale } from "./config";
 import en from "./translations/en.json";
-import ru from "./translations/ru.json";
-import kk from "./translations/kk.json";
-import uz from "./translations/uz.json";
-import ky from "./translations/ky.json";
-import tg from "./translations/tg.json";
-import ar from "./translations/ar.json";
-import zh from "./translations/zh.json";
-import ruProcedureItems from "./procedure-items/ru.json";
-import kkProcedureItems from "./procedure-items/kk.json";
-import uzProcedureItems from "./procedure-items/uz.json";
-import kyProcedureItems from "./procedure-items/ky.json";
-import tgProcedureItems from "./procedure-items/tg.json";
-import arProcedureItems from "./procedure-items/ar.json";
-import zhProcedureItems from "./procedure-items/zh.json";
 
 type Dict = Record<string, unknown>;
 type ProcedureItemFields = {
@@ -32,25 +18,27 @@ type ProcedureItemFields = {
   summary?: string;
 };
 
-const procedureItemOverrides: Partial<Record<Locale, Record<string, ProcedureItemFields>>> = {
-  ru: ruProcedureItems as Record<string, ProcedureItemFields>,
-  kk: kkProcedureItems as Record<string, ProcedureItemFields>,
-  uz: uzProcedureItems as Record<string, ProcedureItemFields>,
-  ky: kyProcedureItems as Record<string, ProcedureItemFields>,
-  tg: tgProcedureItems as Record<string, ProcedureItemFields>,
-  ar: arProcedureItems as Record<string, ProcedureItemFields>,
-  zh: zhProcedureItems as Record<string, ProcedureItemFields>,
+const localeLoaders: Record<Locale, () => Promise<{ default: Dict }>> = {
+  en: () => import("./translations/en.json"),
+  ru: () => import("./translations/ru.json"),
+  kk: () => import("./translations/kk.json"),
+  uz: () => import("./translations/uz.json"),
+  ky: () => import("./translations/ky.json"),
+  tg: () => import("./translations/tg.json"),
+  ar: () => import("./translations/ar.json"),
+  zh: () => import("./translations/zh.json"),
 };
 
-const dictionaries: Record<Locale, Dict> = {
-  en,
-  ru,
-  kk,
-  uz,
-  ky,
-  tg,
-  ar,
-  zh,
+const procedureItemLoaders: Partial<
+  Record<Locale, () => Promise<{ default: Record<string, ProcedureItemFields> }>>
+> = {
+  ru: () => import("./procedure-items/ru.json"),
+  kk: () => import("./procedure-items/kk.json"),
+  uz: () => import("./procedure-items/uz.json"),
+  ky: () => import("./procedure-items/ky.json"),
+  tg: () => import("./procedure-items/tg.json"),
+  ar: () => import("./procedure-items/ar.json"),
+  zh: () => import("./procedure-items/zh.json"),
 };
 
 function resolveRaw(dict: Dict, key: string): unknown {
@@ -77,15 +65,6 @@ function resolveArray(dict: Dict, key: string): string[] | undefined {
     : undefined;
 }
 
-function resolveProcedureItem(locale: Locale, key: string): string | undefined {
-  const match = key.match(/^procedures\.items\.([^.]+)\.(name|description|summary)$/);
-  if (!match || locale === "en") return undefined;
-  const [, id, field] = match;
-  const item = procedureItemOverrides[locale]?.[id];
-  const value = item?.[field as keyof ProcedureItemFields];
-  return typeof value === "string" ? value : undefined;
-}
-
 interface I18nContextValue {
   locale: Locale;
   setLocale: (locale: Locale) => void;
@@ -100,16 +79,53 @@ const STORAGE_KEY = "medtour-locale";
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(defaultLocale);
+  const [dictionaries, setDictionaries] = useState<Partial<Record<Locale, Dict>>>({
+    en: en as Dict,
+  });
+  const [procedureItemOverrides, setProcedureItemOverrides] = useState<
+    Partial<Record<Locale, Record<string, ProcedureItemFields>>>
+  >({});
 
   useEffect(() => {
-    // Read persisted locale after mount to keep SSR/first paint hydration-safe
-    // (server always renders the default locale).
     const stored = window.localStorage.getItem(STORAGE_KEY) as Locale | null;
     if (stored && locales.includes(stored)) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLocaleState(stored);
     }
   }, []);
+
+  useEffect(() => {
+    if (dictionaries[locale]) return;
+
+    let cancelled = false;
+    localeLoaders[locale]().then((module) => {
+      if (cancelled) return;
+      setDictionaries((prev) => ({ ...prev, [locale]: module.default }));
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [locale, dictionaries]);
+
+  useEffect(() => {
+    if (locale === "en" || procedureItemOverrides[locale]) return;
+
+    const loader = procedureItemLoaders[locale];
+    if (!loader) return;
+
+    let cancelled = false;
+    loader().then((module) => {
+      if (cancelled) return;
+      setProcedureItemOverrides((prev) => ({
+        ...prev,
+        [locale]: module.default as Record<string, ProcedureItemFields>,
+      }));
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [locale, procedureItemOverrides]);
 
   useEffect(() => {
     const dir = isRtl(locale) ? "rtl" : "ltr";
@@ -122,29 +138,47 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     window.localStorage.setItem(STORAGE_KEY, next);
   }, []);
 
+  const resolveProcedureItem = useCallback(
+    (key: string): string | undefined => {
+      const match = key.match(/^procedures\.items\.([^.]+)\.(name|description|summary)$/);
+      if (!match || locale === "en") return undefined;
+      const [, id, field] = match;
+      const item = procedureItemOverrides[locale]?.[id];
+      const value = item?.[field as keyof ProcedureItemFields];
+      return typeof value === "string" ? value : undefined;
+    },
+    [locale, procedureItemOverrides]
+  );
+
   const t = useCallback(
     (key: string): string => {
-      const procedureItem = resolveProcedureItem(locale, key);
+      const procedureItem = resolveProcedureItem(key);
       if (procedureItem) return procedureItem;
 
+      const activeDict = dictionaries[locale];
+      const fallbackDict = dictionaries.en ?? (en as Dict);
+
       return (
-        resolveKey(dictionaries[locale], key) ??
-        resolveKey(dictionaries.en, key) ??
+        (activeDict ? resolveKey(activeDict, key) : undefined) ??
+        resolveKey(fallbackDict, key) ??
         key
       );
     },
-    [locale]
+    [locale, dictionaries, resolveProcedureItem]
   );
 
   const ta = useCallback(
     (key: string): string[] => {
+      const activeDict = dictionaries[locale];
+      const fallbackDict = dictionaries.en ?? (en as Dict);
+
       return (
-        resolveArray(dictionaries[locale], key) ??
-        resolveArray(dictionaries.en, key) ??
+        (activeDict ? resolveArray(activeDict, key) : undefined) ??
+        resolveArray(fallbackDict, key) ??
         []
       );
     },
-    [locale]
+    [locale, dictionaries]
   );
 
   return (

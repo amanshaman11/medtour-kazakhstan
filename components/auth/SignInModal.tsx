@@ -5,7 +5,9 @@ import Link from "next/link";
 import { X, Mail, Lock, ArrowLeft, User, Phone, CheckCircle2 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { useAuth } from "@/components/providers/AuthProvider";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleSignInButton } from "@/components/auth/GoogleSignInButton";
+import { GOOGLE_CLIENT_ID } from "@/lib/constants/auth";
 import { Logo } from "@/components/ui/Logo";
 import { firstName } from "@/lib/auth/storage";
 import type { AuthView } from "@/lib/auth/types";
@@ -143,7 +145,7 @@ export function SignInModal({ open, onClose }: SignInModalProps) {
           ? t("auth.createSubtitle")
           : t("auth.signInSubtitle");
 
-  return (
+  const modal = (
     <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
       <button
         type="button"
@@ -345,4 +347,10 @@ export function SignInModal({ open, onClose }: SignInModalProps) {
       </div>
     </div>
   );
+
+  if (GOOGLE_CLIENT_ID) {
+    return <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>{modal}</GoogleOAuthProvider>;
+  }
+
+  return modal;
 }

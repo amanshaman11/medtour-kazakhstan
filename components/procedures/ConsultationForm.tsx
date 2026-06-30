@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Send, CheckCircle2, Phone, AlertCircle, UserCheck } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 
@@ -72,7 +72,7 @@ export function ConsultationForm({
 
   if (submitted) {
     return (
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         className="rounded-2xl border border-kz-blue/25 bg-gradient-to-br from-kz-blue/5 to-white p-8 text-center shadow-sm"
@@ -89,7 +89,7 @@ export function ConsultationForm({
           <Phone className="w-4 h-4" />
           {t("callCenter.callLabel")}: 1717
         </a>
-      </motion.div>
+      </m.div>
     );
   }
 

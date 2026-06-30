@@ -2,9 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/lib/i18n/I18nProvider";
-import { GoogleAuthProvider } from "@/components/providers/GoogleAuthProvider";
 import { AuthProvider } from "@/components/providers/AuthProvider";
-import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { MotionProvider } from "@/components/providers/MotionProvider";
+import { LOGO_SRC } from "@/lib/constants/media";
+
+const FAVICON_VERSION = "3";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -79,8 +81,12 @@ export const metadata: Metadata = {
     address: false,
   },
   icons: {
-    icon: "/images/logo.jpg",
-    apple: "/images/logo.jpg",
+    icon: [
+      { url: `/favicon.ico?v=${FAVICON_VERSION}`, sizes: "48x48", type: "image/x-icon" },
+      { url: LOGO_SRC, type: "image/jpeg" },
+    ],
+    apple: [{ url: `/apple-icon.png?v=${FAVICON_VERSION}`, type: "image/png", sizes: "180x180" }],
+    shortcut: `/favicon.ico?v=${FAVICON_VERSION}`,
   },
 };
 
@@ -100,15 +106,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
-      <head />
+    <html lang="en" className={`${inter.variable} h-full`}>
+      <head>
+        <link rel="icon" href={`/favicon.ico?v=${FAVICON_VERSION}`} sizes="any" />
+        <link rel="icon" type="image/jpeg" href={LOGO_SRC} />
+        <link rel="apple-touch-icon" href={`/apple-icon.png?v=${FAVICON_VERSION}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if("scrollRestoration" in history){history.scrollRestoration="manual";}`,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col antialiased">
-        <ScrollToTop />
-        <GoogleAuthProvider>
-          <I18nProvider>
+        <I18nProvider>
+          <MotionProvider>
             <AuthProvider>{children}</AuthProvider>
-          </I18nProvider>
-        </GoogleAuthProvider>
+          </MotionProvider>
+        </I18nProvider>
       </body>
     </html>
   );

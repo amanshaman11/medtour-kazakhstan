@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   DollarSign,
   Users,
@@ -90,7 +90,7 @@ export function WhyChooseKazakhstan() {
 
             return (
               <AnimatedSection key={`${reason.namespace}-${reason.key}`} delay={index * 0.06}>
-                <motion.div
+                <m.div
                   whileHover={{ y: -8, scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                   className="group h-full"
@@ -112,14 +112,14 @@ export function WhyChooseKazakhstan() {
                       className={`absolute bottom-0 left-0 h-1 ${styles.line} w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl`}
                     />
                   </div>
-                </motion.div>
+                </m.div>
               </AnimatedSection>
             );
           })}
         </div>
 
         <AnimatedSection delay={0.4}>
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -144,7 +144,7 @@ export function WhyChooseKazakhstan() {
                 <p className="text-sm text-muted">{t("whyKazakhstan.stats.support")}</p>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </AnimatedSection>
       </div>
     </section>

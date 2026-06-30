@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -17,14 +17,14 @@ export function FinalCTA() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15),transparent_70%)]" />
 
             <div className="relative">
-              <motion.h2
+              <m.h2
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white tracking-tight max-w-2xl mx-auto leading-tight"
               >
                 {t("cta.title")}
-              </motion.h2>
+              </m.h2>
 
               <p className="mt-5 text-[16px] text-white/55 max-w-lg mx-auto leading-relaxed">
                 {t("cta.subtitle")}

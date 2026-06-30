@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useInView, useMotionValue, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Building2, Users, Globe2, Stethoscope } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -15,23 +14,43 @@ interface Stat {
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
-  const mv = useMotionValue(0);
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    if (!inView) return;
-    const controls = animate(mv, value, {
-      duration: 1.6,
-      ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => setDisplay(v),
-    });
-    return () => controls.stop();
-  }, [inView, value, mv]);
+    const el = ref.current;
+    if (!el) return;
+
+    let frame = 0;
+    let observer: IntersectionObserver | undefined;
+
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer?.disconnect();
+
+        const duration = 1600;
+        const start = performance.now();
+        const tick = (now: number) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          setDisplay(Math.round(value * eased));
+          if (progress < 1) frame = requestAnimationFrame(tick);
+        };
+        frame = requestAnimationFrame(tick);
+      },
+      { rootMargin: "-40px" }
+    );
+
+    observer.observe(el);
+    return () => {
+      observer?.disconnect();
+      cancelAnimationFrame(frame);
+    };
+  }, [value]);
 
   return (
     <span ref={ref}>
-      {Math.round(display).toLocaleString()}
+      {display.toLocaleString()}
       {suffix}
     </span>
   );
@@ -61,12 +80,9 @@ export function Statistics() {
         </AnimatedSection>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-          {stats.map((stat, i) => (
-            <AnimatedSection key={stat.label} delay={i * 0.08}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                className="glass rounded-2xl p-6 lg:p-8 text-center h-full"
-              >
+          {stats.map((stat) => (
+            <AnimatedSection key={stat.label}>
+              <div className="glass rounded-2xl p-6 lg:p-8 text-center h-full transition-transform duration-300 hover:-translate-y-1">
                 <div className="inline-flex w-12 h-12 rounded-xl bg-white/10 items-center justify-center mb-4">
                   <stat.icon className="w-6 h-6 text-accent-light" />
                 </div>
@@ -74,7 +90,7 @@ export function Statistics() {
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="text-[13px] text-white/50 mt-1.5">{stat.label}</p>
-              </motion.div>
+              </div>
             </AnimatedSection>
           ))}
         </div>

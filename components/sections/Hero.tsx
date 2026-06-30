@@ -1,37 +1,20 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
 import { Play, MapPin, Award } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { HeroRequestPanel } from "@/components/sections/HeroRequestPanel";
 
 export function Hero({ background }: { background: React.ReactNode }) {
   const { t } = useTranslation();
-  const reduce = useReducedMotion();
-
-  const scrollToProcedures = () => {
-    document.getElementById("procedures")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const fade = reduce
-    ? { initial: false, animate: { opacity: 1, y: 0 }, transition: { duration: 0 } }
-    : {
-        initial: { opacity: 0, y: 20 },
-        animate: { opacity: 1, y: 0 },
-        transition: { duration: 0.5 },
-      };
-
-  const discoverButtonClass =
-    "flex flex-col items-center gap-1.5 text-white/60 hover:text-white transition-colors group cursor-pointer";
 
   return (
-    <section className="relative min-h-screen lg:min-h-[600px] overflow-x-hidden">
+    <section className="relative min-h-[100svh] lg:min-h-[600px] overflow-x-hidden">
       {background}
 
-      <div className="relative w-full max-w-7xl mx-auto px-5 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-10 pt-[5.25rem] sm:pt-24 lg:pt-0 pb-24 sm:pb-28 lg:pb-20 lg:h-full lg:min-h-screen">
-        <motion.div {...fade} className="max-w-3xl flex-1 min-w-0 w-full">
+      <div className="relative w-full max-w-7xl mx-auto px-5 lg:px-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-10 pt-[5.25rem] sm:pt-24 lg:pt-0 pb-24 sm:pb-28 lg:pb-20 lg:h-full lg:min-h-[600px]">
+        <div className="max-w-3xl flex-1 min-w-0 w-full">
           <div className="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 max-w-full px-3 sm:px-4 py-2 rounded-full glass mb-4 sm:mb-6">
-            <div className="w-2 h-2 rounded-full bg-kz-blue animate-pulse shrink-0" />
+            <div className="w-2 h-2 rounded-full bg-kz-blue shrink-0" />
             <span className="text-[11px] sm:text-xs md:text-sm font-medium text-white/90 leading-snug text-balance">
               {t("hero.eyebrow")}
             </span>
@@ -55,10 +38,6 @@ export function Hero({ background }: { background: React.ReactNode }) {
             </a>
             <a
               href="#procedures"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToProcedures();
-              }}
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white glass rounded-xl hover:bg-white/15 transition-all border border-white/20"
             >
               <MapPin className="w-4 h-4 text-kz-gold" />
@@ -76,44 +55,10 @@ export function Hero({ background }: { background: React.ReactNode }) {
               <span className="text-xs sm:text-sm text-white/70 leading-snug">{t("hero.trust2")}</span>
             </div>
           </div>
-
-          <button
-            onClick={scrollToProcedures}
-            className={`lg:hidden mt-10 ${discoverButtonClass}`}
-            aria-label={t("hero.scrollDown")}
-          >
-            <span className="text-[10px] sm:text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
-            {!reduce && (
-              <div className="w-5 h-8 rounded-full border-2 border-white/40 flex items-start justify-center p-1.5 group-hover:border-kz-blue/60 transition-colors">
-                <motion.div
-                  animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
-                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                  className="w-1 h-2 rounded-full bg-kz-blue/80"
-                />
-              </div>
-            )}
-          </button>
-        </motion.div>
+        </div>
 
         <HeroRequestPanel />
       </div>
-
-      <button
-        onClick={scrollToProcedures}
-        className={`hidden lg:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ${discoverButtonClass}`}
-        aria-label={t("hero.scrollDown")}
-      >
-        <span className="text-xs uppercase tracking-wider font-medium">{t("hero.discover")}</span>
-        {!reduce && (
-          <div className="w-5 h-8 rounded-full border-2 border-white/40 flex items-start justify-center p-1.5 group-hover:border-kz-blue/60 transition-colors">
-            <motion.div
-              animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-              className="w-1 h-2 rounded-full bg-kz-blue/80"
-            />
-          </div>
-        )}
-      </button>
     </section>
   );
 }

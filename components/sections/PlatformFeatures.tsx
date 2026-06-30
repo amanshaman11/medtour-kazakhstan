@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   Search,
   GitCompare,
@@ -42,7 +42,7 @@ export function PlatformFeatures() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, i) => (
             <AnimatedSection key={feature.key} delay={i * 0.05}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -3 }}
                 className="group h-full p-6 rounded-xl bg-white border border-border hover:border-navy-200 hover:shadow-md transition-all duration-300"
               >
@@ -55,7 +55,7 @@ export function PlatformFeatures() {
                 <p className="text-[13px] text-muted leading-relaxed">
                   {t(`platform.features.${feature.key}.desc`)}
                 </p>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>

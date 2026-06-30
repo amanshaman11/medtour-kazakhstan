@@ -9,7 +9,7 @@ export function HeroBackground() {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src={HERO_VIDEO_SRC} type="video/mp4" />

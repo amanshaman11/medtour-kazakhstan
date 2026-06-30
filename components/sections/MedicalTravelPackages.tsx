@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import { travelPackages } from "@/lib/data/packages";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -23,7 +23,7 @@ export function MedicalTravelPackages() {
         <div className="grid lg:grid-cols-3 gap-6">
           {travelPackages.map((pkg, i) => (
             <AnimatedSection key={pkg.id} delay={i * 0.1}>
-              <motion.div
+              <m.div
                 whileHover={{ y: -4 }}
                 className={`relative h-full rounded-xl border p-7 transition-all duration-300 ${
                   pkg.popular
@@ -91,7 +91,7 @@ export function MedicalTravelPackages() {
                   {t("travelPackages.request")}
                   <ArrowRight className="w-3.5 h-3.5 rtl-flip" />
                 </a>
-              </motion.div>
+              </m.div>
             </AnimatedSection>
           ))}
         </div>
