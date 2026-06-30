@@ -2,7 +2,7 @@
 
 import { m, AnimatePresence } from "framer-motion";
 import { Headset, Send, Phone } from "lucide-react";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { conciergeScenarios } from "@/lib/data/concierge";
 import type { ConciergeScenario } from "@/lib/data/types";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
@@ -49,6 +49,7 @@ function ConciergeChat({ scenario }: { scenario: ConciergeScenario }) {
   const { t } = useTranslation();
   const [phase, setPhase] = useState<"typing" | "response">("typing");
   const [visibleLines, setVisibleLines] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const responseLines = useResponseLines(scenario);
 
   useEffect(() => {
@@ -68,8 +69,14 @@ function ConciergeChat({ scenario }: { scenario: ConciergeScenario }) {
     return () => clearTimeout(timer);
   }, [phase, visibleLines, responseLines.length]);
 
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTop = el.scrollHeight;
+  }, [phase, visibleLines, scenario.id]);
+
   return (
-    <div className="space-y-4">
+    <div ref={scrollRef} className="h-full overflow-y-auto space-y-4">
       <div className="flex justify-end">
         <div className="max-w-[80%] px-4 py-3 rounded-xl rounded-tr-sm bg-navy-700 text-white text-[14px]">
           {t(`concierge.scenarios.${scenario.id}.patientMessage`)}
@@ -178,7 +185,7 @@ export function MedicalConcierge() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2} className="lg:col-span-3">
-            <div className="rounded-xl border border-white/10 bg-navy-900/60 backdrop-blur overflow-hidden">
+            <div className="rounded-xl border border-white/10 bg-navy-900/60 backdrop-blur overflow-hidden flex flex-col h-[520px]">
               <div className="flex items-center gap-3 px-5 py-4 border-b border-white/8 bg-white/3">
                 <div className="w-9 h-9 rounded-lg bg-navy-700 flex items-center justify-center">
                   <Headset className="w-4 h-4 text-white" />
@@ -197,13 +204,14 @@ export function MedicalConcierge() {
                 </span>
               </div>
 
-              <div className="p-5 min-h-[380px]">
+              <div className="flex-1 min-h-0 p-5 overflow-hidden">
                 <AnimatePresence mode="wait">
                   <m.div
                     key={scenario.id}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
+                    className="h-full"
                   >
                     <ConciergeChat scenario={scenario} />
                   </m.div>
