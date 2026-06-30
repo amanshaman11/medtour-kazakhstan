@@ -117,35 +117,6 @@ export function WhyChooseKazakhstan() {
             );
           })}
         </div>
-
-        <AnimatedSection delay={0.4}>
-          <m.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mt-16 p-8 rounded-2xl glass-card"
-          >
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <p className="text-4xl font-bold text-kz-blue mb-2">40-60%</p>
-                <p className="text-sm text-muted">{t("whyKazakhstan.stats.savings")}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-navy-900 mb-2">50+</p>
-                <p className="text-sm text-muted">{t("whyKazakhstan.stats.hospitals")}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-kz-gold mb-2">15,000+</p>
-                <p className="text-sm text-muted">{t("whyKazakhstan.stats.patients")}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold text-navy-600 mb-2">24/7</p>
-                <p className="text-sm text-muted">{t("whyKazakhstan.stats.support")}</p>
-              </div>
-            </div>
-          </m.div>
-        </AnimatedSection>
       </div>
     </section>
   );
