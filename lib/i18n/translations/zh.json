@@ -8,6 +8,8 @@
     "contact": "联系我们",
     "concierge": "医疗专员",
     "findTreatment": "查找治疗",
+    "bookAppointment": "预约就诊",
+    "signIn": "登录",
     "procedures": "医疗项目",
     "menu": "菜单"
   },
@@ -736,6 +738,57 @@
       "travel": "旅行协助"
     }
   },
+  "requestForm": {
+    "title": "提交请求",
+    "subtitle": "告诉我们您的医疗需求，协调员将在24小时内联系您。",
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "电子邮箱",
+    "phone": "电话号码",
+    "messageLabel": "您的顾虑或需求",
+    "messagePlaceholder": "描述症状、期望治疗、出行日期或任何问题…",
+    "submit": "提交请求",
+    "sending": "发送中…",
+    "successTitle": "请求已收到",
+    "successMessage": "感谢您。我们的医疗协调员将尽快与您联系。",
+    "error": "无法提交请求。请重试或拨打1717。"
+  },
+  "auth": {
+    "signIn": "登录",
+    "createAccount": "创建账户",
+    "signInSubtitle": "登录您的医疗旅游面板",
+    "createSubtitle": "创建账户以管理预约和医疗服务",
+    "email": "电子邮箱",
+    "fullName": "全名",
+    "phone": "电话号码",
+    "password": "密码",
+    "createPassword": "创建密码",
+    "confirmPassword": "确认密码",
+    "passwordHint": "或在下方创建您自己的密码，随时登录。",
+    "passwordMismatch": "两次输入的密码不一致。",
+    "orEmail": "或使用邮箱",
+    "googleSignIn": "使用 Google 登录",
+    "googleSignUp": "使用 Google 注册",
+    "googleLoading": "正在加载 Google…",
+    "googleError": "Google 登录失败，请重试。",
+    "googleNotConfigured": "Google 登录未配置。请在 .env.local 中添加 NEXT_PUBLIC_GOOGLE_CLIENT_ID。",
+    "loading": "请稍候…",
+    "toggleToCreate": "还没有账户？",
+    "toggleToSignIn": "已有账户？",
+    "backToHome": "返回首页",
+    "close": "关闭",
+    "accountCreatedTitle": "账户创建成功",
+    "accountCreatedMessage": "您的账户已就绪。请登录以访问您的面板。",
+    "accountCreatedHint": "账户已创建。请使用您刚设置的邮箱和密码登录。",
+    "signInNow": "立即登录",
+    "welcomeBack": "欢迎回来",
+    "welcomeMessage": "您已登录到您的账户。",
+    "signedInAs": "当前登录",
+    "signOut": "退出登录",
+    "myAccount": "我的账户",
+    "invalidCredentials": "邮箱或密码不正确。",
+    "emailAlreadyRegistered": "该邮箱已注册账户。"
+  },
   "procedures": {
     "badge": "医疗项目",
     "title": "哈萨克斯坦医疗项目",
@@ -758,6 +811,17 @@
     "breadcrumb": {
       "home": "首页",
       "all": "所有项目"
+    },
+    "cityPicker": {
+      "title": "选择医疗城市",
+      "subtitle": "选择您希望接受治疗的城市。每个城市均有认证医院。",
+      "browse": "浏览医疗项目",
+      "switchCity": "医疗城市",
+      "cities": {
+        "almaty": "哈萨克斯坦最大的医疗中心，拥有JCI认证医院。",
+        "astana": "首都现代化医疗区，先进诊断设备。",
+        "shymkent": "南哈萨克斯坦新兴医疗目的地，价格优惠。"
+      }
     },
     "form": {
       "title": "申请咨询",

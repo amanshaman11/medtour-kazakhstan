@@ -50,6 +50,7 @@ export function ConsultationForm({
           categoryId,
           clinicId,
           clinicName,
+          message: data.get("message"),
         }),
       });
 
@@ -178,6 +179,19 @@ export function ConsultationForm({
               required
               autoComplete="tel"
               className="w-full px-4 py-3 text-sm bg-surface border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-kz-blue/25 focus:border-kz-blue"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-[12px] font-semibold text-navy-800 mb-1.5 uppercase tracking-wide">
+              {t("requestForm.messageLabel")}
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={3}
+              placeholder={t("requestForm.messagePlaceholder")}
+              className="w-full px-4 py-3 text-sm bg-surface border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-kz-blue/25 focus:border-kz-blue resize-none"
             />
           </div>
 

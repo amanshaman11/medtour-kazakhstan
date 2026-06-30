@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/lib/i18n/I18nProvider";
+import { GoogleAuthProvider } from "@/components/providers/GoogleAuthProvider";
+import { AuthProvider } from "@/components/providers/AuthProvider";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
-import { HERO_VIDEO_SRC } from "@/lib/constants/media";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -77,6 +78,10 @@ export const metadata: Metadata = {
     email: true,
     address: false,
   },
+  icons: {
+    icon: "/images/logo.jpg",
+    apple: "/images/logo.jpg",
+  },
 };
 
 export const viewport: Viewport = {
@@ -96,12 +101,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
-      <head>
-        <link rel="preload" href={HERO_VIDEO_SRC} as="video" type="video/mp4" />
-      </head>
+      <head />
       <body className="min-h-full flex flex-col antialiased">
         <ScrollToTop />
-        <I18nProvider>{children}</I18nProvider>
+        <GoogleAuthProvider>
+          <I18nProvider>
+            <AuthProvider>{children}</AuthProvider>
+          </I18nProvider>
+        </GoogleAuthProvider>
       </body>
     </html>
   );

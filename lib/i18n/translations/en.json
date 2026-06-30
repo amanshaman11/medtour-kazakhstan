@@ -8,6 +8,8 @@
     "contact": "Contact",
     "concierge": "Medical Concierge",
     "findTreatment": "Find Treatment",
+    "bookAppointment": "Book Appointment",
+    "signIn": "Sign In",
     "procedures": "Procedures",
     "menu": "Toggle menu"
   },
@@ -736,6 +738,57 @@
       "travel": "Travel Assistance"
     }
   },
+  "requestForm": {
+    "title": "Submit a Request",
+    "subtitle": "Tell us about your medical needs and our coordinators will reach out within 24 hours.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "messageLabel": "Your concerns or needs",
+    "messagePlaceholder": "Describe your symptoms, preferred treatment, travel dates, or any questions…",
+    "submit": "Submit Request",
+    "sending": "Sending…",
+    "successTitle": "Request received",
+    "successMessage": "Thank you. Our medical coordinator will contact you shortly.",
+    "error": "Unable to submit your request. Please try again or call 1717."
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "createAccount": "Create Account",
+    "signInSubtitle": "Sign in to your medical travel dashboard",
+    "createSubtitle": "Set up your account to manage appointments and care",
+    "email": "Email",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "password": "Password",
+    "createPassword": "Create Password",
+    "confirmPassword": "Confirm Password",
+    "passwordHint": "Or create your own password below to sign in anytime.",
+    "passwordMismatch": "Passwords do not match.",
+    "orEmail": "or use email",
+    "googleSignIn": "Sign in with Google",
+    "googleSignUp": "Sign up with Google",
+    "googleLoading": "Loading Google…",
+    "googleError": "Google sign-in failed. Please try again.",
+    "googleNotConfigured": "Google sign-in is not configured. Add NEXT_PUBLIC_GOOGLE_CLIENT_ID to .env.local.",
+    "loading": "Please wait…",
+    "toggleToCreate": "Don't have an account?",
+    "toggleToSignIn": "Already have an account?",
+    "backToHome": "Back to home",
+    "close": "Close",
+    "accountCreatedTitle": "Account created successfully",
+    "accountCreatedMessage": "Your account is ready. Sign in to access your dashboard.",
+    "accountCreatedHint": "Your account was created successfully. Sign in with the email and password you just set.",
+    "signInNow": "Sign in now",
+    "welcomeBack": "Welcome back",
+    "welcomeMessage": "You're now signed in to your account.",
+    "signedInAs": "Signed in as",
+    "signOut": "Sign out",
+    "myAccount": "My account",
+    "invalidCredentials": "Invalid email or password.",
+    "emailAlreadyRegistered": "An account with this email already exists."
+  },
   "procedures": {
     "badge": "Medical Procedures",
     "title": "Medical Procedures in Kazakhstan",
@@ -760,6 +813,17 @@
     "breadcrumb": {
       "home": "Home",
       "all": "All procedures"
+    },
+    "cityPicker": {
+      "title": "Choose Your Medical City",
+      "subtitle": "Select the city where you'd like to receive treatment. Each destination offers accredited hospitals and full coordinator support.",
+      "browse": "Browse procedures",
+      "switchCity": "Medical city",
+      "cities": {
+        "almaty": "Kazakhstan's largest medical hub with JCI-accredited hospitals and mountain recovery retreats.",
+        "astana": "The capital's modern medical district with advanced diagnostics and specialist centers.",
+        "shymkent": "Southern Kazakhstan's growing healthcare destination with competitive pricing."
+      }
     },
     "flow": {
       "aria": "Procedure booking journey",

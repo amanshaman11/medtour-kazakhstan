@@ -33,6 +33,7 @@ export function ProcedureFlowBar({
 
   const crumbs: { label: string; href?: string }[] = [
     { label: t("procedures.breadcrumb.home"), href: "/" },
+    { label: t("procedures.breadcrumb.all"), href: "/procedures" },
     { label: cityName, href: currentStep > 1 ? `/procedures/${city}` : undefined },
   ];
 

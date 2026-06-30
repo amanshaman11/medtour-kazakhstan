@@ -11,6 +11,7 @@ import {
 import { useTranslation } from "@/lib/i18n/I18nProvider";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ProcedureFlowBar } from "@/components/procedures/ProcedureFlowBar";
+import { CitySwitcher } from "@/components/procedures/CitySwitcher";
 import {
   ProceduresPageShell,
   ProceduresPageHeader,
@@ -32,6 +33,15 @@ export function ProceduresCityView({ city }: { city: ProcedureCity }) {
       />
 
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-8 lg:py-12">
+        <AnimatedSection delay={0}>
+          <div className="mb-8">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted mb-3">
+              {t("procedures.cityPicker.switchCity")}
+            </p>
+            <CitySwitcher activeCity={city} />
+          </div>
+        </AnimatedSection>
+
         <AnimatedSection delay={0.05}>
           <div id="procedure-categories" className="scroll-mt-32">
             <div className="flex items-center gap-2 mb-4">

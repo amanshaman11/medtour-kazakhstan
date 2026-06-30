@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { HeartPulse, Mail, MapPin, Building2, Hotel, Plane, Compass, Globe } from "lucide-react";
+import { Mail, MapPin, Building2, Hotel, Plane, Compass, Globe } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/I18nProvider";
+import { Logo } from "@/components/ui/Logo";
 import { homeHref } from "@/lib/utils/routes";
 
 const footerColumns = [
@@ -64,12 +65,7 @@ export function Footer() {
 
         <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-10">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-lg bg-gradient-kz flex items-center justify-center">
-                <HeartPulse className="w-[18px] h-[18px] text-white" />
-              </div>
-              <span className="text-white font-semibold text-[15px]">MedTour Kazakhstan</span>
-            </Link>
+            <Logo variant="footer" className="mb-5" />
             <p className="text-[13px] text-white/55 leading-relaxed max-w-xs mb-6">
               {t("footer.tagline")}
             </p>

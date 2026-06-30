@@ -1,27 +1,49 @@
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { PageAmbience } from "@/components/ui/PageAmbience";
 import { Hero } from "@/components/sections/Hero";
 import { HeroBackground } from "@/components/sections/HeroBackground";
-import { MedicalProcedures } from "@/components/sections/MedicalProcedures";
-import { CitySelection } from "@/components/sections/CitySelection";
-import { WhyChooseKazakhstan } from "@/components/sections/WhyChooseKazakhstan";
-import { Statistics } from "@/components/sections/Statistics";
-import { PlatformFeatures } from "@/components/sections/PlatformFeatures";
-import { TreatmentSearch } from "@/components/sections/TreatmentSearch";
-import { MedicalConcierge } from "@/components/sections/MedicalConcierge";
-import { TreatmentCategories } from "@/components/sections/TreatmentCategories";
-import { HotelsAccommodation } from "@/components/sections/HotelsAccommodation";
-import { MedicalTravelPackages } from "@/components/sections/MedicalTravelPackages";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { TrustIndicators } from "@/components/sections/TrustIndicators";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+
+const CitySelection = dynamic(() =>
+  import("@/components/sections/CitySelection").then((m) => ({ default: m.CitySelection }))
+);
+const MedicalProcedures = dynamic(() =>
+  import("@/components/sections/MedicalProcedures").then((m) => ({ default: m.MedicalProcedures }))
+);
+const WhyChooseKazakhstan = dynamic(() =>
+  import("@/components/sections/WhyChooseKazakhstan").then((m) => ({ default: m.WhyChooseKazakhstan }))
+);
+const Statistics = dynamic(() =>
+  import("@/components/sections/Statistics").then((m) => ({ default: m.Statistics }))
+);
+const PlatformFeatures = dynamic(() =>
+  import("@/components/sections/PlatformFeatures").then((m) => ({ default: m.PlatformFeatures }))
+);
+const TreatmentSearch = dynamic(() =>
+  import("@/components/sections/TreatmentSearch").then((m) => ({ default: m.TreatmentSearch }))
+);
+const MedicalConcierge = dynamic(() =>
+  import("@/components/sections/MedicalConcierge").then((m) => ({ default: m.MedicalConcierge }))
+);
+const HotelsAccommodation = dynamic(() =>
+  import("@/components/sections/HotelsAccommodation").then((m) => ({ default: m.HotelsAccommodation }))
+);
+const MedicalTravelPackages = dynamic(() =>
+  import("@/components/sections/MedicalTravelPackages").then((m) => ({ default: m.MedicalTravelPackages }))
+);
+const HowItWorks = dynamic(() =>
+  import("@/components/sections/HowItWorks").then((m) => ({ default: m.HowItWorks }))
+);
+const Testimonials = dynamic(() =>
+  import("@/components/sections/Testimonials").then((m) => ({ default: m.Testimonials }))
+);
+const FinalCTA = dynamic(() =>
+  import("@/components/sections/FinalCTA").then((m) => ({ default: m.FinalCTA }))
+);
 
 export default function Home() {
   return (
     <>
-      <PageAmbience />
       <Navbar />
       <main className="relative z-10">
         <Hero background={<HeroBackground />} />
@@ -32,11 +54,9 @@ export default function Home() {
         <PlatformFeatures />
         <TreatmentSearch />
         <MedicalConcierge />
-        <TreatmentCategories />
         <HotelsAccommodation />
         <MedicalTravelPackages />
         <HowItWorks />
-        <TrustIndicators />
         <Testimonials />
         <FinalCTA />
       </main>

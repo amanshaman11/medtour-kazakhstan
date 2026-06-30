@@ -11,6 +11,7 @@ interface ConsultationBody {
   categoryId?: string;
   clinicId?: string;
   clinicName?: string;
+  message?: string;
 }
 
 function isValidEmail(email: string): boolean {
@@ -50,6 +51,7 @@ export async function POST(request: Request) {
       categoryId: body.categoryId?.trim() ?? "",
       clinicId: body.clinicId?.trim() ?? "",
       clinicName: body.clinicName?.trim() ?? "",
+      message: body.message?.trim() ?? "",
       submittedAt: new Date().toISOString(),
     };
 

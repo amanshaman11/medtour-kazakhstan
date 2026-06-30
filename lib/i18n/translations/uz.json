@@ -8,6 +8,8 @@
     "contact": "Aloqa",
     "concierge": "Tibbiy konsyerj",
     "findTreatment": "Davolashni topish",
+    "bookAppointment": "Qabulga yozilish",
+    "signIn": "Kirish",
     "procedures": "Protseduralar",
     "menu": "Menyu"
   },
@@ -736,6 +738,57 @@
       "travel": "Sayohat yordami"
     }
   },
+  "requestForm": {
+    "title": "So'rov yuborish",
+    "subtitle": "Tibbiy ehtiyojlaringizni tasvirlang — koordinator 24 soat ichida bog'lanadi.",
+    "firstName": "Ism",
+    "lastName": "Familiya",
+    "email": "Elektron pochta",
+    "phone": "Telefon",
+    "messageLabel": "Savollar yoki ehtiyojlaringiz",
+    "messagePlaceholder": "Alomatlar, kerakli davolash, sayohat sanalari yoki savollar…",
+    "submit": "So'rov yuborish",
+    "sending": "Yuborilmoqda…",
+    "successTitle": "So'rov qabul qilindi",
+    "successMessage": "Rahmat. Tibbiy koordinatorimiz tez orada bog'lanadi.",
+    "error": "So'rov yuborilmadi. Qayta urinib ko'ring yoki 1717 ga qo'ng'iroq qiling."
+  },
+  "auth": {
+    "signIn": "Kirish",
+    "createAccount": "Ro'yxatdan o'tish",
+    "signInSubtitle": "Tibbiy turizm paneliga kiring",
+    "createSubtitle": "Qabul va davolanishni boshqarish uchun hisob yarating",
+    "email": "Elektron pochta",
+    "fullName": "To'liq ism",
+    "phone": "Telefon",
+    "password": "Parol",
+    "createPassword": "Parol yarating",
+    "confirmPassword": "Parolni tasdiqlang",
+    "passwordHint": "Yoki istalgan vaqtda kirish uchun o'z parolingizni yarating.",
+    "passwordMismatch": "Parollar mos kelmaydi.",
+    "orEmail": "yoki email orqali",
+    "googleSignIn": "Google orqali kirish",
+    "googleSignUp": "Google orqali ro'yxatdan o'tish",
+    "googleLoading": "Google yuklanmoqda…",
+    "googleError": "Google orqali kirish amalga oshmadi. Qayta urinib ko'ring.",
+    "googleNotConfigured": "Google kirish sozlanmagan. .env.local ga NEXT_PUBLIC_GOOGLE_CLIENT_ID qo'shing.",
+    "loading": "Kuting…",
+    "toggleToCreate": "Hisobingiz yo'qmi?",
+    "toggleToSignIn": "Hisobingiz bormi?",
+    "backToHome": "Bosh sahifaga",
+    "close": "Yopish",
+    "accountCreatedTitle": "Hisob muvaffaqiyatli yaratildi",
+    "accountCreatedMessage": "Hisobingiz tayyor. Panelga kirish uchun tizimga kiring.",
+    "accountCreatedHint": "Hisob yaratildi. Ko'rsatgan email va parolingiz bilan kiring.",
+    "signInNow": "Hozir kirish",
+    "welcomeBack": "Xush kelibsiz",
+    "welcomeMessage": "Siz o'z hisobingizga kirdingiz.",
+    "signedInAs": "Kirgan foydalanuvchi",
+    "signOut": "Chiqish",
+    "myAccount": "Mening hisobim",
+    "invalidCredentials": "Email yoki parol noto'g'ri.",
+    "emailAlreadyRegistered": "Bu email bilan hisob mavjud."
+  },
   "procedures": {
     "badge": "Tibbiy protseduralar",
     "title": "Qozog'istondagi tibbiy protseduralar",
@@ -758,6 +811,17 @@
     "breadcrumb": {
       "home": "Bosh sahifa",
       "all": "Barcha protseduralar"
+    },
+    "cityPicker": {
+      "title": "Tibbiy shaharni tanlang",
+      "subtitle": "Davolanish olmoqchi bo'lgan shaharni tanlang. Har bir shaharda akkreditatsiyalangan shifoxonalar mavjud.",
+      "browse": "Protseduralarni ko'rish",
+      "switchCity": "Tibbiy shahar",
+      "cities": {
+        "almaty": "JCI akkreditatsiyalangan shifoxonalari bilan eng yirik tibbiy markaz.",
+        "astana": "Poytaxtning zamonaviy tibbiy tumani.",
+        "shymkent": "Janubiy Qozog'istondagi arzon narxlarga ega tibbiy markaz."
+      }
     },
     "form": {
       "title": "Konsultatsiya so'rash",

@@ -11,6 +11,10 @@ export function homeHref(href: string): string {
   return href;
 }
 
+export function proceduresPath() {
+  return "/procedures";
+}
+
 export const DEFAULT_PROCEDURE_CITY = "almaty" as const;
 
 export function procedureCityPath(city: string = DEFAULT_PROCEDURE_CITY) {
